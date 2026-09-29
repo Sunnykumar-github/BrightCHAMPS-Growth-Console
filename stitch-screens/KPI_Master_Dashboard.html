@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.tabular-nums{font-variant-numeric:tabular-nums;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#002113", "surface-bright": "#f9f9ff", "surface-container-high": "#e5e8f4", "error": "#ba1a1a", "on-error-container": "#93000a", "tertiary-fixed-dim": "#bec6de", "on-background": "#181c24", "on-tertiary-fixed": "#131b2d", "secondary": "#2d694d", "surface-variant": "#dfe2ef", "background": "#f9f9ff", "on-secondary-container": "#326e51", "on-tertiary": "#ffffff", "tertiary-fixed": "#dae2fb", "primary-fixed-dim": "#ffb77b", "error-container": "#ffdad6", "primary-container": "#a8631e", "on-primary-fixed": "#2e1500", "inverse-surface": "#2c303a", "surface-container": "#ebedfa", "tertiary-container": "#6c748a", "on-tertiary-container": "#fdfbff", "on-secondary-fixed-variant": "#105137", "surface-dim": "#d7dae6", "primary-fixed": "#ffdcc2", "on-surface-variant": "#534438", "primary": "#8a4b02", "inverse-primary": "#ffb77b", "on-surface": "#181c24", "outline": "#867467", "surface": "#f9f9ff", "surface-container-low": "#f1f3ff", "outline-variant": "#d8c2b3", "surface-container-lowest": "#ffffff", "on-primary-container": "#fffaf9", "surface-container-highest": "#dfe2ef", "surface-tint": "#8e4e06", "secondary-fixed-dim": "#96d4b2", "on-primary": "#ffffff", "secondary-fixed": "#b1f0cd", "on-primary-fixed-variant": "#6d3a00", "tertiary": "#535b70", "secondary-container": "#aeedca", "on-error": "#ffffff", "on-secondary": "#ffffff", "inverse-on-surface": "eef0fd", "on-tertiary-fixed-variant": "#3f475a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "1rem", "space-md": "0.75rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "gutter-desktop": "1.25rem", "space-xs": "0.25rem", "space-lg": "1.25rem", "gutter": "1rem", "space-xl": "2rem" }, "fontFamily": { "mono-data-sm": [ "IBM Plex Sans" ], "label-md": [ "IBM Plex Sans" ], "stat-display": [ "\"Source Serif 4\"" ], "headline-lg-mobile": [ "\"Source Serif 4\"" ], "body-md": [ "IBM Plex Sans" ], "body-lg": [ "IBM Plex Sans" ], "label-sm": [ "IBM Plex Sans" ], "headline-lg": [ "\"Source Serif 4\"" ], "headline-sm": [ "\"Source Serif 4\"" ], "headline-md": [ "\"Source Serif 4\"" ], "mono-data": [ "IBM Plex Sans" ], "stat-display-mobile": [ "\"Source Serif 4\"" ] }, "fontSize": { "mono-data-sm": [ "11px", { "lineHeight": "14px", "fontWeight": "500" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "stat-display": [ "36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-md": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "body-lg": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-sm": [ "17px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "mono-data": [ "13px", { "lineHeight": "16px", "fontWeight": "500" } ], "stat-display-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="p-space-lg bg-surface-container-low"><div class="flex items-center justify-between gap-space-xs"><div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">BrightChamps</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Growth Console</span></div><span class="material-symbols-outlined text-tertiary cursor-pointer hover:text-on-surface transition-colors text-[20px]">dock_to_right</span></div><div class="mt-space-sm flex items-center justify-between bg-surface-container-lowest px-space-sm py-space-xs rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-mono-data-sm text-mono-data-sm text-on-surface-variant flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>USA · Math Vertical</span><span class="font-mono-data-sm text-mono-data-sm font-semibold text-primary-container tabular-nums">$50 → $25 CPL</span></div></div><div class="px-space-md py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary px-space-sm block mt-space-sm mb-space-xs">Operational Vectors</span></div><nav class="flex flex-col px-space-sm gap-0.5" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="executive-summary" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">01</span><span class="material-symbols-outlined text-[18px]">dashboard</span><span class="font-body-md text-body-md truncate">Executive Summary</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="situation-and-guardrail" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">02</span><span class="material-symbols-outlined text-[18px]">verified_user</span><span class="font-body-md text-body-md truncate">Situation &amp; Guardrail</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="the-model" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">03</span><span class="material-symbols-outlined text-[18px]">calculate</span><span class="font-body-md text-body-md truncate">The Model</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="marketing-engine" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">04</span><span class="material-symbols-outlined text-[18px]">campaign</span><span class="font-body-md text-body-md truncate">Marketing Engine</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="product-engine" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">05</span><span class="material-symbols-outlined text-[18px]">rocket_launch</span><span class="font-body-md text-body-md truncate">Product Engine</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="audience-expansion" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">06</span><span class="material-symbols-outlined text-[18px]">groups</span><span class="font-body-md text-body-md truncate">Audience Expansion</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="strategic-roadmap" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">07</span><span class="material-symbols-outlined text-[18px]">alt_route</span><span class="font-body-md text-body-md truncate">Strategic Roadmap</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-semibold rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]" data-path="kpi-master-dashboard" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">08</span><span class="material-symbols-outlined text-[18px]">table_chart</span><span class="font-body-md text-body-md truncate">KPI Master Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="risks-and-scenarios" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">09</span><span class="material-symbols-outlined text-[18px]">query_stats</span><span class="font-body-md text-body-md truncate">Risks &amp; Scenarios</span></a></nav></div><div class="p-space-md bg-surface-container-low flex flex-col gap-space-sm"><div class="bg-surface-container-lowest p-space-sm rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><div class="flex items-center justify-between text-tertiary mb-1"><span class="font-label-sm text-label-sm uppercase tracking-wider">Target Audience</span><span class="material-symbols-outlined text-[14px]">lock</span></div><p class="font-body-md text-body-md text-on-surface font-medium truncate">Founder's Office &amp; Execs</p><div class="mt-space-xs pt-space-xs flex items-center justify-between font-mono-data-sm text-mono-data-sm text-tertiary"><span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>Live v2.4</span><span class="tabular-nums">FY25 Plan</span></div></div><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="min-w-0"><p class="font-body-md text-body-md font-semibold text-on-surface truncate">R. Sharma</p><p class="font-label-sm text-label-sm text-tertiary truncate">VP Growth</p></div></div><button class="p-1 text-tertiary hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">unfold_more</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-2"><span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">BrightChamps</span><span class="text-tertiary text-xs">/</span><span class="font-body-md text-body-md font-semibold text-on-surface">Executive Overview</span></div><div class="hidden xl:flex items-center gap-1.5 bg-surface-container-high px-space-sm py-1 rounded"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-medium">Active Scenario: Base-Case Plan</span></div></div><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center gap-space-sm"><div class="flex items-center gap-1.5 bg-primary-fixed px-space-sm py-1 rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-label-sm text-label-sm text-on-primary-fixed uppercase tracking-wider">Target CPL</span><span class="font-mono-data text-mono-data text-primary font-bold tabular-nums">$25.00</span></div><div class="flex items-center gap-1.5 bg-secondary-fixed px-space-sm py-1 rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-label-sm text-label-sm text-on-secondary-fixed uppercase tracking-wider">IQI Floor</span><span class="font-mono-data text-mono-data text-secondary font-bold tabular-nums">≥84.0</span></div><div class="hidden lg:flex items-center gap-1.5 bg-surface-container-high px-space-sm py-1 rounded"><span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Horizon</span><span class="font-mono-data text-mono-data text-on-surface font-semibold tabular-nums">Q3 FY25</span></div></div><div class="flex items-center gap-space-sm"><button class="flex items-center gap-1.5 px-space-sm py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">tune</span><span class="hidden sm:inline">Base-Case</span><span class="material-symbols-outlined text-[16px]">arrow_drop_down</span></button><button class="flex items-center gap-1 px-space-sm py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" title="Export Plan" type="button"><span class="material-symbols-outlined text-[16px]">file_download</span><span class="hidden lg:inline">Export</span></button><button class="p-1.5 bg-surface-container-lowest text-on-surface rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" title="Share Scenario" type="button"><span class="material-symbols-outlined text-[16px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg lg:p-margin-desktop flex flex-col gap-space-lg max-w-[1600px] mx-auto w-full">
+<!-- Executive Title & Subheader Row -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md pb-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data-sm text-mono-data-sm text-primary uppercase tracking-widest font-semibold">Ledger Group 08</span>
+<span class="text-tertiary-container">•</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary font-medium">Cadence: Daily Synchronized 04:00 UTC</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">KPI Master Dashboard: Operational &amp; Financial Telemetry</h1>
+<p class="font-body-lg text-body-lg text-tertiary">Real-time telemetry across cost, engagement, product funnel, and business unit economics.</p>
+</div>
+<!-- Quick Action Controls & Ledger Tag -->
+<div class="flex items-center gap-space-sm flex-wrap shrink-0">
+<div class="flex items-center gap-2 bg-surface-container-low px-space-md py-space-xs rounded shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-mono-data-sm text-mono-data-sm text-on-surface font-semibold">18/18 Nodes Verifying</span>
+</div>
+<button class="flex items-center gap-1.5 px-space-md py-space-xs bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">filter_alt</span>
+<span>Filter Metric Class</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-space-xs bg-primary text-on-primary font-label-md text-label-md rounded shadow-sm hover:opacity-95 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Snapshot Ledger (.csv)</span>
+</button>
+</div>
+</div>
+<!-- Top Summary Sparkline Deck: CPL Trajectory Runway & Velocity -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Trajectory Card 1: Core CPL Glidepath -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">CPL Glidepath Run</span>
+<span class="font-mono-data-sm text-mono-data-sm text-primary-container bg-primary-fixed px-1.5 py-0.5 rounded font-bold">-50.0% Burn Rate</span>
+</div>
+<div class="flex items-baseline gap-space-sm my-1">
+<span class="font-stat-display text-stat-display text-on-surface tabular-nums tracking-tight">$25.00</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums line-through">$50.00 base</span>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-center justify-between text-tertiary font-mono-data-sm text-mono-data-sm mb-1 tabular-nums">
+<span>M1: $50</span>
+<span>M2: $42</span>
+<span>M3: $34</span>
+<span>M4: $28</span>
+<span class="text-primary font-bold">M5: $25</span>
+</div>
+<!-- Sparkline Track -->
+<svg class="w-full h-10 text-primary-container" fill="none" preserveaspectratio="none" viewbox="0 0 240 40">
+<path d="M 0,6 L 60,18 L 120,27 L 180,33 L 240,38" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<circle cx="0" cy="6" fill="#ffffff" r="3" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="60" cy="18" fill="#ffffff" r="3" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="120" cy="27" fill="#ffffff" r="3" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="180" cy="33" fill="#ffffff" r="3" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="240" cy="38" fill="currentColor" r="4"></circle>
+</svg>
+</div>
+</div>
+<!-- Trajectory Card 2: Blended CAC Descent -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Blended Full CAC</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary bg-secondary-container px-1.5 py-0.5 rounded font-bold">-67.0% Net</span>
+</div>
+<div class="flex items-baseline gap-space-sm my-1">
+<span class="font-stat-display text-stat-display text-on-surface tabular-nums tracking-tight">$250</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">Goal (from $757)</span>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-center justify-between text-tertiary font-mono-data-sm text-mono-data-sm mb-1 tabular-nums">
+<span>Entry $757</span>
+<span>Current $460</span>
+<span class="text-secondary font-bold">Target $250</span>
+</div>
+<svg class="w-full h-10 text-secondary" fill="none" preserveaspectratio="none" viewbox="0 0 240 40">
+<path d="M 0,5 L 80,16 L 160,26 L 240,36" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<circle cx="0" cy="5" fill="#ffffff" r="3" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="80" cy="16" fill="#ffffff" r="3" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="160" cy="26" fill="#ffffff" r="3" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="240" cy="36" fill="currentColor" r="4"></circle>
+</svg>
+</div>
+</div>
+<!-- Trajectory Card 3: Quality Index Guardrail -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Quality Index (IQI)</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary bg-secondary-fixed px-1.5 py-0.5 rounded font-bold">Floor ≥80.0</span>
+</div>
+<div class="flex items-baseline gap-space-sm my-1">
+<span class="font-stat-display text-stat-display text-secondary tabular-nums tracking-tight">84.5</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary font-semibold tabular-nums">+4.5 Margin</span>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-center justify-between text-tertiary font-mono-data-sm text-mono-data-sm mb-1 tabular-nums">
+<span>Floor: 80.0</span>
+<span class="text-secondary font-bold">Act: 84.5</span>
+<span>Goal: 86.0</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded overflow-hidden mt-3">
+<div class="bg-secondary h-full rounded" style="width: 84.5%;"></div>
+</div>
+</div>
+</div>
+<!-- Trajectory Card 4: LTV : CAC Multiple -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">LTV : CAC Multiple</span>
+<span class="font-mono-data-sm text-mono-data-sm text-primary font-bold bg-primary-fixed px-1.5 py-0.5 rounded">3.03x Growth</span>
+</div>
+<div class="flex items-baseline gap-space-sm my-1">
+<span class="font-stat-display text-stat-display text-on-surface tabular-nums tracking-tight">6.00x</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">from 1.98x</span>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-center justify-between text-tertiary font-mono-data-sm text-mono-data-sm mb-1 tabular-nums">
+<span>Baseline 1.98x</span>
+<span>Midpoint 3.80x</span>
+<span class="text-primary font-bold">Pacing 6.00x</span>
+</div>
+<svg class="w-full h-10 text-primary-container" fill="none" preserveaspectratio="none" viewbox="0 0 240 40">
+<path d="M 0,35 L 70,28 L 150,18 L 240,6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<circle cx="0" cy="35" fill="#ffffff" r="3" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="70" cy="28" fill="#ffffff" r="3" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="150" cy="18" fill="#ffffff" r="3" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="240" cy="6" fill="currentColor" r="4"></circle>
+</svg>
+</div>
+</div>
+</div>
+<!-- Functional Master KPI Ledger Section -->
+<div class="bg-surface-container-lowest rounded shadow-sm overflow-hidden flex flex-col">
+<!-- Table Filter and Status Strip -->
+<div class="bg-surface-container-low px-space-lg py-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Telemetry Registry</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">18 Tracked Metrics</span>
+<span class="hidden md:inline text-tertiary-container">•</span>
+<span class="hidden md:inline font-mono-data-sm text-mono-data-sm text-tertiary">All figures in USD ($) / Standard Conversion %</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium mr-2">Amber: Efficiency Vector</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Green: Guardrail / Health</span>
+</div>
+</div>
+<!-- Master KPI Ledger Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse min-w-[960px]">
+<thead>
+<tr class="bg-surface-container-high text-tertiary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-lg font-semibold w-1/3" scope="col">Metric Name &amp; Parameter Definition</th>
+<th class="py-space-sm px-space-md font-semibold text-right" scope="col">Current Baseline</th>
+<th class="py-space-sm px-space-md font-semibold text-right" scope="col">Target Goal</th>
+<th class="py-space-sm px-space-md font-semibold text-right" scope="col">Variance / Delta</th>
+<th class="py-space-sm px-space-md font-semibold text-center w-36" scope="col">Runway Trend</th>
+<th class="py-space-sm px-space-lg font-semibold text-right" scope="col">Operational Status</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- SECTION 1: COST & EFFICIENCY METRICS (Amber Accent Category) -->
+<tr class="bg-surface-container-low">
+<td class="py-space-xs px-space-lg" colspan="6">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded bg-primary-container"></span>
+<span class="font-mono-data-sm text-mono-data-sm font-bold uppercase tracking-wider text-on-surface">Section 1.0 — Cost &amp; Efficiency Metrics</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">(Amber Vector • Primary Cost Reductions)</span>
+</div>
+</td>
+</tr>
+<!-- Metric 1.1: Cost Per Lead -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Cost Per Lead (Blended CPL)</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">All acquisition channels paid aggregate</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">$50.00</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary font-bold">$25.00</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary-container font-semibold">-50.0%</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-primary-container" fill="none" viewbox="0 0 100 20">
+<path d="M 0,3 L 25,7 L 50,11 L 75,14 L 100,18" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-primary-fixed text-primary">On Track</span>
+</td>
+</tr>
+<!-- Metric 1.2: Cost Per Mille (CPM) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Cost Per Mille (CPM)</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Meta &amp; Google blended impression cost</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">$40.00</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary font-bold">$32.00</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary-container font-semibold">-20.0%</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-primary-container" fill="none" viewbox="0 0 100 20">
+<path d="M 0,4 L 30,8 L 60,11 L 100,16" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-primary-fixed text-primary">Progressing</span>
+</td>
+</tr>
+<!-- Metric 1.3: Cost Per Click (CPC) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Cost Per Click (CPC)</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Outbound paid click efficiency</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">$2.50</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary font-bold">$1.78</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary-container font-semibold">-28.8%</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-primary-container" fill="none" viewbox="0 0 100 20">
+<path d="M 0,2 L 35,6 L 70,12 L 100,17" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-primary-fixed text-primary">On Track</span>
+</td>
+</tr>
+<!-- Metric 1.4: Cost Per Booked Demo -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Cost Per Booked Demo</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Direct paid marketing cost per scheduled trial</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">$166.60</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary font-bold">$62.50</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary-container font-semibold">-62.5%</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-primary-container" fill="none" viewbox="0 0 100 20">
+<path d="M 0,3 L 30,10 L 65,14 L 100,18" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-primary-fixed-dim text-on-primary-fixed">Critical Target</span>
+</td>
+</tr>
+<!-- SECTION 2: ENGAGEMENT & MARKETING TELEMETRY (Muted Neutral Category) -->
+<tr class="bg-surface-container-low">
+<td class="py-space-xs px-space-lg" colspan="6">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded bg-tertiary"></span>
+<span class="font-mono-data-sm text-mono-data-sm font-bold uppercase tracking-wider text-on-surface">Section 2.0 — Engagement &amp; Marketing Telemetry</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">(Neutral Category • Ad Signals &amp; Creative Momentum)</span>
+</div>
+</td>
+</tr>
+<!-- Metric 2.1: Click-Through Rate -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Click-Through Rate (CTR)</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Outbound creative CTR (Industry Benchmark: 2.19%)</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">1.60%</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface font-semibold">1.80%</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-secondary font-semibold">+0.20%</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-tertiary" fill="none" viewbox="0 0 100 20">
+<path d="M 0,16 L 30,14 L 60,11 L 100,5" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-surface-container-high text-tertiary">Improving</span>
+</td>
+</tr>
+<!-- Metric 2.2: Ad Frequency -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Ad Frequency (14-day Rolling)</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Audience fatigue suppression limit</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">3.4x</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface font-semibold">2.3x</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-secondary font-semibold">-1.1x</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-tertiary" fill="none" viewbox="0 0 100 20">
+<path d="M 0,3 L 30,7 L 70,12 L 100,16" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-surface-container-high text-tertiary">Guarded</span>
+</td>
+</tr>
+<!-- Metric 2.3: Creative Relevance Score -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Creative Relevance Score</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">First-party algorithmic resonance audit</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">7.1 / 10</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface font-semibold">9.0 / 10</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-secondary font-semibold">+1.9</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-tertiary" fill="none" viewbox="0 0 100 20">
+<path d="M 0,15 L 40,12 L 70,8 L 100,4" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-surface-container-high text-tertiary">Above Avg</span>
+</td>
+</tr>
+<!-- Metric 2.4: Creative Refresh Velocity -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Creative Refresh Velocity</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">New net-approved assets entering ad flight</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">2 / month</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface font-semibold">8 / week</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-secondary font-semibold">+300%</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-tertiary" fill="none" viewbox="0 0 100 20">
+<path d="M 0,18 L 20,16 L 50,11 L 80,6 L 100,2" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-surface-container-high text-tertiary">Active</span>
+</td>
+</tr>
+<!-- SECTION 3: PRODUCT FUNNEL & CONVERSION (Efficiency / Amber Category) -->
+<tr class="bg-surface-container-low">
+<td class="py-space-xs px-space-lg" colspan="6">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded bg-primary-container"></span>
+<span class="font-mono-data-sm text-mono-data-sm font-bold uppercase tracking-wider text-on-surface">Section 3.0 — Product Funnel &amp; Conversion</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">(Amber Vector • High-Lever Conversion Optimization)</span>
+</div>
+</td>
+</tr>
+<!-- Metric 3.1: Landing Page CVR -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Landing Page Conversion (CVR)</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Visitor-to-lead rate (USA EdTech Benchmark: 5.7%)</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">2.50%</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary font-bold">4.00%</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary-container font-semibold">+1.50%</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-primary-container" fill="none" viewbox="0 0 100 20">
+<path d="M 0,16 L 30,13 L 60,9 L 100,3" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-primary-fixed text-primary">Primary Lever</span>
+</td>
+</tr>
+<!-- Metric 3.2: Form Completion Rate -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Form Completion Rate</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Drop-off minimization through multi-step qualification</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">51.5%</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary font-bold">72.0%</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary-container font-semibold">+20.5%</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-primary-container" fill="none" viewbox="0 0 100 20">
+<path d="M 0,15 L 30,12 L 65,7 L 100,2" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-primary-fixed text-primary">Optimizing</span>
+</td>
+</tr>
+<!-- Metric 3.3: Lead-to-Booked-Demo Rate -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Lead-to-Booked-Demo Rate</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Verified leads picking a confirmed calendar trial slot</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">30.0%</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary font-bold">40.0%</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary-container font-semibold">+10.0%</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-primary-container" fill="none" viewbox="0 0 100 20">
+<path d="M 0,14 L 35,11 L 70,8 L 100,4" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-primary-fixed text-primary">Testing</span>
+</td>
+</tr>
+<!-- Metric 3.4: Median Booking Duration -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Median Booking Duration</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">End-to-end friction index on booking flow</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">135 sec</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary font-bold">45 sec</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-primary-container font-semibold">-66.7%</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-primary-container" fill="none" viewbox="0 0 100 20">
+<path d="M 0,2 L 30,7 L 65,12 L 100,18" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-secondary-fixed text-secondary">Deployed</span>
+</td>
+</tr>
+<!-- SECTION 4: BUSINESS GUARDRAILS & UNIT ECONOMICS (Green Guardrail Category) -->
+<tr class="bg-surface-container-low">
+<td class="py-space-xs px-space-lg" colspan="6">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded bg-secondary"></span>
+<span class="font-mono-data-sm text-mono-data-sm font-bold uppercase tracking-wider text-on-surface">Section 4.0 — Business Guardrails &amp; Unit Economics</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">(Green Guardrail • Non-Negotiable Quality &amp; Downstream Margin)</span>
+</div>
+</td>
+</tr>
+<!-- Metric 4.1: Lead Quality Index (IQI) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Lead Quality Index (IQI)</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Verified propensity score (Absolute Floor: 80.0)</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">84.5</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-secondary font-bold">86.0</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-secondary font-semibold">+1.5</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-secondary" fill="none" viewbox="0 0 100 20">
+<path d="M 0,14 L 35,11 L 65,9 L 100,5" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-secondary-fixed text-on-secondary-fixed">SAFE / PASS</span>
+</td>
+</tr>
+<!-- Metric 4.2: Demo Attendance / Show-Up Rate -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Demo Attendance / Show-Up Rate</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Qualified students entering live 1:1 math trial session</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">58.0%</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-secondary font-bold">72.0%</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-secondary font-semibold">+14.0%</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-secondary" fill="none" viewbox="0 0 100 20">
+<path d="M 0,16 L 30,12 L 65,8 L 100,3" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-secondary-fixed text-on-secondary-fixed">Healthy</span>
+</td>
+</tr>
+<!-- Metric 4.3: Demo-to-Paid Customer Close -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Demo-to-Paid Customer Close</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Immediate subscription enrollments post-trial</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">22.0%</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-secondary font-bold">25.0%</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-secondary font-semibold">+3.0%</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-secondary" fill="none" viewbox="0 0 100 20">
+<path d="M 0,14 L 35,12 L 70,8 L 100,5" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-secondary-fixed text-on-secondary-fixed">Stable</span>
+</td>
+</tr>
+<!-- Metric 4.4: Blended CAC -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Blended CAC (Full Customer)</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Total acquisition spend divided by new paying customers</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">$757</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-secondary font-bold">$250</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-secondary font-semibold">-67.0%</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-secondary" fill="none" viewbox="0 0 100 20">
+<path d="M 0,3 L 30,8 L 65,13 L 100,18" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-secondary text-on-secondary">Transformational</span>
+</td>
+</tr>
+<!-- Metric 4.5: Customer LTV -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Customer Lifetime Value (LTV)</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">14-month cohort verified revenue run rate</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">$1,500</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface font-semibold">$1,500</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-tertiary font-semibold">0.0%</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-secondary" fill="none" viewbox="0 0 100 20">
+<path d="M 0,10 L 30,10 L 70,10 L 100,10" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-surface-container-high text-on-surface">Confirmed</span>
+</td>
+</tr>
+<!-- Metric 4.6: LTV : CAC Ratio -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3 px-space-lg">
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">LTV : CAC Ratio</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Macro equity return efficiency on marketing capital</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-on-surface">1.98x</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-secondary font-bold">6.00x</td>
+<td class="py-3 px-space-md text-right font-mono-data text-mono-data tabular-nums text-secondary font-semibold">+4.02x</td>
+<td class="py-3 px-space-md text-center">
+<svg class="w-28 h-5 mx-auto text-secondary" fill="none" viewbox="0 0 100 20">
+<path d="M 0,17 L 30,14 L 65,9 L 100,2" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</td>
+<td class="py-3 px-space-lg text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-secondary text-on-secondary">Exceptional</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Ledger Footer & Audit Trace -->
+<div class="bg-surface-container-low px-space-lg py-space-sm flex flex-col sm:flex-row items-center justify-between text-tertiary font-mono-data-sm text-mono-data-sm gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Source: BrightChamps Attribution Pipeline v2.4 (Snowflake / DBT Live)</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span>Confidence Interval: 99.2%</span>
+<span class="text-tertiary-container">•</span>
+<span class="text-on-surface font-semibold">Audited by Growth Finance</span>
+</div>
+</div>
+</div>
+<!-- Editorial Synthesis & Unit Guardrail Bento Footnote -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Guardrail Summary Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">shield_with_heart</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">IQI Structural Guardrail</span>
+</div>
+<p class="font-body-md text-body-md text-tertiary leading-relaxed mb-space-md">
+          Lead Quality Index is programmatically decoupled from volume pressures. If IQI falls below <strong class="text-on-surface">80.0</strong> for more than 48 hours, automated bidding protocols immediately restrict downstream audience expansion to preserve academic conversion economics.
+        </p>
+<div class="flex items-center justify-between bg-surface-container-low p-space-sm rounded">
+<span class="font-mono-data-sm text-mono-data-sm text-on-surface font-semibold">Active IQI Buffer:</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary font-bold tabular-nums">+4.5 pts above circuit breaker</span>
+</div>
+</div>
+<!-- Unit Economics Lever Analysis Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-[20px]">pie_chart</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">LTV Expansion Catalyst</span>
+</div>
+<p class="font-body-md text-body-md text-tertiary leading-relaxed mb-space-md">
+          A <strong class="text-on-surface">6.00x LTV : CAC multiple</strong> converts the US Math acquisition model into an aggressive cash generator. Every $100k deployed returns $600k in recognized student lifetime value with a 3.4-month payback horizon.
+        </p>
+<div class="flex items-center justify-between bg-surface-container-low p-space-sm rounded">
+<span class="font-mono-data-sm text-mono-data-sm text-on-surface font-semibold">Capital Payback Period:</span>
+<span class="font-mono-data-sm text-mono-data-sm text-primary font-bold tabular-nums">3.4 Months (Target ≤ 4.0)</span>
+</div>
+</div>
+<!-- Execution Status & Next Milestone Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">flag</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Sprint Q3 FY25 Mandate</span>
+</div>
+<p class="font-body-md text-body-md text-tertiary leading-relaxed mb-space-md">
+          Critical focus remains on the <strong class="text-on-surface">Landing Page CVR lever (2.50% → 4.00%)</strong>. Combined with median duration compression from 135s to 45s, this single vector unlocks 54% of the required CPL reduction.
+        </p>
+<div class="flex items-center justify-between bg-surface-container-low p-space-sm rounded">
+<span class="font-mono-data-sm text-mono-data-sm text-on-surface font-semibold">CVR Optimization Cycle:</span>
+<span class="font-mono-data-sm text-mono-data-sm text-primary-container font-bold tabular-nums">Cohort #4 In Flight</span>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

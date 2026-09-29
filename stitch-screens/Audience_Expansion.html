@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.tabular-nums{font-variant-numeric:tabular-nums;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#002113", "surface-bright": "#f9f9ff", "surface-container-high": "#e5e8f4", "error": "#ba1a1a", "on-error-container": "#93000a", "tertiary-fixed-dim": "#bec6de", "on-background": "#181c24", "on-tertiary-fixed": "#131b2d", "secondary": "#2d694d", "surface-variant": "#dfe2ef", "background": "#f9f9ff", "on-secondary-container": "#326e51", "on-tertiary": "#ffffff", "tertiary-fixed": "#dae2fb", "primary-fixed-dim": "#ffb77b", "error-container": "#ffdad6", "primary-container": "#a8631e", "on-primary-fixed": "#2e1500", "inverse-surface": "#2c303a", "surface-container": "#ebedfa", "tertiary-container": "#6c748a", "on-tertiary-container": "#fdfbff", "on-secondary-fixed-variant": "#105137", "surface-dim": "#d7dae6", "primary-fixed": "#ffdcc2", "on-surface-variant": "#534438", "primary": "#8a4b02", "inverse-primary": "#ffb77b", "on-surface": "#181c24", "outline": "#867467", "surface": "#f9f9ff", "surface-container-low": "#f1f3ff", "outline-variant": "#d8c2b3", "surface-container-lowest": "#ffffff", "on-primary-container": "#fffaf9", "surface-container-highest": "#dfe2ef", "surface-tint": "#8e4e06", "secondary-fixed-dim": "#96d4b2", "on-primary": "#ffffff", "secondary-fixed": "#b1f0cd", "on-primary-fixed-variant": "#6d3a00", "tertiary": "#535b70", "secondary-container": "#aeedca", "on-error": "#ffffff", "on-secondary": "#ffffff", "inverse-on-surface": "eef0fd", "on-tertiary-fixed-variant": "#3f475a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "1rem", "space-md": "0.75rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "gutter-desktop": "1.25rem", "space-xs": "0.25rem", "space-lg": "1.25rem", "gutter": "1rem", "space-xl": "2rem" }, "fontFamily": { "mono-data-sm": [ "IBM Plex Sans" ], "label-md": [ "IBM Plex Sans" ], "stat-display": [ "\"Source Serif 4\"" ], "headline-lg-mobile": [ "\"Source Serif 4\"" ], "body-md": [ "IBM Plex Sans" ], "body-lg": [ "IBM Plex Sans" ], "label-sm": [ "IBM Plex Sans" ], "headline-lg": [ "\"Source Serif 4\"" ], "headline-sm": [ "\"Source Serif 4\"" ], "headline-md": [ "\"Source Serif 4\"" ], "mono-data": [ "IBM Plex Sans" ], "stat-display-mobile": [ "\"Source Serif 4\"" ] }, "fontSize": { "mono-data-sm": [ "11px", { "lineHeight": "14px", "fontWeight": "500" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "stat-display": [ "36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-md": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "body-lg": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-sm": [ "17px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "mono-data": [ "13px", { "lineHeight": "16px", "fontWeight": "500" } ], "stat-display-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="p-space-lg bg-surface-container-low"><div class="flex items-center justify-between gap-space-xs"><div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">BrightChamps</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Growth Console</span></div><span class="material-symbols-outlined text-tertiary cursor-pointer hover:text-on-surface transition-colors text-[20px]">dock_to_right</span></div><div class="mt-space-sm flex items-center justify-between bg-surface-container-lowest px-space-sm py-space-xs rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-mono-data-sm text-mono-data-sm text-on-surface-variant flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>USA · Math Vertical</span><span class="font-mono-data-sm text-mono-data-sm font-semibold text-primary-container tabular-nums">$50 → $25 CPL</span></div></div><div class="px-space-md py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary px-space-sm block mt-space-sm mb-space-xs">Operational Vectors</span></div><nav class="flex flex-col px-space-sm gap-0.5" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="executive-summary" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">01</span><span class="material-symbols-outlined text-[18px]">dashboard</span><span class="font-body-md text-body-md truncate">Executive Summary</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="situation-and-guardrail" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">02</span><span class="material-symbols-outlined text-[18px]">verified_user</span><span class="font-body-md text-body-md truncate">Situation &amp; Guardrail</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="the-model" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">03</span><span class="material-symbols-outlined text-[18px]">calculate</span><span class="font-body-md text-body-md truncate">The Model</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="marketing-engine" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">04</span><span class="material-symbols-outlined text-[18px]">campaign</span><span class="font-body-md text-body-md truncate">Marketing Engine</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="product-engine" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">05</span><span class="material-symbols-outlined text-[18px]">rocket_launch</span><span class="font-body-md text-body-md truncate">Product Engine</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-semibold rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]" data-path="audience-expansion" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">06</span><span class="material-symbols-outlined text-[18px]">groups</span><span class="font-body-md text-body-md truncate">Audience Expansion</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="strategic-roadmap" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">07</span><span class="material-symbols-outlined text-[18px]">alt_route</span><span class="font-body-md text-body-md truncate">Strategic Roadmap</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="kpi-master-dashboard" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">08</span><span class="material-symbols-outlined text-[18px]">table_chart</span><span class="font-body-md text-body-md truncate">KPI Master Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="risks-and-scenarios" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">09</span><span class="material-symbols-outlined text-[18px]">query_stats</span><span class="font-body-md text-body-md truncate">Risks &amp; Scenarios</span></a></nav></div><div class="p-space-md bg-surface-container-low flex flex-col gap-space-sm"><div class="bg-surface-container-lowest p-space-sm rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><div class="flex items-center justify-between text-tertiary mb-1"><span class="font-label-sm text-label-sm uppercase tracking-wider">Target Audience</span><span class="material-symbols-outlined text-[14px]">lock</span></div><p class="font-body-md text-body-md text-on-surface font-medium truncate">Founder's Office &amp; Execs</p><div class="mt-space-xs pt-space-xs flex items-center justify-between font-mono-data-sm text-mono-data-sm text-tertiary"><span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>Live v2.4</span><span class="tabular-nums">FY25 Plan</span></div></div><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="min-w-0"><p class="font-body-md text-body-md font-semibold text-on-surface truncate">R. Sharma</p><p class="font-label-sm text-label-sm text-tertiary truncate">VP Growth</p></div></div><button class="p-1 text-tertiary hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">unfold_more</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-2"><span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">BrightChamps</span><span class="text-tertiary text-xs">/</span><span class="font-body-md text-body-md font-semibold text-on-surface">Executive Overview</span></div><div class="hidden xl:flex items-center gap-1.5 bg-surface-container-high px-space-sm py-1 rounded"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-medium">Active Scenario: Base-Case Plan</span></div></div><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center gap-space-sm"><div class="flex items-center gap-1.5 bg-primary-fixed px-space-sm py-1 rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-label-sm text-label-sm text-on-primary-fixed uppercase tracking-wider">Target CPL</span><span class="font-mono-data text-mono-data text-primary font-bold tabular-nums">$25.00</span></div><div class="flex items-center gap-1.5 bg-secondary-fixed px-space-sm py-1 rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-label-sm text-label-sm text-on-secondary-fixed uppercase tracking-wider">IQI Floor</span><span class="font-mono-data text-mono-data text-secondary font-bold tabular-nums">≥84.0</span></div><div class="hidden lg:flex items-center gap-1.5 bg-surface-container-high px-space-sm py-1 rounded"><span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Horizon</span><span class="font-mono-data text-mono-data text-on-surface font-semibold tabular-nums">Q3 FY25</span></div></div><div class="flex items-center gap-space-sm"><button class="flex items-center gap-1.5 px-space-sm py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">tune</span><span class="hidden sm:inline">Base-Case</span><span class="material-symbols-outlined text-[16px]">arrow_drop_down</span></button><button class="flex items-center gap-1 px-space-sm py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" title="Export Plan" type="button"><span class="material-symbols-outlined text-[16px]">file_download</span><span class="hidden lg:inline">Export</span></button><button class="p-1.5 bg-surface-container-lowest text-on-surface rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" title="Share Scenario" type="button"><span class="material-symbols-outlined text-[16px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-desktop py-space-lg space-y-space-lg">
+<!-- Breadcrumb & Segment Subheader Strip -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm pb-space-xs">
+<div class="flex flex-col space-y-1">
+<div class="flex items-center space-x-2">
+<span class="font-mono-data-sm text-mono-data-sm uppercase tracking-wider text-primary font-bold">Vector 06</span>
+<span class="text-tertiary text-xs">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Demographic Alpha</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Audience Expansion: High-Intent Demographic Scaling</h1>
+<p class="font-body-lg text-body-lg text-tertiary">Unlocking underserved premium US sub-segments with superior unit economics and tighter payback windows.</p>
+</div>
+<!-- Live Telemetry Pill Cluster -->
+<div class="flex items-center gap-space-xs self-start md:self-auto">
+<div class="bg-surface-container px-space-md py-1.5 rounded flex items-center gap-2 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-mono-data-sm text-mono-data-sm text-on-surface">Blended CPL Target: <strong class="text-secondary">$25.00</strong></span>
+</div>
+<div class="bg-surface-container px-space-md py-1.5 rounded flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">verified</span>
+<span class="font-mono-data-sm text-mono-data-sm text-on-surface">IQI Guardrail: <strong class="text-on-surface">≥80.0</strong></span>
+</div>
+</div>
+</div>
+<!-- Primary Cohort Focus: Two Large Asymmetric Hero Stat Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Hero Card 1: NRI Diaspora -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-secondary/5 blur-3xl pointer-events-none"></div>
+<div>
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold bg-secondary-fixed/50 px-2 py-0.5 rounded">Segment A · Primary Alpha</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-stat-display text-stat-display text-on-surface tabular-nums">~5.2M</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-normal">Indian-American (NRI)</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">psychology</span>
+</div>
+</div>
+<p class="mt-space-md font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Highest median household income in the United States (~$138k). Characterized by high cultural prioritization of K-12 STEM mastery and acute demand for accelerated alternatives to Kumon and Russian School of Math (RSM).
+        </p>
+<!-- Visual Sparkline + Target Metrics Sub-Grid -->
+<div class="mt-space-lg grid grid-cols-3 gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Projected CPL</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-stat-display text-stat-display text-primary font-bold tabular-nums">$19.40</span>
+</div>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[13px]">trending_down</span> -22.4% vs Base
+            </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Quality Index</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-stat-display text-stat-display text-secondary font-bold tabular-nums">88.5</span>
+</div>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary font-medium mt-0.5">+4.5 Over Floor</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">CAC Payback</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-stat-display text-stat-display text-on-surface font-bold tabular-nums">1.2</span>
+<span class="font-mono-data text-mono-data text-tertiary">mo</span>
+</div>
+<span class="font-mono-data-sm text-mono-data-sm text-on-surface-variant mt-0.5">Sub-60d Cycle</span>
+</div>
+</div>
+</div>
+<!-- Execution Directives -->
+<div class="mt-space-lg pt-space-md bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary block mb-2">Tactical Channel Levers</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs font-mono-data-sm text-mono-data-sm text-on-surface">
+<div class="bg-surface-container-high/60 p-space-xs rounded flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">chat</span>
+<span class="truncate">WhatsApp Parents</span>
+</div>
+<div class="bg-surface-container-high/60 p-space-xs rounded flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">school</span>
+<span class="truncate">IIT/IIM Alumni Hubs</span>
+</div>
+<div class="bg-surface-container-high/60 p-space-xs rounded flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary-container text-[16px]">emoji_events</span>
+<span class="truncate">STEM Contests</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Card 2: Hispanic Bilingual Families -->
+<div class="lg:col-span-6 bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-56 h-56 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div>
+<div class="flex items-start justify-between">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold bg-primary-fixed/50 px-2 py-0.5 rounded">Segment B · Scale Volume</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-stat-display text-stat-display text-on-surface tabular-nums">~62M</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-normal">Hispanic Bilingual Families</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[22px]">translate</span>
+</div>
+</div>
+<p class="mt-space-md font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Fastest growing K-12 demographic cohort nationwide (comprising 28% of all US public school enrollments). Pronounced undersupply of high-touch, dual-language Spanish/English STEM programs tailored to upwardly mobile households.
+        </p>
+<!-- Visual Sparkline + Target Metrics Sub-Grid -->
+<div class="mt-space-lg grid grid-cols-3 gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Projected CPL</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-stat-display text-stat-display text-primary font-bold tabular-nums">$22.80</span>
+</div>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[13px]">trending_down</span> -8.8% vs Target
+            </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Quality Index</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-stat-display text-stat-display text-on-surface font-bold tabular-nums">82.4</span>
+</div>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary font-medium mt-0.5">Meets &gt;80.0 Guardrail</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Total Addressable</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-stat-display text-stat-display text-on-surface font-bold tabular-nums">12.4M</span>
+</div>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary mt-0.5">Elem. Students</span>
+</div>
+</div>
+</div>
+<!-- Execution Directives -->
+<div class="mt-space-lg pt-space-md bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary block mb-2">Tactical Channel Levers</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs font-mono-data-sm text-mono-data-sm text-on-surface">
+<div class="bg-surface-container-high/60 p-space-xs rounded flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">tv</span>
+<span class="truncate">Univision / Telemundo</span>
+</div>
+<div class="bg-surface-container-high/60 p-space-xs rounded flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">language</span>
+<span class="truncate">Bilingual Landing Funnel</span>
+</div>
+<div class="bg-surface-container-high/60 p-space-xs rounded flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary-container text-[16px]">local_activity</span>
+<span class="truncate">Community Math Fairs</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Methodology Flow Strip: Validation & Scale Lifecycle -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-md mb-space-md gap-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Operational Architecture</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Validation &amp; Scale Methodology</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Sprint Cadence: <strong>14-Day Micro-Cycles</strong></span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary font-semibold">Strict Guardrail Gating</span>
+</div>
+</div>
+<!-- 4-Stage Connected Process Track -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter-desktop relative">
+<!-- Stage 1 -->
+<div class="flex flex-col bg-surface-container-low p-space-md rounded-lg relative group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary font-mono-data-sm text-mono-data-sm flex items-center justify-center font-bold">1</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Completed</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Micro-Cell Pilot</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Deploy rapid budget silos to stress-test hook variations across specific diasporic nodes.</p>
+<div class="mt-space-md pt-space-xs flex flex-col space-y-1 font-mono-data-sm text-mono-data-sm text-tertiary">
+<div class="flex justify-between">
+<span>Pilot Cap:</span>
+<strong class="text-on-surface font-bold">$5,000 / cell</strong>
+</div>
+<div class="flex justify-between">
+<span>Cycle Length:</span>
+<span class="text-on-surface">14 Calendar Days</span>
+</div>
+</div>
+</div>
+<!-- Stage 2 -->
+<div class="flex flex-col bg-surface-container-low p-space-md rounded-lg relative group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary font-mono-data-sm text-mono-data-sm flex items-center justify-center font-bold animate-pulse">2</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Evaluating</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Guardrail Audit</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Cross-reference live lead batches against retention and parent responsiveness models.</p>
+<div class="mt-space-md pt-space-xs flex flex-col space-y-1 font-mono-data-sm text-mono-data-sm text-tertiary">
+<div class="flex justify-between">
+<span>IQI Floor:</span>
+<strong class="text-primary font-bold">≥ 80.0 Minimum</strong>
+</div>
+<div class="flex justify-between">
+<span>Attendance Req:</span>
+<span class="text-on-surface">&gt; 72% Demo Rate</span>
+</div>
+</div>
+</div>
+<!-- Stage 3 -->
+<div class="flex flex-col bg-surface-container-low p-space-md rounded-lg relative group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-tertiary font-mono-data-sm text-mono-data-sm flex items-center justify-center font-bold">3</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase tracking-wider">Go / No-Go</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Decision Gate</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Automated programmatic kill-switch if unit CAC escalates beyond the safety envelope.</p>
+<div class="mt-space-md pt-space-xs flex flex-col space-y-1 font-mono-data-sm text-mono-data-sm text-tertiary">
+<div class="flex justify-between">
+<span>Pass Rule:</span>
+<strong class="text-secondary font-bold">CPL &lt; $25 &amp; IQI ≥80</strong>
+</div>
+<div class="flex justify-between">
+<span>Fail Action:</span>
+<span class="text-error font-medium">Kill / Rework Assets</span>
+</div>
+</div>
+</div>
+<!-- Stage 4 -->
+<div class="flex flex-col bg-surface-container-low p-space-md rounded-lg relative group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-tertiary font-mono-data-sm text-mono-data-sm flex items-center justify-center font-bold">4</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase tracking-wider">Scale Phase</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Budget Absorption</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Graduate validated cohort pipelines into core programmatic spend distribution.</p>
+<div class="mt-space-md pt-space-xs flex flex-col space-y-1 font-mono-data-sm text-mono-data-sm text-tertiary">
+<div class="flex justify-between">
+<span>Target Volume:</span>
+<strong class="text-on-surface font-bold">40% Total Spend</strong>
+</div>
+<div class="flex justify-between">
+<span>Blended Yield:</span>
+<span class="text-secondary font-medium">$22.00-24.50 CPL</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Split Grid: Strategic Deployment Checklists & Comprehensive KPI Table -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Left: Localization & Execution Protocol Card -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Readiness Framework</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Localization Playbook</h2>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">checklist_rtl</span>
+</div>
+<p class="font-body-md text-body-md text-tertiary mb-space-md">
+          Mandatory operational prerequisites enforced before allocating paid micro-pilot tranches into diaspora segments.
+        </p>
+<!-- Checklist List Items -->
+<div class="space-y-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<div class="pt-0.5">
+<span class="w-4 h-4 rounded bg-secondary text-on-secondary flex items-center justify-center text-[12px]">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+</div>
+<div class="min-w-0">
+<p class="font-body-md text-body-md text-on-surface font-medium">Bilingual Landing Page variant</p>
+<p class="font-mono-data-sm text-mono-data-sm text-tertiary">Spanish/English dynamic language toggle with geo-detected default localization.</p>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<div class="pt-0.5">
+<span class="w-4 h-4 rounded bg-secondary text-on-secondary flex items-center justify-center text-[12px]">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+</div>
+<div class="min-w-0">
+<p class="font-body-md text-body-md text-on-surface font-medium">Competitive Math Prep Positioning</p>
+<p class="font-mono-data-sm text-mono-data-sm text-tertiary">Cultural creatives emphasizing direct Kumon / Russian School of Math benchmark comparisons.</p>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<div class="pt-0.5">
+<span class="w-4 h-4 rounded bg-primary text-on-primary flex items-center justify-center text-[12px]">
+<span class="material-symbols-outlined text-[13px]">hourglass_top</span>
+</span>
+</div>
+<div class="min-w-0">
+<p class="font-body-md text-body-md text-on-surface font-medium">WhatsApp Slot Booking Integration</p>
+<p class="font-mono-data-sm text-mono-data-sm text-tertiary">Native friction-free WhatsApp conversational demo scheduler built for NRI parents.</p>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm">
+<div class="pt-0.5">
+<span class="w-4 h-4 rounded bg-secondary text-on-secondary flex items-center justify-center text-[12px]">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+</div>
+<div class="min-w-0">
+<p class="font-body-md text-body-md text-on-surface font-medium">Regional Geo-Cluster Fencing</p>
+<p class="font-mono-data-sm text-mono-data-sm text-tertiary">Precision coordinates: Bay Area CA, Dallas/Houston TX, Edison NJ, and Miami FL.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Execution Footnote -->
+<div class="mt-space-md pt-space-sm bg-surface-container-high/40 p-space-sm rounded text-on-surface-variant flex items-center justify-between font-mono-data-sm text-mono-data-sm">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          3 of 4 Gates Cleared
+        </span>
+<span class="text-secondary font-semibold">Pilot Deployment Permitted</span>
+</div>
+</div>
+<!-- Right: Segment-Level KPI Comparison Table -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Unit Economic Ledger</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Segment-Level KPI Comparison</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="bg-surface-container-high px-2 py-0.5 rounded font-mono-data-sm text-mono-data-sm text-on-surface">Q3 FY25 Outlook</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-tertiary mb-space-md">
+          Granular performance benchmarking showing the strategic margin compression effect of diasporic acquisition.
+        </p>
+<!-- KPI Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-tertiary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-3 rounded-l">Segment</th>
+<th class="py-2.5 px-3 text-right">Population</th>
+<th class="py-2.5 px-3 text-right">Spend %</th>
+<th class="py-2.5 px-3 text-right">Current CPL</th>
+<th class="py-2.5 px-3 text-right">Target CPL</th>
+<th class="py-2.5 px-3 text-right">IQI Score</th>
+<th class="py-2.5 px-3 rounded-r text-center">Status</th>
+</tr>
+</thead>
+<tbody class="font-mono-data-sm text-mono-data-sm text-on-surface">
+<!-- Row 1: Core US General -->
+<tr class="hover:bg-surface-container-high/30 transition-colors">
+<td class="py-3 px-3 font-body-md text-body-md font-semibold text-on-surface">
+                  Core US General
+                </td>
+<td class="py-3 px-3 text-right tabular-nums text-tertiary">330M+</td>
+<td class="py-3 px-3 text-right tabular-nums">60.0%</td>
+<td class="py-3 px-3 text-right tabular-nums text-error font-medium">$34.20</td>
+<td class="py-3 px-3 text-right tabular-nums font-bold">$28.50</td>
+<td class="py-3 px-3 text-right tabular-nums font-semibold">83.0</td>
+<td class="py-3 px-3 text-center">
+<span class="bg-surface-container-high text-tertiary font-label-sm text-label-sm px-2 py-0.5 rounded font-medium">BASELINE</span>
+</td>
+</tr>
+<!-- Row 2: NRI Diaspora -->
+<tr class="bg-secondary-fixed/10 hover:bg-secondary-fixed/20 transition-colors">
+<td class="py-3 px-3 font-body-md text-body-md font-semibold text-secondary flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  NRI Diaspora
+                </td>
+<td class="py-3 px-3 text-right tabular-nums text-on-surface">5.2M</td>
+<td class="py-3 px-3 text-right tabular-nums font-semibold text-secondary">22.0%</td>
+<td class="py-3 px-3 text-right tabular-nums text-on-surface">$24.10</td>
+<td class="py-3 px-3 text-right tabular-nums font-bold text-secondary">$19.40</td>
+<td class="py-3 px-3 text-right tabular-nums font-bold text-secondary">88.5</td>
+<td class="py-3 px-3 text-center">
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded font-bold uppercase tracking-wider">PASSED</span>
+</td>
+</tr>
+<!-- Row 3: Hispanic Bilingual -->
+<tr class="bg-primary-fixed/10 hover:bg-primary-fixed/20 transition-colors">
+<td class="py-3 px-3 font-body-md text-body-md font-semibold text-primary flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Hispanic Bilingual
+                </td>
+<td class="py-3 px-3 text-right tabular-nums text-on-surface">62.0M</td>
+<td class="py-3 px-3 text-right tabular-nums font-semibold text-primary">18.0%</td>
+<td class="py-3 px-3 text-right tabular-nums text-on-surface">$27.60</td>
+<td class="py-3 px-3 text-right tabular-nums font-bold text-primary">$22.80</td>
+<td class="py-3 px-3 text-right tabular-nums font-bold text-primary">82.4</td>
+<td class="py-3 px-3 text-center">
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2 py-0.5 rounded font-bold uppercase tracking-wider">PASSED</span>
+</td>
+</tr>
+<!-- Row 4: Blended Target Summary -->
+<tr class="bg-surface-container font-semibold text-on-surface">
+<td class="py-3.5 px-3 font-body-md text-body-md font-bold text-on-surface">
+                  Blended Total
+                </td>
+<td class="py-3.5 px-3 text-right tabular-nums">~397M</td>
+<td class="py-3.5 px-3 text-right tabular-nums">100.0%</td>
+<td class="py-3.5 px-3 text-right tabular-nums text-tertiary font-normal">$30.80</td>
+<td class="py-3.5 px-3 text-right tabular-nums font-stat-display text-headline-sm text-primary font-bold leading-none">$25.00</td>
+<td class="py-3.5 px-3 text-right tabular-nums font-stat-display text-headline-sm text-secondary font-bold leading-none">84.8</td>
+<td class="py-3.5 px-3 text-center">
+<span class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-2 py-0.5 rounded font-bold uppercase tracking-wider">OPTIMAL</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Action & Governance Footnote -->
+<div class="mt-space-md pt-space-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-xs font-mono-data-sm text-mono-data-sm text-tertiary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified_user</span>
+          IQI calculated on 4-week post-registration retention probability.
+        </span>
+<button class="bg-surface-container-high hover:bg-surface-container text-on-surface px-space-sm py-1 rounded font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1" type="button">
+<span>Re-Simulate Weights</span>
+<span class="material-symbols-outlined text-[14px]">tune</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

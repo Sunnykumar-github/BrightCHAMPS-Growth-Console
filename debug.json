@@ -1,0 +1,44 @@
+{
+  "headers": [
+    "lead_id",
+    "lead_source",
+    "geography",
+    "parent_timezone",
+    "created_at",
+    "demo_scheduled_at",
+    "rep_assigned",
+    "rep_shift",
+    "follow_up_attempts",
+    "demo_joined",
+    "demo_completed",
+    "converted"
+  ],
+  "row1": [
+    "L103406",
+    "Referral",
+    "USA",
+    "America/New_York",
+    "2026-06-28 01:59",
+    "2026-07-01 10:56",
+    "AD-02",
+    "US_SHIFT",
+    "4",
+    "N",
+    "N",
+    "N"
+  ],
+  "row2": [
+    "L100757",
+    "Organic",
+    "Saudi Arabia",
+    "Asia/Riyadh",
+    "2026-06-17 16:57",
+    "2026-06-17 22:43",
+    "AD-02",
+    "US_SHIFT",
+    "2",
+    "N",
+    "N",
+    "N"
+  ]
+}

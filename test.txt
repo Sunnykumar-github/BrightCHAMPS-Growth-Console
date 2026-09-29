@@ -1,0 +1,48 @@
+﻿
+> temp-app@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.3.6 (Turbopack)
+- Environments: .env.local
+Γ£ô Running next.config.ts took 23ms
+
+  Creating an optimized production build ...
+node.exe : 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Users\onepl\AppData\Roaming\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (: 
+   String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandErr 
+   or
+ 
+> Build error occurred
+Error: Turbopack build failed with 1 error:
+./src/app/kpi-master-dashboard/page.tsx:34:103
+Error: Expected '</', got 'jsx text'
+  [90m32 |[0m ...>
+  [90m33 |[0m ...onClick={() => 
+exportToCSV()} onClick={() => exportToCSV()} 
+className=[32m"flex items-cente...[0m
+[31m[1m>[0m [90m34 |[0m 
+...assName=[32m"material-symbols-outlined text
+-[16px]"[0m>file_download<[35m/span>Export 
+Jira Roadmap...[0m
+  [90m   |[0m                                
+                                               
+                   [31m[1m[0m
+[31m[1m>[0m [90m35 |[0m 
+...[33mapshot[0m [33mLedger[0m 
+(.csv)</span>
+  [90m   |[0m    [31m[1m^[0m
+  [90m36 |[0m ...>
+  [90m37 |[0m ...
+  [90m38 |[0m ...
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (./src/app/kpi-master-dashboar
+d/page.tsx:34:103)

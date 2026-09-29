@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.tabular-nums{font-variant-numeric:tabular-nums;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#002113", "surface-bright": "#f9f9ff", "surface-container-high": "#e5e8f4", "error": "#ba1a1a", "on-error-container": "#93000a", "tertiary-fixed-dim": "#bec6de", "on-background": "#181c24", "on-tertiary-fixed": "#131b2d", "secondary": "#2d694d", "surface-variant": "#dfe2ef", "background": "#f9f9ff", "on-secondary-container": "#326e51", "on-tertiary": "#ffffff", "tertiary-fixed": "#dae2fb", "primary-fixed-dim": "#ffb77b", "error-container": "#ffdad6", "primary-container": "#a8631e", "on-primary-fixed": "#2e1500", "inverse-surface": "#2c303a", "surface-container": "#ebedfa", "tertiary-container": "#6c748a", "on-tertiary-container": "#fdfbff", "on-secondary-fixed-variant": "#105137", "surface-dim": "#d7dae6", "primary-fixed": "#ffdcc2", "on-surface-variant": "#534438", "primary": "#8a4b02", "inverse-primary": "#ffb77b", "on-surface": "#181c24", "outline": "#867467", "surface": "#f9f9ff", "surface-container-low": "#f1f3ff", "outline-variant": "#d8c2b3", "surface-container-lowest": "#ffffff", "on-primary-container": "#fffaf9", "surface-container-highest": "#dfe2ef", "surface-tint": "#8e4e06", "secondary-fixed-dim": "#96d4b2", "on-primary": "#ffffff", "secondary-fixed": "#b1f0cd", "on-primary-fixed-variant": "#6d3a00", "tertiary": "#535b70", "secondary-container": "#aeedca", "on-error": "#ffffff", "on-secondary": "#ffffff", "inverse-on-surface": "eef0fd", "on-tertiary-fixed-variant": "#3f475a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "1rem", "space-md": "0.75rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "gutter-desktop": "1.25rem", "space-xs": "0.25rem", "space-lg": "1.25rem", "gutter": "1rem", "space-xl": "2rem" }, "fontFamily": { "mono-data-sm": [ "IBM Plex Sans" ], "label-md": [ "IBM Plex Sans" ], "stat-display": [ "\"Source Serif 4\"" ], "headline-lg-mobile": [ "\"Source Serif 4\"" ], "body-md": [ "IBM Plex Sans" ], "body-lg": [ "IBM Plex Sans" ], "label-sm": [ "IBM Plex Sans" ], "headline-lg": [ "\"Source Serif 4\"" ], "headline-sm": [ "\"Source Serif 4\"" ], "headline-md": [ "\"Source Serif 4\"" ], "mono-data": [ "IBM Plex Sans" ], "stat-display-mobile": [ "\"Source Serif 4\"" ] }, "fontSize": { "mono-data-sm": [ "11px", { "lineHeight": "14px", "fontWeight": "500" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "stat-display": [ "36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-md": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "body-lg": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-sm": [ "17px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "mono-data": [ "13px", { "lineHeight": "16px", "fontWeight": "500" } ], "stat-display-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="p-space-lg bg-surface-container-low"><div class="flex items-center justify-between gap-space-xs"><div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">BrightChamps</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Growth Console</span></div><span class="material-symbols-outlined text-tertiary cursor-pointer hover:text-on-surface transition-colors text-[20px]">dock_to_right</span></div><div class="mt-space-sm flex items-center justify-between bg-surface-container-lowest px-space-sm py-space-xs rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-mono-data-sm text-mono-data-sm text-on-surface-variant flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>USA · Math Vertical</span><span class="font-mono-data-sm text-mono-data-sm font-semibold text-primary-container tabular-nums">$50 → $25 CPL</span></div></div><div class="px-space-md py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary px-space-sm block mt-space-sm mb-space-xs">Operational Vectors</span></div><nav class="flex flex-col px-space-sm gap-0.5" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="executive-summary" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">01</span><span class="material-symbols-outlined text-[18px]">dashboard</span><span class="font-body-md text-body-md truncate">Executive Summary</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="situation-and-guardrail" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">02</span><span class="material-symbols-outlined text-[18px]">verified_user</span><span class="font-body-md text-body-md truncate">Situation &amp; Guardrail</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="the-model" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">03</span><span class="material-symbols-outlined text-[18px]">calculate</span><span class="font-body-md text-body-md truncate">The Model</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="marketing-engine" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">04</span><span class="material-symbols-outlined text-[18px]">campaign</span><span class="font-body-md text-body-md truncate">Marketing Engine</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-semibold rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]" data-path="product-engine" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">05</span><span class="material-symbols-outlined text-[18px]">rocket_launch</span><span class="font-body-md text-body-md truncate">Product Engine</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="audience-expansion" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">06</span><span class="material-symbols-outlined text-[18px]">groups</span><span class="font-body-md text-body-md truncate">Audience Expansion</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="strategic-roadmap" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">07</span><span class="material-symbols-outlined text-[18px]">alt_route</span><span class="font-body-md text-body-md truncate">Strategic Roadmap</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="kpi-master-dashboard" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">08</span><span class="material-symbols-outlined text-[18px]">table_chart</span><span class="font-body-md text-body-md truncate">KPI Master Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="risks-and-scenarios" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">09</span><span class="material-symbols-outlined text-[18px]">query_stats</span><span class="font-body-md text-body-md truncate">Risks &amp; Scenarios</span></a></nav></div><div class="p-space-md bg-surface-container-low flex flex-col gap-space-sm"><div class="bg-surface-container-lowest p-space-sm rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><div class="flex items-center justify-between text-tertiary mb-1"><span class="font-label-sm text-label-sm uppercase tracking-wider">Target Audience</span><span class="material-symbols-outlined text-[14px]">lock</span></div><p class="font-body-md text-body-md text-on-surface font-medium truncate">Founder's Office &amp; Execs</p><div class="mt-space-xs pt-space-xs flex items-center justify-between font-mono-data-sm text-mono-data-sm text-tertiary"><span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>Live v2.4</span><span class="tabular-nums">FY25 Plan</span></div></div><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="min-w-0"><p class="font-body-md text-body-md font-semibold text-on-surface truncate">R. Sharma</p><p class="font-label-sm text-label-sm text-tertiary truncate">VP Growth</p></div></div><button class="p-1 text-tertiary hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">unfold_more</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-2"><span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">BrightChamps</span><span class="text-tertiary text-xs">/</span><span class="font-body-md text-body-md font-semibold text-on-surface">Executive Overview</span></div><div class="hidden xl:flex items-center gap-1.5 bg-surface-container-high px-space-sm py-1 rounded"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-medium">Active Scenario: Base-Case Plan</span></div></div><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center gap-space-sm"><div class="flex items-center gap-1.5 bg-primary-fixed px-space-sm py-1 rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-label-sm text-label-sm text-on-primary-fixed uppercase tracking-wider">Target CPL</span><span class="font-mono-data text-mono-data text-primary font-bold tabular-nums">$25.00</span></div><div class="flex items-center gap-1.5 bg-secondary-fixed px-space-sm py-1 rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-label-sm text-label-sm text-on-secondary-fixed uppercase tracking-wider">IQI Floor</span><span class="font-mono-data text-mono-data text-secondary font-bold tabular-nums">≥84.0</span></div><div class="hidden lg:flex items-center gap-1.5 bg-surface-container-high px-space-sm py-1 rounded"><span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Horizon</span><span class="font-mono-data text-mono-data text-on-surface font-semibold tabular-nums">Q3 FY25</span></div></div><div class="flex items-center gap-space-sm"><button class="flex items-center gap-1.5 px-space-sm py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">tune</span><span class="hidden sm:inline">Base-Case</span><span class="material-symbols-outlined text-[16px]">arrow_drop_down</span></button><button class="flex items-center gap-1 px-space-sm py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" title="Export Plan" type="button"><span class="material-symbols-outlined text-[16px]">file_download</span><span class="hidden lg:inline">Export</span></button><button class="p-1.5 bg-surface-container-lowest text-on-surface rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" title="Share Scenario" type="button"><span class="material-symbols-outlined text-[16px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient glow contained within page bounds -->
+<div class="relative w-full px-margin-desktop py-space-xl overflow-hidden">
+<div class="absolute -top-32 right-12 w-96 h-96 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/2 -left-20 w-80 h-80 rounded-full bg-secondary-fixed/25 blur-3xl pointer-events-none -z-10"></div>
+<!-- Editorial Header Section -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-xl">
+<div class="max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary mb-space-xs">
+<span class="font-mono-data-sm text-mono-data-sm uppercase tracking-widest font-semibold">Vector 05 // Conversion Architecture</span>
+<span class="w-1 h-1 rounded-full bg-primary"></span>
+<span class="font-mono-data-sm text-mono-data-sm uppercase tracking-widest text-tertiary">USA K-12 STEM Funnel</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Product Engine: Funnel Velocity &amp; Landing Page CVR
+        </h1>
+<p class="font-body-lg text-body-lg text-tertiary mt-space-xs">
+          Transforming traffic into booked demos: Target CVR 2.5% → 4.0% <span class="text-on-surface font-medium">(Education Industry Benchmark: 5.7%)</span>
+</p>
+</div>
+<!-- Quick Horizon Filter / Micro Status -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-xs rounded-lg shadow-sm self-start lg:self-auto">
+<button class="px-space-sm py-1 rounded bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold transition-all">
+          Active Funnel (Cohort v3.2)
+        </button>
+<button class="px-space-sm py-1 rounded text-tertiary hover:text-on-surface font-label-md text-label-md transition-colors">
+          Benchmark Simulation
+        </button>
+</div>
+</div>
+<!-- Top Core Product KPIs (4-up Bento Grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop mb-space-xl">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Landing-Page CVR</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed text-primary font-mono-data-sm text-mono-data-sm font-semibold">+1.50% Target</span>
+</div>
+<div class="my-space-md">
+<div class="font-stat-display text-stat-display text-on-surface tabular-nums">4.00%</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-mono-data-sm text-mono-data-sm text-on-surface-variant tabular-nums">Current: 2.50%</span>
+<span class="text-tertiary font-mono-data-sm text-mono-data-sm">/</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary font-medium tabular-nums">Peer Bench: 5.70%</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-700" style="width: 70%;"></div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Form Completion Rate</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-mono-data-sm text-mono-data-sm font-semibold">+20.5% Gap</span>
+</div>
+<div class="my-space-md">
+<div class="font-stat-display text-stat-display text-on-surface tabular-nums">72.0%</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-mono-data-sm text-mono-data-sm text-on-surface-variant tabular-nums">Current Run-rate: 51.5%</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-700" style="width: 71.5%;"></div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Median Time-to-Booking</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed text-primary font-mono-data-sm text-mono-data-sm font-semibold">-93s Faster</span>
+</div>
+<div class="my-space-md">
+<div class="font-stat-display text-stat-display text-on-surface tabular-nums">42s</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-mono-data-sm text-mono-data-sm text-on-surface-variant tabular-nums">Baseline Friction: 2m 15s</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-700" style="width: 31%;"></div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Mobile Page Speed Score</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-secondary font-mono-data-sm text-mono-data-sm font-semibold">99.8% Pass</span>
+</div>
+<div class="my-space-md">
+<div class="font-stat-display text-stat-display text-on-surface tabular-nums">96<span class="font-body-md text-body-md text-tertiary">/100</span></div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-mono-data-sm text-mono-data-sm text-secondary font-semibold tabular-nums">LCP: 1.2s</span>
+<span class="text-tertiary font-mono-data-sm text-mono-data-sm">•</span>
+<span class="font-mono-data-sm text-mono-data-sm text-on-surface-variant">CLS: 0.01</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-700" style="width: 96%;"></div>
+</div>
+</div>
+</div>
+<!-- Main Content Layout: Vertical Funnel Flow + Rich Visual & AB Roadmap Side Panel -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-desktop">
+<!-- LEFT 7-COL: High-Density Vertical Funnel Ledger -->
+<div class="xl:col-span-7 flex flex-col bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md mb-space-md bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">End-to-End Funnel Velocity Trace</h2>
+<p class="font-mono-data-sm text-mono-data-sm text-tertiary mt-0.5">Base Trajectory: 100,000 Inbound Paid Sessions • Dynamic Model</p>
+</div>
+<div class="flex items-center gap-2 mt-2 sm:mt-0">
+<span class="flex items-center gap-1 font-mono-data-sm text-mono-data-sm text-primary font-medium">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> Friction Alert Node
+            </span>
+</div>
+</div>
+<!-- Vertical Process Flow Strip -->
+<div class="relative flex flex-col space-y-3">
+<!-- STAGE 1 -->
+<div class="group relative flex items-start gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-mono-data font-semibold flex items-center justify-center shadow-sm">
+                01
+              </div>
+<div class="w-0.5 h-10 bg-surface-container-high mt-1"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Paid Ad Click</h3>
+<span class="font-label-sm text-label-sm text-tertiary">Meta &amp; Google K-12 Math Campaigns</span>
+</div>
+<div class="text-right">
+<span class="font-mono-data text-mono-data font-semibold text-on-surface tabular-nums">100,000</span>
+<span class="block font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">100.0% Reach</span>
+</div>
+</div>
+</div>
+</div>
+<!-- DROP-OFF CONNECTOR 1 -> 2 -->
+<div class="-my-1 ml-10 flex items-center gap-2 pl-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-mono-data-sm text-mono-data-sm text-error font-medium tabular-nums">
+              ↓ -12.0% Bounce Drop (Speed/Pre-render failure)
+            </span>
+</div>
+<!-- STAGE 2 -->
+<div class="group relative flex items-start gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-mono-data font-semibold flex items-center justify-center shadow-sm">
+                02
+              </div>
+<div class="w-0.5 h-10 bg-surface-container-high mt-1"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Landing Page View</h3>
+<span class="font-label-sm text-label-sm text-tertiary">Hero fold with US Math curriculum interactive selector</span>
+</div>
+<div class="text-right">
+<span class="font-mono-data text-mono-data font-semibold text-on-surface tabular-nums">88,000</span>
+<span class="block font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">88.0% Retention</span>
+</div>
+</div>
+</div>
+</div>
+<!-- DROP-OFF CONNECTOR 2 -> 3 (INTERVENTION POINT) -->
+<div class="-my-1 ml-10 flex items-center gap-2 pl-2">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-mono-data-sm text-mono-data-sm font-semibold tabular-nums">
+              ↓ -45.0% Initial Read Drop • [Intervention Point: Micro-Quiz Hero]
+            </span>
+</div>
+<!-- STAGE 3 -->
+<div class="group relative flex items-start gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-mono-data font-semibold flex items-center justify-center shadow-sm">
+                03
+              </div>
+<div class="w-0.5 h-10 bg-surface-container-high mt-1"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Form Start Engagement</h3>
+<span class="font-label-sm text-label-sm text-tertiary">Grade level &amp; parent goal selection step</span>
+</div>
+<div class="text-right">
+<span class="font-mono-data text-mono-data font-semibold text-on-surface tabular-nums">48,400</span>
+<span class="block font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">48.4% Start Rate</span>
+</div>
+</div>
+</div>
+</div>
+<!-- DROP-OFF CONNECTOR 3 -> 4 (INTERVENTION POINT) -->
+<div class="-my-1 ml-10 flex items-center gap-2 pl-2">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-mono-data-sm text-mono-data-sm font-semibold tabular-nums">
+              ↓ -28.0% Phone Number Barrier • [Intervention: Deferred SMS OTP]
+            </span>
+</div>
+<!-- STAGE 4 -->
+<div class="group relative flex items-start gap-space-md p-space-sm rounded-lg bg-surface-container-low shadow-sm">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container font-mono-data font-semibold flex items-center justify-center shadow-sm">
+                04
+              </div>
+<div class="w-0.5 h-10 bg-surface-container-high mt-1"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Form Submit / Lead Capture</h3>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-secondary font-mono-data-sm text-mono-data-sm font-semibold uppercase">CVR Target Metric</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">Verified parent contact record populated in CRM</span>
+</div>
+<div class="text-right">
+<span class="font-mono-data text-mono-data font-bold text-primary-container tabular-nums">34,848</span>
+<span class="block font-mono-data-sm text-mono-data-sm text-secondary font-semibold tabular-nums">34.8% Blended Lead</span>
+</div>
+</div>
+</div>
+</div>
+<!-- DROP-OFF CONNECTOR 4 -> 5 (CRITICAL CALENDAR DROP) -->
+<div class="-my-1 ml-10 flex items-center gap-2 pl-2">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-primary font-mono-data-sm text-mono-data-sm font-semibold tabular-nums">
+              ↓ -30.0% Calendar Drop • [Intervention: Instant 1-Click WhatsApp Booking]
+            </span>
+</div>
+<!-- STAGE 5 -->
+<div class="group relative flex items-start gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-mono-data font-semibold flex items-center justify-center shadow-sm">
+                05
+              </div>
+<div class="w-0.5 h-10 bg-surface-container-high mt-1"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Slot Selection / Booked Demo</h3>
+<span class="font-label-sm text-label-sm text-tertiary">Assigned 1:1 certified US educator slot</span>
+</div>
+<div class="text-right">
+<span class="font-mono-data text-mono-data font-semibold text-on-surface tabular-nums">13,939</span>
+<span class="block font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">40.0% of Leads</span>
+</div>
+</div>
+</div>
+</div>
+<!-- DROP-OFF CONNECTOR 5 -> 6 -->
+<div class="-my-1 ml-10 flex items-center gap-2 pl-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-mono-data-sm text-mono-data-sm text-error font-medium tabular-nums">
+              ↓ -15.0% Confirmation Failure (Ghost appointments)
+            </span>
+</div>
+<!-- STAGE 6 -->
+<div class="group relative flex items-start gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-mono-data font-semibold flex items-center justify-center shadow-sm">
+                06
+              </div>
+<div class="w-0.5 h-10 bg-surface-container-high mt-1"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Demo Reminder &amp; Confirmation</h3>
+<span class="font-label-sm text-label-sm text-tertiary">Two-way SMS RSVP + Parent Calendar invite confirmed</span>
+</div>
+<div class="text-right">
+<span class="font-mono-data text-mono-data font-semibold text-on-surface tabular-nums">11,848</span>
+<span class="block font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">85.0% Confirmed</span>
+</div>
+</div>
+</div>
+</div>
+<!-- DROP-OFF CONNECTOR 6 -> 7 -->
+<div class="-my-1 ml-10 flex items-center gap-2 pl-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-mono-data-sm text-mono-data-sm text-error font-medium tabular-nums">
+              ↓ -28.0% No-Show rate at scheduled session
+            </span>
+</div>
+<!-- STAGE 7 -->
+<div class="group relative flex items-start gap-space-md p-space-sm rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface font-mono-data font-semibold flex items-center justify-center shadow-sm">
+                07
+              </div>
+<div class="w-0.5 h-10 bg-surface-container-high mt-1"></div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Demo Attended &amp; Completed</h3>
+<span class="font-label-sm text-label-sm text-tertiary">45-minute live interactive diagnostic trial completed</span>
+</div>
+<div class="text-right">
+<span class="font-mono-data text-mono-data font-semibold text-on-surface tabular-nums">8,530</span>
+<span class="block font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">72.0% Attendance</span>
+</div>
+</div>
+</div>
+</div>
+<!-- DROP-OFF CONNECTOR 7 -> 8 -->
+<div class="-my-1 ml-10 flex items-center gap-2 pl-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-mono-data-sm text-mono-data-sm text-tertiary font-medium tabular-nums">
+              ↓ -75.0% Trial-to-Paid Sales Filter
+            </span>
+</div>
+<!-- STAGE 8 -->
+<div class="group relative flex items-start gap-space-md p-space-sm rounded-lg bg-secondary-fixed/20 shadow-sm">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary font-mono-data font-bold flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-body-lg text-body-lg font-bold text-on-surface">Paid Enrolment / Annual Subscription</h3>
+<span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-mono-data-sm text-mono-data-sm font-semibold uppercase">Revenue Close</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">Average Order Value: $1,440/yr</span>
+</div>
+<div class="text-right">
+<span class="font-mono-data text-mono-data font-bold text-secondary tabular-nums">2,132</span>
+<span class="block font-mono-data-sm text-mono-data-sm text-secondary font-semibold tabular-nums">25.0% Demo Close</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT 5-COL: Live A/B Experimentation Engine & Media Showcase -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg">
+<!-- Live Product Prototype Visual Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">science</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Active Experiment in Production</h2>
+</div>
+<span class="flex items-center gap-1 font-mono-data-sm text-mono-data-sm text-secondary font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+              99.2% Stat Sig
+            </span>
+</div>
+<!-- Editorial Image Display -->
+<div class="relative w-full h-44 rounded-lg overflow-hidden my-space-xs bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Modern tablet display showing an interactive math learning quiz for children with friendly vibrant geometry characters, sleek editorial clean interface, soft studio warm illumination, focused classroom environment in Cupertino school district." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7dy1PDCO4-T4xSX5JkJb2mFN6m94J_igcbnDaAHPqjsw2YcyIPv3psPMmEQdr3768JWhDGrqfQmHPVmmUq0puPwYZafCP5nh0Rvt5LYh98hI7xIJhnmc8Z3KE9Cz7ybErZSkuQXeObwNe2HCwCZ3wYB191txqXfQqYDSPV4-VwKW3_CMvVPUsSmOrIPdHLKwGi1UFOqXCpdz455pPlI0c0YdjamTTBasRIOqzJhdDxvdH3DvtcAxo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-on-primary">
+<span class="font-mono-data-sm text-mono-data-sm">Test #104 Variant B • Micro-Quiz Flow</span>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-mono-data-sm text-mono-data-sm font-bold tabular-nums">+38% Lift</span>
+</div>
+</div>
+<!-- Micro Sparkline Telemetry for Variant Run -->
+<div class="mt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary">Conversion Delta Velocity</span>
+<span class="font-mono-data text-mono-data text-secondary font-bold tabular-nums">2.50% → 3.45% Blended</span>
+</div>
+<div class="w-32 h-8">
+<svg class="w-full h-full stroke-secondary fill-none" preserveaspectratio="none" viewbox="0 0 120 32">
+<path d="M0 24 L20 22 L40 25 L60 16 L80 18 L100 8 L120 4" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- A/B Test Roadmap Card Grid -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-space-xs">
+<h3 class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-bold">A/B Testing Deployment Pipeline</h3>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">4 Initiatives Loaded</span>
+</div>
+<!-- Test Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<span class="font-mono-data-sm text-mono-data-sm text-primary font-semibold">Test #104</span>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">2-Step Micro-Quiz vs Traditional Lead Form</h4>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-mono-data-sm text-mono-data-sm font-semibold shrink-0">
+                Active Winner
+              </span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-mono-data-sm text-mono-data-sm">
+<span class="text-secondary font-bold tabular-nums">+38% Form Completion</span>
+<span class="tabular-nums font-semibold text-primary">CVR: 2.5% → 3.45%</span>
+</div>
+</div>
+<!-- Test Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary font-semibold">Test #105</span>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">Instant 1-Click WhatsApp/SMS Slot Booking Calendar</h4>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-mono-data-sm text-mono-data-sm font-semibold shrink-0">
+                In Development
+              </span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-mono-data-sm text-mono-data-sm">
+<span>Bypasses Email Verification drop</span>
+<span class="tabular-nums font-semibold text-secondary">Proj. Lift: +0.45% CVR</span>
+</div>
+</div>
+<!-- Test Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary font-semibold">Test #106</span>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">Grade-Specific Curriculum Preview Dynamic Hero</h4>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-tertiary font-mono-data-sm text-mono-data-sm font-semibold shrink-0">
+                Queued
+              </span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-mono-data-sm text-mono-data-sm">
+<span>Grade 1-8 dynamic copy engine</span>
+<span class="tabular-nums font-semibold text-on-surface">Target: Grade Personalization</span>
+</div>
+</div>
+<!-- Test Card 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary font-semibold">Test #107</span>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">Social Proof by Top US School Districts</h4>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-tertiary font-mono-data-sm text-mono-data-sm font-semibold shrink-0">
+                Backlog
+              </span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-mono-data-sm text-mono-data-sm">
+<span>Geo-fenced social proofing</span>
+<span class="tabular-nums font-semibold text-tertiary">Cupertino, Plano, Scarsdale</span>
+</div>
+</div>
+</div>
+<!-- Simulation Interactive Strip -->
+<div class="bg-primary-container p-space-md rounded-xl text-on-primary-container shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider">Target Realization Check</span>
+<span class="font-mono-data-sm text-mono-data-sm opacity-90">With Tests 104+105 live: Target 4.0% CVR achieved at 34,800 leads</span>
+</div>
+</div>
+<button class="px-space-md py-1.5 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold shadow hover:bg-surface transition-colors shrink-0">
+            Push Roadmap
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

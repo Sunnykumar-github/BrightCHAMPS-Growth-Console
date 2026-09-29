@@ -1,0 +1,44 @@
+﻿
+> temp-app@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.3.6 (Turbopack)
+- Environments: .env.local
+Γ£ô Running next.config.ts took 30ms
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 903ms
+  Running TypeScript ...
+.next/dev/types/validator.ts(42,39): error TS2306: File 'Q:/BrightChamps Console/src/app/audience-expansion/page.tsx' is not a module.
+.next/dev/types/validator.ts(51,39): error TS2306: File 'Q:/BrightChamps Console/src/app/kpi-master-dashboard/page.tsx' is not a module.
+.next/dev/types/validator.ts(60,39): error TS2306: File 'Q:/BrightChamps Console/src/app/marketing-engine/page.tsx' is not a module.
+.next/dev/types/validator.ts(69,39): error TS2306: File 'Q:/BrightChamps Console/src/app/page.tsx' is not a module.
+.next/dev/types/validator.ts(78,39): error TS2306: File 'Q:/BrightChamps Console/src/app/product-engine/page.tsx' is not a module.
+.next/dev/types/validator.ts(87,39): error TS2306: File 'Q:/BrightChamps Console/src/app/risks-and-scenarios/page.tsx' is not a module.
+.next/dev/types/validator.ts(96,39): error TS2306: File 'Q:/BrightChamps Console/src/app/situation-and-guardrail/page.tsx' is not a module.
+.next/dev/types/validator.ts(105,39): error TS2306: File 'Q:/BrightChamps Console/src/app/strategic-roadmap/page.tsx' is not a module.
+.next/dev/types/validator.ts(114,39): error TS2306: File 'Q:/BrightChamps Console/src/app/the-model/page.tsx' is not a module.
+.next/dev/types/validator.ts(129,39): error TS2306: File 'Q:/BrightChamps Console/src/app/layout.tsx' is not a module.
+.next/types/validator.ts(42,39): error TS2306: File 'Q:/BrightChamps Console/src/app/audience-expansion/page.tsx' is not a module.
+.next/types/validator.ts(51,39): error TS2306: File 'Q:/BrightChamps Console/src/app/kpi-master-dashboard/page.tsx' is not a module.
+.next/types/validator.ts(60,39): error TS2306: File 'Q:/BrightChamps Console/src/app/marketing-engine/page.tsx' is not a module.
+.next/types/validator.ts(69,39): error TS2306: File 'Q:/BrightChamps Console/src/app/page.tsx' is not a module.
+.next/types/validator.ts(78,39): error TS2306: File 'Q:/BrightChamps Console/src/app/product-engine/page.tsx' is not a module.
+.next/types/validator.ts(87,39): error TS2306: File 'Q:/BrightChamps Console/src/app/risks-and-scenarios/page.tsx' is not a module.
+.next/types/validator.ts(96,39): error TS2306: File 'Q:/BrightChamps Console/src/app/situation-and-guardrail/page.tsx' is not a module.
+.next/types/validator.ts(105,39): error TS2306: File 'Q:/BrightChamps Console/src/app/strategic-roadmap/page.tsx' is not a module.
+.next/types/validator.ts(114,39): error TS2306: File 'Q:/BrightChamps Console/src/app/the-model/page.tsx' is not a module.
+.next/types/validator.ts(129,39): error TS2306: File 'Q:/BrightChamps Console/src/app/layout.tsx' is not a module.
+node.exe : Failed to type check.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Users\onepl\AppData\Roaming\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (F 
+   ailed to type check.:String) [], RemoteExc  
+  eption
+    + FullyQualifiedErrorId : NativeCommandErr 
+   or
+ 
+

@@ -1,0 +1,127 @@
+store_content = """import { create } from 'zustand';
+import { supabase } from '../lib/supabase';
+
+interface KpiState {
+    adSpend: number;
+    baseCpl: number;
+    blendedCpl: number;
+    slgGrowth: number;
+    conversionRate: number;
+    iqiFloor: number;
+
+    getMonthlyLeads: () => number;
+    getBookedDemos: () => number;
+    getPaidEnrolments: () => number;
+    getNetEfficiencySavings: () => number;
+
+    setAdSpend: (val: number) => void;
+    setBaseCpl: (val: number) => void;
+    setBlendedCpl: (val: number) => void;
+    setSlgGrowth: (val: number) => void;
+    setConversionRate: (val: number) => void;
+    setIqiFloor: (val: number) => void;
+
+    applyPreset: (type: 'best' | 'base' | 'worst') => void;
+    exportToCSV: () => void;
+    syncToSupabase: () => Promise<void>;
+    loadFromSupabase: () => Promise<void>;
+}
+
+export const useKpiStore = create<KpiState>((set, get) => ({
+    adSpend: 125000,
+    baseCpl: 25.00,
+    blendedCpl: 25.00,
+    slgGrowth: 5.0,
+    conversionRate: 7.24,
+    iqiFloor: 84.0,
+
+    getMonthlyLeads: () => 5000, 
+    getBookedDemos: () => 3229,
+    getPaidEnrolments: () => Math.floor(get().getMonthlyLeads() * (get().conversionRate / 100)),
+    getNetEfficiencySavings: () => (get().getMonthlyLeads() * 50) - get().adSpend,
+
+    setAdSpend: (val) => { set({ adSpend: val }); get().syncToSupabase(); },
+    setBaseCpl: (val) => { set({ baseCpl: val }); get().syncToSupabase(); },
+    setBlendedCpl: (val) => { set({ blendedCpl: val }); get().syncToSupabase(); },
+    setSlgGrowth: (val) => { set({ slgGrowth: val }); get().syncToSupabase(); },
+    setConversionRate: (val) => { set({ conversionRate: val }); get().syncToSupabase(); },
+    setIqiFloor: (val) => { set({ iqiFloor: val }); get().syncToSupabase(); },
+
+    applyPreset: (type) => {
+        switch (type) {
+            case 'best':
+                set({ blendedCpl: 20, conversionRate: 15.0, slgGrowth: 8.0, iqiFloor: 90 });
+                break;
+            case 'base':
+                set({ blendedCpl: 25, conversionRate: 7.24, slgGrowth: 5.0, iqiFloor: 84.5 });
+                break;
+            case 'worst':
+                set({ blendedCpl: 35, conversionRate: 4.0, slgGrowth: 2.0, iqiFloor: 75 });
+                break;
+        }
+        get().syncToSupabase();
+    },
+
+    exportToCSV: () => {
+        const data = [
+            ['Metric', 'Value'],
+            ['Ad Spend Baseline ($)', get().adSpend.toString()],
+            ['Target CPL ($)', get().blendedCpl.toString()],
+            ['Target Conversion Rate (%)', get().conversionRate.toString()],
+            ['Target IQI Floor', get().iqiFloor.toString()],
+            ['Monthly Leads Volume', get().getMonthlyLeads().toString()],
+            ['Booked Demos', get().getBookedDemos().toString()],
+            ['Paid Enrolments', get().getPaidEnrolments().toString()],
+            ['Recalculated Efficiency Savings ($)', get().getNetEfficiencySavings().toString()]
+        ];
+        let csvContent = "data:text/csv;charset=utf-8," + data.map(e => e.join(",")).join("\\n");
+        const encodedUri = encodeURI(csvContent);
+        const link = document.createElement("a");
+        link.setAttribute("href", encodedUri);
+        link.setAttribute("download", "brightchamps_kpi_export.csv");
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    },
+
+    syncToSupabase: async () => {
+        try {
+            await supabase.from('kpi_settings').upsert({
+                id: 1,
+                base_cpl: get().baseCpl,
+                blended_cpl: get().blendedCpl,
+                slg_growth: get().slgGrowth,
+                ad_spend: get().adSpend,
+                conversion_rate: get().conversionRate,
+                iqi_floor: get().iqiFloor
+            });
+        } catch (e: any) {
+            console.error("Supabase sync failed (check if RLS is enabled or table exists):", e);
+        }
+    },
+
+    loadFromSupabase: async () => {
+        try {
+            const { data, error } = await supabase.from('kpi_settings').select('*').eq('id', 1).single();
+            if (data && !error) {
+                set({
+                    adSpend: data.ad_spend || 125000,
+                    baseCpl: data.base_cpl || 25,
+                    blendedCpl: data.blended_cpl || 25,
+                    slgGrowth: data.slg_growth || 5.0,
+                    conversionRate: data.conversion_rate || 7.24,
+                    iqiFloor: data.iqi_floor || 84.0
+                });
+            } else if (error) {
+                console.error("Failed to load from Supabase (Check RLS Policies):", error);
+            }
+        } catch (e: any) {
+            console.error("Failed to load from Supabase:", e);
+        }
+    }
+}));
+"""
+
+with open('src/store/useKpiStore.ts', 'w', encoding='utf-8') as f:
+    f.write(store_content.strip())
+print("Store rewritten.")

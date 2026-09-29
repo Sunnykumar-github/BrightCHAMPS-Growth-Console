@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.tabular-nums{font-variant-numeric:tabular-nums;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#002113", "surface-bright": "#f9f9ff", "surface-container-high": "#e5e8f4", "error": "#ba1a1a", "on-error-container": "#93000a", "tertiary-fixed-dim": "#bec6de", "on-background": "#181c24", "on-tertiary-fixed": "#131b2d", "secondary": "#2d694d", "surface-variant": "#dfe2ef", "background": "#f9f9ff", "on-secondary-container": "#326e51", "on-tertiary": "#ffffff", "tertiary-fixed": "#dae2fb", "primary-fixed-dim": "#ffb77b", "error-container": "#ffdad6", "primary-container": "#a8631e", "on-primary-fixed": "#2e1500", "inverse-surface": "#2c303a", "surface-container": "#ebedfa", "tertiary-container": "#6c748a", "on-tertiary-container": "#fdfbff", "on-secondary-fixed-variant": "#105137", "surface-dim": "#d7dae6", "primary-fixed": "#ffdcc2", "on-surface-variant": "#534438", "primary": "#8a4b02", "inverse-primary": "#ffb77b", "on-surface": "#181c24", "outline": "#867467", "surface": "#f9f9ff", "surface-container-low": "#f1f3ff", "outline-variant": "#d8c2b3", "surface-container-lowest": "#ffffff", "on-primary-container": "#fffaf9", "surface-container-highest": "#dfe2ef", "surface-tint": "#8e4e06", "secondary-fixed-dim": "#96d4b2", "on-primary": "#ffffff", "secondary-fixed": "#b1f0cd", "on-primary-fixed-variant": "#6d3a00", "tertiary": "#535b70", "secondary-container": "#aeedca", "on-error": "#ffffff", "on-secondary": "#ffffff", "inverse-on-surface": "eef0fd", "on-tertiary-fixed-variant": "#3f475a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "1rem", "space-md": "0.75rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "gutter-desktop": "1.25rem", "space-xs": "0.25rem", "space-lg": "1.25rem", "gutter": "1rem", "space-xl": "2rem" }, "fontFamily": { "mono-data-sm": [ "IBM Plex Sans" ], "label-md": [ "IBM Plex Sans" ], "stat-display": [ "\"Source Serif 4\"" ], "headline-lg-mobile": [ "\"Source Serif 4\"" ], "body-md": [ "IBM Plex Sans" ], "body-lg": [ "IBM Plex Sans" ], "label-sm": [ "IBM Plex Sans" ], "headline-lg": [ "\"Source Serif 4\"" ], "headline-sm": [ "\"Source Serif 4\"" ], "headline-md": [ "\"Source Serif 4\"" ], "mono-data": [ "IBM Plex Sans" ], "stat-display-mobile": [ "\"Source Serif 4\"" ] }, "fontSize": { "mono-data-sm": [ "11px", { "lineHeight": "14px", "fontWeight": "500" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "stat-display": [ "36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-md": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "body-lg": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-sm": [ "17px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "mono-data": [ "13px", { "lineHeight": "16px", "fontWeight": "500" } ], "stat-display-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="p-space-lg bg-surface-container-low"><div class="flex items-center justify-between gap-space-xs"><div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">BrightChamps</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Growth Console</span></div><span class="material-symbols-outlined text-tertiary cursor-pointer hover:text-on-surface transition-colors text-[20px]">dock_to_right</span></div><div class="mt-space-sm flex items-center justify-between bg-surface-container-lowest px-space-sm py-space-xs rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-mono-data-sm text-mono-data-sm text-on-surface-variant flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>USA · Math Vertical</span><span class="font-mono-data-sm text-mono-data-sm font-semibold text-primary-container tabular-nums">$50 → $25 CPL</span></div></div><div class="px-space-md py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary px-space-sm block mt-space-sm mb-space-xs">Operational Vectors</span></div><nav class="flex flex-col px-space-sm gap-0.5" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="executive-summary" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">01</span><span class="material-symbols-outlined text-[18px]">dashboard</span><span class="font-body-md text-body-md truncate">Executive Summary</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="situation-and-guardrail" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">02</span><span class="material-symbols-outlined text-[18px]">verified_user</span><span class="font-body-md text-body-md truncate">Situation &amp; Guardrail</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="the-model" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">03</span><span class="material-symbols-outlined text-[18px]">calculate</span><span class="font-body-md text-body-md truncate">The Model</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-semibold rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]" data-path="marketing-engine" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">04</span><span class="material-symbols-outlined text-[18px]">campaign</span><span class="font-body-md text-body-md truncate">Marketing Engine</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="product-engine" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">05</span><span class="material-symbols-outlined text-[18px]">rocket_launch</span><span class="font-body-md text-body-md truncate">Product Engine</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="audience-expansion" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">06</span><span class="material-symbols-outlined text-[18px]">groups</span><span class="font-body-md text-body-md truncate">Audience Expansion</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="strategic-roadmap" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">07</span><span class="material-symbols-outlined text-[18px]">alt_route</span><span class="font-body-md text-body-md truncate">Strategic Roadmap</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="kpi-master-dashboard" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">08</span><span class="material-symbols-outlined text-[18px]">table_chart</span><span class="font-body-md text-body-md truncate">KPI Master Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="risks-and-scenarios" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">09</span><span class="material-symbols-outlined text-[18px]">query_stats</span><span class="font-body-md text-body-md truncate">Risks &amp; Scenarios</span></a></nav></div><div class="p-space-md bg-surface-container-low flex flex-col gap-space-sm"><div class="bg-surface-container-lowest p-space-sm rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><div class="flex items-center justify-between text-tertiary mb-1"><span class="font-label-sm text-label-sm uppercase tracking-wider">Target Audience</span><span class="material-symbols-outlined text-[14px]">lock</span></div><p class="font-body-md text-body-md text-on-surface font-medium truncate">Founder's Office &amp; Execs</p><div class="mt-space-xs pt-space-xs flex items-center justify-between font-mono-data-sm text-mono-data-sm text-tertiary"><span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>Live v2.4</span><span class="tabular-nums">FY25 Plan</span></div></div><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="min-w-0"><p class="font-body-md text-body-md font-semibold text-on-surface truncate">R. Sharma</p><p class="font-label-sm text-label-sm text-tertiary truncate">VP Growth</p></div></div><button class="p-1 text-tertiary hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">unfold_more</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-2"><span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">BrightChamps</span><span class="text-tertiary text-xs">/</span><span class="font-body-md text-body-md font-semibold text-on-surface">Executive Overview</span></div><div class="hidden xl:flex items-center gap-1.5 bg-surface-container-high px-space-sm py-1 rounded"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-medium">Active Scenario: Base-Case Plan</span></div></div><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center gap-space-sm"><div class="flex items-center gap-1.5 bg-primary-fixed px-space-sm py-1 rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-label-sm text-label-sm text-on-primary-fixed uppercase tracking-wider">Target CPL</span><span class="font-mono-data text-mono-data text-primary font-bold tabular-nums">$25.00</span></div><div class="flex items-center gap-1.5 bg-secondary-fixed px-space-sm py-1 rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-label-sm text-label-sm text-on-secondary-fixed uppercase tracking-wider">IQI Floor</span><span class="font-mono-data text-mono-data text-secondary font-bold tabular-nums">≥84.0</span></div><div class="hidden lg:flex items-center gap-1.5 bg-surface-container-high px-space-sm py-1 rounded"><span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Horizon</span><span class="font-mono-data text-mono-data text-on-surface font-semibold tabular-nums">Q3 FY25</span></div></div><div class="flex items-center gap-space-sm"><button class="flex items-center gap-1.5 px-space-sm py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">tune</span><span class="hidden sm:inline">Base-Case</span><span class="material-symbols-outlined text-[16px]">arrow_drop_down</span></button><button class="flex items-center gap-1 px-space-sm py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" title="Export Plan" type="button"><span class="material-symbols-outlined text-[16px]">file_download</span><span class="hidden lg:inline">Export</span></button><button class="p-1.5 bg-surface-container-lowest text-on-surface rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" title="Share Scenario" type="button"><span class="material-symbols-outlined text-[16px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-desktop py-space-lg space-y-space-lg">
+<!-- Executive Control Ribbon -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md pb-space-md border-b border-surface-container-high">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs font-mono-data-sm text-mono-data-sm text-tertiary uppercase tracking-wider">
+<span>Vector 04</span>
+<span>/</span>
+<span class="text-primary font-semibold">Growth Ops</span>
+<span>/</span>
+<span>Paid Acquisition Architecture</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Marketing Engine: Creative Velocity &amp; Paid Efficiency</h1>
+<p class="font-body-md text-body-md text-tertiary">Real-time spend pacing, multivariate creative fatigue governance, and cross-channel arbitrage.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded shadow-sm">
+<div class="flex items-center gap-1.5 pr-space-md border-r border-outline-variant/30">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Target CTR</span>
+<span class="font-mono-data text-mono-data text-secondary font-bold tabular-nums">1.80%</span>
+</div>
+<div class="flex items-center gap-1.5 pr-space-md border-r border-outline-variant/30">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Target CPM</span>
+<span class="font-mono-data text-mono-data text-on-surface font-bold tabular-nums">$32.00</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Allocated Run-Rate</span>
+<span class="font-mono-data text-mono-data text-primary-container font-bold tabular-nums">$240,000<span class="text-tertiary text-mono-data-sm font-normal">/mo</span></span>
+</div>
+</div>
+</div>
+<!-- KPI Deck: 5 High-Density Executive Telemetry Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Stat 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Blended CPM</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-mono-data-sm bg-secondary-fixed text-on-secondary-fixed font-bold">-20.0%</span>
+</div>
+<div class="my-space-xs">
+<span class="font-stat-display text-stat-display text-on-surface tabular-nums">$32.00</span>
+</div>
+<div class="flex items-center justify-between text-mono-data-sm font-mono-data-sm text-tertiary pt-1 border-t border-surface-container-high">
+<span>Baseline: $40.00</span>
+<span class="text-secondary font-medium">Optimal</span>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Blended CTR</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-mono-data-sm bg-secondary-fixed text-on-secondary-fixed font-bold">+12.5%</span>
+</div>
+<div class="my-space-xs">
+<span class="font-stat-display text-stat-display text-on-surface tabular-nums">1.80%</span>
+</div>
+<div class="flex items-center justify-between text-mono-data-sm font-mono-data-sm text-tertiary pt-1 border-t border-surface-container-high">
+<span>Baseline: 1.60%</span>
+<span>Median: 2.19%</span>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Avg Frequency</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-mono-data-sm bg-surface-container-high text-tertiary font-bold">14-Day</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-1">
+<span class="font-stat-display text-stat-display text-on-surface tabular-nums">2.3x</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">/ 14d</span>
+</div>
+<div class="flex items-center justify-between text-mono-data-sm font-mono-data-sm text-tertiary pt-1 border-t border-surface-container-high">
+<span>Hard Ceiling: 3.0x</span>
+<span class="text-secondary font-medium">Safe Margin</span>
+</div>
+</div>
+<!-- Stat 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Ad Relevance</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-mono-data-sm bg-secondary-container text-on-secondary-container font-bold">Top 10%</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-1">
+<span class="font-stat-display text-stat-display text-on-surface tabular-nums">9.2</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">/ 10</span>
+</div>
+<div class="flex items-center justify-between text-mono-data-sm font-mono-data-sm text-tertiary pt-1 border-t border-surface-container-high">
+<span>Diagnostics: Above Avg</span>
+<span class="text-secondary font-medium">Verified</span>
+</div>
+</div>
+<!-- Stat 5 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Spend Pacing</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-mono-data-sm bg-primary-fixed text-on-primary-fixed font-bold">On Plan</span>
+</div>
+<div class="my-space-xs">
+<span class="font-stat-display text-stat-display text-primary-container tabular-nums">99.4%</span>
+</div>
+<div class="flex items-center justify-between text-mono-data-sm font-mono-data-sm text-tertiary pt-1 border-t border-surface-container-high">
+<span>$238.5k spent</span>
+<span class="text-on-surface font-medium tabular-nums">±0.6%</span>
+</div>
+</div>
+</div>
+<!-- Horizontal Process-Flow Strip: Creative Velocity Architecture -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-sm border-b border-surface-container-high">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">cyclone</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Creative Velocity Pipeline (3.2-Week Cycle)</h2>
+</div>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Throughput SLA: 8 concepts/wk • 48-Hour Micro-Testing Sandbox</span>
+</div>
+<!-- Connected Process Nodes -->
+<div class="relative pt-space-xs pb-2">
+<!-- Background Connecting Hairline Track -->
+<div class="hidden md:block absolute top-10 left-[6%] right-[6%] h-[2px] bg-surface-container-high -translate-y-1/2 z-0"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-start bg-surface p-space-md rounded shadow-sm border-l-2 border-secondary">
+<div class="flex items-center justify-between w-full mb-space-sm">
+<span class="w-8 h-8 rounded-full bg-secondary text-on-secondary font-mono-data-sm text-mono-data-sm font-bold flex items-center justify-center shadow-sm">01</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-mono-data-sm font-semibold bg-surface-container-high text-tertiary">Phase I</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Creative Brief</span>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-mono-data text-mono-data font-bold text-secondary tabular-nums">8 New Concepts</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">/ wk</span>
+</div>
+<p class="mt-space-xs font-body-md text-body-md text-tertiary leading-relaxed">Core Hook: Parent Anxiety, Grade-level falling behind &amp; Math Confidence redemption narratives.</p>
+<div class="mt-space-sm pt-space-xs w-full border-t border-surface-container-high flex justify-between items-center text-mono-data-sm text-mono-data-sm">
+<span class="text-tertiary">Lead Time</span>
+<span class="font-semibold text-on-surface">2.5 Days</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-start bg-surface p-space-md rounded shadow-sm border-l-2 border-secondary">
+<div class="flex items-center justify-between w-full mb-space-sm">
+<span class="w-8 h-8 rounded-full bg-secondary text-on-secondary font-mono-data-sm text-mono-data-sm font-bold flex items-center justify-center shadow-sm">02</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-mono-data-sm font-semibold bg-secondary-fixed text-on-secondary-fixed">Live MVT</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Launch &amp; Test</span>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-mono-data text-mono-data font-bold text-on-surface tabular-nums">48hr MVT Window</span>
+</div>
+<p class="mt-space-xs font-body-md text-body-md text-tertiary leading-relaxed">$500 micro-budget testing cells per creative variant. Rapid statistically significant hook isolation.</p>
+<div class="mt-space-sm pt-space-xs w-full border-t border-surface-container-high flex justify-between items-center text-mono-data-sm text-mono-data-sm">
+<span class="text-tertiary">Sample Target</span>
+<span class="font-semibold text-on-surface">15,000 Impr.</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-start bg-surface p-space-md rounded shadow-sm border-l-2 border-primary-container">
+<div class="flex items-center justify-between w-full mb-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest border border-primary-container text-primary-container font-mono-data-sm text-mono-data-sm font-bold flex items-center justify-center relative">
+              03
+              <span class="w-2 h-2 rounded-full bg-primary-container animate-ping absolute -top-0.5 -right-0.5"></span>
+</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-mono-data-sm font-semibold bg-primary-fixed text-on-primary-fixed">Active Rule</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Algorithmic Monitor</span>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-mono-data text-mono-data font-bold text-primary tabular-nums">CTR ≥ 1.80%</span>
+</div>
+<p class="mt-space-xs font-body-md text-body-md text-tertiary leading-relaxed">Automated frequency ceiling flag at 2.8x. Immediate signal damping when audience saturation begins.</p>
+<div class="mt-space-sm pt-space-xs w-full border-t border-surface-container-high flex justify-between items-center text-mono-data-sm text-mono-data-sm">
+<span class="text-tertiary">Frequency Alert</span>
+<span class="font-semibold text-primary">&gt; 2.80x</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-start bg-surface p-space-md rounded shadow-sm border-l-2 border-error">
+<div class="flex items-center justify-between w-full mb-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container-high text-tertiary font-mono-data-sm text-mono-data-sm font-bold flex items-center justify-center">04</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-mono-data-sm font-semibold bg-error-container text-on-error-container">Auto-Kill</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Refresh or Kill</span>
+<div class="mt-1 flex items-baseline gap-1">
+<span class="font-mono-data text-mono-data font-bold text-error tabular-nums">3.2-Wk Cycle</span>
+</div>
+<p class="mt-space-xs font-body-md text-body-md text-tertiary leading-relaxed">Hard kill boundary at 1.40% CTR. Assets sunset before terminal audience burn impacts blended CAC.</p>
+<div class="mt-space-sm pt-space-xs w-full border-t border-surface-container-high flex justify-between items-center text-mono-data-sm text-mono-data-sm">
+<span class="text-tertiary">Decay Floor</span>
+<span class="font-semibold text-error">&lt; 1.40% CTR</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Analytics Split: Channel Mix vs. Creative Decay Modeling -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- Left Panel: Channel Mix & Efficiency Rebalancing (7 cols) -->
+<div class="xl:col-span-7 bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm border-b border-surface-container-high gap-2">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Channel Mix &amp; Efficiency Rebalancing</h3>
+<p class="font-body-md text-body-md text-tertiary">Real-time capital deployment against incremental CAC elasticity</p>
+</div>
+<span class="px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-mono-data-sm text-mono-data-sm font-semibold tracking-wide self-start sm:self-auto">
+            Target CPL ≤ $25.00
+          </span>
+</div>
+<!-- Visual Channel Progress Bars / Composition -->
+<div class="mt-space-md space-y-space-md">
+<!-- Meta -->
+<div class="space-y-1.5 p-space-md bg-surface-container-low rounded">
+<div class="flex flex-wrap items-center justify-between gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Meta (Instagram / Facebook Feed)</span>
+</div>
+<div class="flex items-center gap-space-sm font-mono-data-sm text-mono-data-sm">
+<span class="text-tertiary">Spend: <strong class="text-on-surface">$108,000</strong> (45%)</span>
+<span class="text-tertiary">•</span>
+<span class="text-secondary font-bold">CPL: $24.20</span>
+</div>
+</div>
+<!-- Segmented visual bar -->
+<div class="w-full bg-surface-container h-2.5 rounded overflow-hidden">
+<div class="bg-primary-container h-full rounded" style="width: 45%;"></div>
+</div>
+<div class="flex items-center justify-between font-mono-data-sm text-mono-data-sm text-tertiary pt-1">
+<span>CTR: <strong class="text-on-surface">1.85%</strong> (Healthy)</span>
+<span>CPM: <strong class="text-on-surface">$28.50</strong></span>
+<span>Conversion: <strong class="text-secondary">4.2%</strong> to Trial</span>
+</div>
+</div>
+<!-- Google Search -->
+<div class="space-y-1.5 p-space-md bg-surface-container-low rounded">
+<div class="flex flex-wrap items-center justify-between gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Google Search (High-Intent Keywords)</span>
+</div>
+<div class="flex items-center gap-space-sm font-mono-data-sm text-mono-data-sm">
+<span class="text-tertiary">Spend: <strong class="text-on-surface">$84,000</strong> (35%)</span>
+<span class="text-tertiary">•</span>
+<span class="text-on-surface-variant font-bold">CPL: $27.40</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded overflow-hidden">
+<div class="bg-secondary h-full rounded" style="width: 35%;"></div>
+</div>
+<div class="flex items-center justify-between font-mono-data-sm text-mono-data-sm text-tertiary pt-1">
+<span>CTR: <strong class="text-on-surface">3.40%</strong> (High-Intent)</span>
+<span>CPC: <strong class="text-on-surface">$1.90</strong></span>
+<span>Lead-to-Booking: <strong class="text-secondary">18.6%</strong></span>
+</div>
+</div>
+<!-- YouTube / Shorts -->
+<div class="space-y-1.5 p-space-md bg-surface-container-low rounded">
+<div class="flex flex-wrap items-center justify-between gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">YouTube &amp; Video Shorts (Discovery)</span>
+</div>
+<div class="flex items-center gap-space-sm font-mono-data-sm text-mono-data-sm">
+<span class="text-tertiary">Spend: <strong class="text-on-surface">$48,000</strong> (20%)</span>
+<span class="text-tertiary">•</span>
+<span class="text-secondary font-bold">CPL: $23.10</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded overflow-hidden">
+<div class="bg-tertiary-container h-full rounded" style="width: 20%;"></div>
+</div>
+<div class="flex items-center justify-between font-mono-data-sm text-mono-data-sm text-tertiary pt-1">
+<span>CTR: <strong class="text-on-surface">1.15%</strong></span>
+<span>CPV: <strong class="text-on-surface">$0.04</strong></span>
+<span>VTR: <strong class="text-on-surface">38.2%</strong> (30s)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Strategic Channel Reallocation Protocol Note -->
+<div class="mt-space-md p-space-md bg-surface rounded border-l-4 border-primary-container space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-container font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+            Active Rebalance Directive #MKT-402
+          </span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Scheduled: Monday Sprint</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+<strong>Strategic Action:</strong> Shifting <strong>15% ($36,000)</strong> of ad spend away from saturated broad Meta lookalikes directly into YouTube parent social-proof testimonials and hyper-targeted long-tail search clusters. Meta frequency on generic cohorts reached 2.85x with marginal CPL climbing to $29.80.
+        </p>
+</div>
+</div>
+<!-- Right Panel: Creative Fatigue Decay Modeling (5 cols) -->
+<div class="xl:col-span-5 bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Creative Fatigue Decay</h3>
+<p class="font-body-md text-body-md text-tertiary">CTR trajectory over asset age in weeks</p>
+</div>
+<span class="font-mono-data-sm text-mono-data-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-semibold">
+            Cutoff: Wk 3.2
+          </span>
+</div>
+<!-- SVG Line Chart: CTR Decay Curve -->
+<div class="mt-space-md bg-surface p-space-md rounded">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Empirical CTR% vs In-Market Lifetime</span>
+<div class="flex items-center gap-2 font-mono-data-sm text-mono-data-sm">
+<span class="flex items-center gap-1 text-secondary"><span class="w-2 h-0.5 bg-secondary inline-block"></span> Model Curve</span>
+<span class="flex items-center gap-1 text-error"><span class="w-2 h-0.5 bg-error inline-block"></span> Kill Line (1.4%)</span>
+</div>
+</div>
+<div class="relative w-full h-44">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 400 160">
+<!-- Grid lines -->
+<line stroke="#EBEDFA" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="400" y1="20" y2="20"></line>
+<text class="font-mono-data-sm text-[9px]" fill="#6C748A" x="2" y="16">2.2%</text>
+<line stroke="#EBEDFA" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="400" y1="60" y2="60"></line>
+<text class="font-mono-data-sm text-[9px]" fill="#6C748A" x="2" y="56">1.8% (Target)</text>
+<!-- Kill threshold line at CTR 1.40% (y = 100) -->
+<line stroke="#BA1A1A" stroke-dasharray="4 2" stroke-width="1.2" x1="0" x2="400" y1="100" y2="100"></line>
+<text class="font-mono-data-sm text-[9px] font-bold" fill="#BA1A1A" x="320" y="95">1.40% Kill Floor</text>
+<line stroke="#EBEDFA" stroke-width="1" x1="0" x2="400" y1="140" y2="140"></line>
+<text class="font-mono-data-sm text-[9px]" fill="#6C748A" x="2" y="136">1.0%</text>
+<!-- Optimal Refresh Zone Highlight (Week 3 to Week 3.5 -> x=140 to x=180) -->
+<rect fill="#A8631E" fill-opacity="0.08" height="130" rx="2" width="38" x="145" y="10"></rect>
+<text class="font-mono-data-sm text-[8px] font-bold" fill="#A8631E" x="148" y="24">REPLACE</text>
+<!-- Trajectory Line: Week 1 (x=30, y=28) -> Week 2 (x=90, y=42) -> Week 3 (x=150, y=65) -> Week 4 (x=210, y=98) -> Week 8 (x=380, y=142) -->
+<path d="M 30 28 C 60 32, 75 38, 90 42 C 120 50, 135 58, 150 65 C 180 80, 195 90, 210 98 C 260 125, 330 138, 380 144" fill="none" stroke="#2D694D" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Data markers -->
+<!-- Wk 1 -->
+<circle cx="30" cy="28" fill="#FFFFFF" r="3.5" stroke="#2D694D" stroke-width="2"></circle>
+<text class="font-mono-data-sm text-[9px] font-bold" fill="#181C24" x="20" y="22">2.10%</text>
+<!-- Wk 2 -->
+<circle cx="90" cy="42" fill="#FFFFFF" r="3.5" stroke="#2D694D" stroke-width="2"></circle>
+<text class="font-mono-data-sm text-[9px] font-bold" fill="#181C24" x="80" y="36">1.95%</text>
+<!-- Wk 3 -->
+<circle cx="150" cy="65" fill="#FFFFFF" r="3.5" stroke="#A8631E" stroke-width="2"></circle>
+<text class="font-mono-data-sm text-[9px] font-bold" fill="#A8631E" x="142" y="58">1.75%</text>
+<!-- Wk 4 (Kill) -->
+<circle cx="210" cy="98" fill="#FFFFFF" r="3.5" stroke="#BA1A1A" stroke-width="2"></circle>
+<text class="font-mono-data-sm text-[9px] font-bold" fill="#BA1A1A" x="202" y="112">1.42%</text>
+<!-- Wk 8 (Extrapolated) -->
+<circle cx="380" cy="144" fill="#6C748A" r="3"></circle>
+<text class="font-mono-data-sm text-[9px]" fill="#6C748A" x="365" y="156">0.92%</text>
+</svg>
+</div>
+<!-- X-Axis Labels -->
+<div class="flex justify-between font-mono-data-sm text-mono-data-sm text-tertiary px-2 pt-2 border-t border-surface-container-high">
+<span>W1 (Launch)</span>
+<span>W2</span>
+<span class="text-primary font-bold">W3.2 (Cut)</span>
+<span class="text-error font-medium">W4 (Kill)</span>
+<span>W6</span>
+<span>W8</span>
+</div>
+</div>
+<!-- Weekly CTR Table Breakdown -->
+<div class="mt-space-md overflow-x-auto">
+<table class="w-full text-left font-mono-data-sm text-mono-data-sm">
+<thead>
+<tr class="text-tertiary uppercase text-[10px] tracking-wider border-b border-surface-container-high">
+<th class="pb-1">Lifecycle Stage</th>
+<th class="pb-1 text-right">Avg CTR</th>
+<th class="pb-1 text-right">Frequency</th>
+<th class="pb-1 text-right">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-on-surface">
+<tr>
+<td class="py-1.5 font-medium">Week 1 (Peak Exploration)</td>
+<td class="py-1.5 text-right font-bold text-secondary tabular-nums">2.10%</td>
+<td class="py-1.5 text-right tabular-nums">1.2x</td>
+<td class="py-1.5 text-right"><span class="px-1.5 py-0.5 rounded text-[9px] bg-secondary-fixed text-on-secondary-fixed font-bold">Hyper-scale</span></td>
+</tr>
+<tr>
+<td class="py-1.5 font-medium">Week 2 (Stable Baseline)</td>
+<td class="py-1.5 text-right font-bold tabular-nums">1.95%</td>
+<td class="py-1.5 text-right tabular-nums">1.8x</td>
+<td class="py-1.5 text-right"><span class="px-1.5 py-0.5 rounded text-[9px] bg-surface-container-high text-on-surface font-semibold">Active Run</span></td>
+</tr>
+<tr>
+<td class="py-1.5 font-medium">Week 3 (Threshold Softening)</td>
+<td class="py-1.5 text-right font-bold text-primary tabular-nums">1.75%</td>
+<td class="py-1.5 text-right tabular-nums">2.4x</td>
+<td class="py-1.5 text-right"><span class="px-1.5 py-0.5 rounded text-[9px] bg-primary-fixed text-on-primary-fixed font-bold">Replacement Queued</span></td>
+</tr>
+<tr>
+<td class="py-1.5 font-medium">Week 4 (Terminal Fatigue)</td>
+<td class="py-1.5 text-right font-bold text-error tabular-nums">1.42%</td>
+<td class="py-1.5 text-right tabular-nums">3.1x</td>
+<td class="py-1.5 text-right"><span class="px-1.5 py-0.5 rounded text-[9px] bg-error-container text-on-error-container font-bold">Auto-Halted</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Algorithmic Rule Callout -->
+<div class="mt-space-md p-space-sm bg-surface-container-low rounded flex items-center justify-between text-mono-data-sm text-mono-data-sm">
+<span class="text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">auto_mode</span>
+          Governance: Auto-sunset triggered at W3.2
+        </span>
+<span class="text-on-surface font-bold">Zero manual override</span>
+</div>
+</div>
+</div>
+<!-- Bottom Creative Performance Ledger & Live Asset Gallery -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm border-b border-surface-container-high gap-2">
+<div class="space-y-0.5">
+<h3 class="font-headline-md text-headline-md text-on-surface">Active Creative Flight Diagnostics</h3>
+<p class="font-body-md text-body-md text-tertiary">Real-time status across top in-flight visual narratives and hook iterations</p>
+</div>
+<div class="flex items-center gap-space-xs font-mono-data-sm text-mono-data-sm">
+<span class="text-tertiary">Filter:</span>
+<span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-medium cursor-pointer">All Channels (14)</span>
+<span class="px-2 py-1 rounded hover:bg-surface-container-high text-tertiary font-medium cursor-pointer transition-colors">Needs Refresh (3)</span>
+</div>
+</div>
+<!-- 3 High-Impact Visual Creative Cards with Rich Placeholders -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Creative Card 1 -->
+<div class="bg-surface p-space-md rounded shadow-sm flex flex-col justify-between space-y-space-sm group">
+<div class="relative w-full h-40 rounded overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close-up emotional documentary portrait of an elementary school child smiling confidently over a completed advanced math workbook at a warm wooden kitchen desk with natural daylight filtering in, warm amber and sage accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkXhbXltO_Fwjmsq-r1ExLAK6uBzqpSQ_JosozQ7P_8F3-TjfoFQC_bY4ALq64dQ2uXLLgHMS7STAxy3Szv9dd0FrfEbFPa0rtYswMTC6QVS1vPwjeywokD_cxSJ62sfcjexYaxpt-92YaxNW-cPA0TMTWxl8L4fyfpkzA5ybjckk2nZA0-VrVlUvlD2Jm5EQls2Ea2oXHHBkU8GI_TO4fa0gEJ-wca1HHAN0Uck1QkfpdQ0dzzZ7c"/>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded text-[10px] font-mono-data-sm font-bold bg-surface-container-lowest/90 backdrop-blur text-secondary">
+            Meta Feed • Video 15s
+          </span>
+<span class="absolute top-2 right-2 px-1.5 py-0.5 rounded text-[10px] font-mono-data-sm font-bold bg-secondary text-on-secondary">
+            Top Winner
+          </span>
+</div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Hook: "Grade 4 Tears to Straight As"</span>
+</div>
+<p class="font-body-md text-body-md text-tertiary line-clamp-2 mt-0.5">Focuses on parental relief after initial 30-day assessment; authentic testimonial pacing.</p>
+</div>
+<div class="pt-space-xs border-t border-surface-container-high grid grid-cols-3 gap-1 font-mono-data-sm text-mono-data-sm">
+<div>
+<span class="text-[10px] uppercase text-tertiary block">Spend</span>
+<span class="font-bold text-on-surface tabular-nums">$34.2k</span>
+</div>
+<div>
+<span class="text-[10px] uppercase text-tertiary block">CTR</span>
+<span class="font-bold text-secondary tabular-nums">2.24%</span>
+</div>
+<div>
+<span class="text-[10px] uppercase text-tertiary block">CPL</span>
+<span class="font-bold text-secondary tabular-nums">$21.80</span>
+</div>
+</div>
+</div>
+<!-- Creative Card 2 -->
+<div class="bg-surface p-space-md rounded shadow-sm flex flex-col justify-between space-y-space-sm group">
+<div class="relative w-full h-40 rounded overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dynamic split screen graphic displaying a clean interactive tablet screen showing playful 3D geometry blocks juxtaposed with a focused focused parent nodding with satisfaction in a modern minimalist living room setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFAlfIYuZbvLjTF5MA6_Wa69dQBi82BcFHTIFUfX4tgpNh34gCGDpEtNemRarhR74oBO0GhxSf9MgdYzj_X8aDQEDciwOyNnqoEFIIOxaFPuto0ACVKiAyYmIR-i__d527IOo6N9oxrgmVMUmzxSts3aYN0UEQv4yJYosF6WVOvmy9OsOX8VTie_dGq58wEUAFfH5I8c58f5K0Mv2LmA6TJ4E0N_0x3aoEI52b2w8oFTLOgYWTalUe"/>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded text-[10px] font-mono-data-sm font-bold bg-surface-container-lowest/90 backdrop-blur text-primary-container">
+            YouTube Shorts • 9:16
+          </span>
+<span class="absolute top-2 right-2 px-1.5 py-0.5 rounded text-[10px] font-mono-data-sm font-bold bg-primary-fixed text-on-primary-fixed">
+            Week 2.8
+          </span>
+</div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Hook: "Is Your Child Falling Behind in Fractions?"</span>
+</div>
+<p class="font-body-md text-body-md text-tertiary line-clamp-2 mt-0.5">Direct diagnostic challenge triggering anxiety relief via free 1:1 baseline diagnostic.</p>
+</div>
+<div class="pt-space-xs border-t border-surface-container-high grid grid-cols-3 gap-1 font-mono-data-sm text-mono-data-sm">
+<div>
+<span class="text-[10px] uppercase text-tertiary block">Spend</span>
+<span class="font-bold text-on-surface tabular-nums">$18.9k</span>
+</div>
+<div>
+<span class="text-[10px] uppercase text-tertiary block">CTR</span>
+<span class="font-bold text-on-surface tabular-nums">1.78%</span>
+</div>
+<div>
+<span class="text-[10px] uppercase text-tertiary block">CPL</span>
+<span class="font-bold text-on-surface tabular-nums">$24.90</span>
+</div>
+</div>
+</div>
+<!-- Creative Card 3 -->
+<div class="bg-surface p-space-md rounded shadow-sm flex flex-col justify-between space-y-space-sm group">
+<div class="relative w-full h-40 rounded overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High contrast editorial graphic showing an architectural breakdown chart of Stanford-backed learning methodology alongside a young female student proudly wearing an oversized graduation cap and holding a mathematical trophy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0VI9QvOhB529OLZgT7M1I4mwciJ5djilBwuI2jHlnSl0Z5zMGwIwHP43kPz7o0VA2DIXkRRIUNtNlxyqJ2O3ynkEEmbmErN9rJVbgFlsmmDRhRQ70z6vvwUHAyKfjDARDmbeCWGvCP51kjEF3aSao_8-INU38gjs273-osssRx53TUcym5XvAfC7AIwyGp37cAJNjma8Gcs6VZqg-j6F1v6hBjk1VB2zGPIa6MYkd-pr5uuFbpfS2"/>
+<span class="absolute top-2 left-2 px-1.5 py-0.5 rounded text-[10px] font-mono-data-sm font-bold bg-surface-container-lowest/90 backdrop-blur text-error">
+            Meta Carousel • Static
+          </span>
+<span class="absolute top-2 right-2 px-1.5 py-0.5 rounded text-[10px] font-mono-data-sm font-bold bg-error-container text-on-error-container">
+            Scheduled Halt
+          </span>
+</div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Hook: "Top 1% Math Curriculum Breakdown"</span>
+</div>
+<p class="font-body-md text-body-md text-tertiary line-clamp-2 mt-0.5">Heavy academic authority proof points; strong initial conversion now softening under high frequency.</p>
+</div>
+<div class="pt-space-xs border-t border-surface-container-high grid grid-cols-3 gap-1 font-mono-data-sm text-mono-data-sm">
+<div>
+<span class="text-[10px] uppercase text-tertiary block">Spend</span>
+<span class="font-bold text-on-surface tabular-nums">$22.4k</span>
+</div>
+<div>
+<span class="text-[10px] uppercase text-tertiary block">CTR</span>
+<span class="font-bold text-error tabular-nums">1.38%</span>
+</div>
+<div>
+<span class="text-[10px] uppercase text-tertiary block">CPL</span>
+<span class="font-bold text-error tabular-nums">$28.10</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

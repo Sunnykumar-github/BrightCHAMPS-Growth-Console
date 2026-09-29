@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.tabular-nums{font-variant-numeric:tabular-nums;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#002113", "surface-bright": "#f9f9ff", "surface-container-high": "#e5e8f4", "error": "#ba1a1a", "on-error-container": "#93000a", "tertiary-fixed-dim": "#bec6de", "on-background": "#181c24", "on-tertiary-fixed": "#131b2d", "secondary": "#2d694d", "surface-variant": "#dfe2ef", "background": "#f9f9ff", "on-secondary-container": "#326e51", "on-tertiary": "#ffffff", "tertiary-fixed": "#dae2fb", "primary-fixed-dim": "#ffb77b", "error-container": "#ffdad6", "primary-container": "#a8631e", "on-primary-fixed": "#2e1500", "inverse-surface": "#2c303a", "surface-container": "#ebedfa", "tertiary-container": "#6c748a", "on-tertiary-container": "#fdfbff", "on-secondary-fixed-variant": "#105137", "surface-dim": "#d7dae6", "primary-fixed": "#ffdcc2", "on-surface-variant": "#534438", "primary": "#8a4b02", "inverse-primary": "#ffb77b", "on-surface": "#181c24", "outline": "#867467", "surface": "#f9f9ff", "surface-container-low": "#f1f3ff", "outline-variant": "#d8c2b3", "surface-container-lowest": "#ffffff", "on-primary-container": "#fffaf9", "surface-container-highest": "#dfe2ef", "surface-tint": "#8e4e06", "secondary-fixed-dim": "#96d4b2", "on-primary": "#ffffff", "secondary-fixed": "#b1f0cd", "on-primary-fixed-variant": "#6d3a00", "tertiary": "#535b70", "secondary-container": "#aeedca", "on-error": "#ffffff", "on-secondary": "#ffffff", "inverse-on-surface": "eef0fd", "on-tertiary-fixed-variant": "#3f475a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "1rem", "space-md": "0.75rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "gutter-desktop": "1.25rem", "space-xs": "0.25rem", "space-lg": "1.25rem", "gutter": "1rem", "space-xl": "2rem" }, "fontFamily": { "mono-data-sm": [ "IBM Plex Sans" ], "label-md": [ "IBM Plex Sans" ], "stat-display": [ "\"Source Serif 4\"" ], "headline-lg-mobile": [ "\"Source Serif 4\"" ], "body-md": [ "IBM Plex Sans" ], "body-lg": [ "IBM Plex Sans" ], "label-sm": [ "IBM Plex Sans" ], "headline-lg": [ "\"Source Serif 4\"" ], "headline-sm": [ "\"Source Serif 4\"" ], "headline-md": [ "\"Source Serif 4\"" ], "mono-data": [ "IBM Plex Sans" ], "stat-display-mobile": [ "\"Source Serif 4\"" ] }, "fontSize": { "mono-data-sm": [ "11px", { "lineHeight": "14px", "fontWeight": "500" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "stat-display": [ "36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-md": [ "13px", { "lineHeight": "18px", "fontWeight": "400" } ], "body-lg": [ "15px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "headline-sm": [ "17px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "mono-data": [ "13px", { "lineHeight": "16px", "fontWeight": "500" } ], "stat-display-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="p-space-lg bg-surface-container-low"><div class="flex items-center justify-between gap-space-xs"><div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">BrightChamps</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Growth Console</span></div><span class="material-symbols-outlined text-tertiary cursor-pointer hover:text-on-surface transition-colors text-[20px]">dock_to_right</span></div><div class="mt-space-sm flex items-center justify-between bg-surface-container-lowest px-space-sm py-space-xs rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-mono-data-sm text-mono-data-sm text-on-surface-variant flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>USA · Math Vertical</span><span class="font-mono-data-sm text-mono-data-sm font-semibold text-primary-container tabular-nums">$50 → $25 CPL</span></div></div><div class="px-space-md py-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary px-space-sm block mt-space-sm mb-space-xs">Operational Vectors</span></div><nav class="flex flex-col px-space-sm gap-0.5" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="executive-summary" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">01</span><span class="material-symbols-outlined text-[18px]">dashboard</span><span class="font-body-md text-body-md truncate">Executive Summary</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="situation-and-guardrail" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">02</span><span class="material-symbols-outlined text-[18px]">verified_user</span><span class="font-body-md text-body-md truncate">Situation &amp; Guardrail</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary-container text-on-primary-container font-semibold rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]" data-path="the-model" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">03</span><span class="material-symbols-outlined text-[18px]">calculate</span><span class="font-body-md text-body-md truncate">The Model</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="marketing-engine" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">04</span><span class="material-symbols-outlined text-[18px]">campaign</span><span class="font-body-md text-body-md truncate">Marketing Engine</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="product-engine" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">05</span><span class="material-symbols-outlined text-[18px]">rocket_launch</span><span class="font-body-md text-body-md truncate">Product Engine</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="audience-expansion" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">06</span><span class="material-symbols-outlined text-[18px]">groups</span><span class="font-body-md text-body-md truncate">Audience Expansion</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="strategic-roadmap" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">07</span><span class="material-symbols-outlined text-[18px]">alt_route</span><span class="font-body-md text-body-md truncate">Strategic Roadmap</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="kpi-master-dashboard" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">08</span><span class="material-symbols-outlined text-[18px]">table_chart</span><span class="font-body-md text-body-md truncate">KPI Master Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="risks-and-scenarios" href="#"><span class="font-mono-data-sm text-mono-data-sm text-tertiary tabular-nums">09</span><span class="material-symbols-outlined text-[18px]">query_stats</span><span class="font-body-md text-body-md truncate">Risks &amp; Scenarios</span></a></nav></div><div class="p-space-md bg-surface-container-low flex flex-col gap-space-sm"><div class="bg-surface-container-lowest p-space-sm rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><div class="flex items-center justify-between text-tertiary mb-1"><span class="font-label-sm text-label-sm uppercase tracking-wider">Target Audience</span><span class="material-symbols-outlined text-[14px]">lock</span></div><p class="font-body-md text-body-md text-on-surface font-medium truncate">Founder's Office &amp; Execs</p><div class="mt-space-xs pt-space-xs flex items-center justify-between font-mono-data-sm text-mono-data-sm text-tertiary"><span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>Live v2.4</span><span class="tabular-nums">FY25 Plan</span></div></div><div class="flex items-center justify-between pt-space-xs"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="min-w-0"><p class="font-body-md text-body-md font-semibold text-on-surface truncate">R. Sharma</p><p class="font-label-sm text-label-sm text-tertiary truncate">VP Growth</p></div></div><button class="p-1 text-tertiary hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">unfold_more</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-2"><span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">BrightChamps</span><span class="text-tertiary text-xs">/</span><span class="font-body-md text-body-md font-semibold text-on-surface">Executive Overview</span></div><div class="hidden xl:flex items-center gap-1.5 bg-surface-container-high px-space-sm py-1 rounded"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-medium">Active Scenario: Base-Case Plan</span></div></div><div class="flex items-center gap-space-lg"><div class="hidden md:flex items-center gap-space-sm"><div class="flex items-center gap-1.5 bg-primary-fixed px-space-sm py-1 rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-label-sm text-label-sm text-on-primary-fixed uppercase tracking-wider">Target CPL</span><span class="font-mono-data text-mono-data text-primary font-bold tabular-nums">$25.00</span></div><div class="flex items-center gap-1.5 bg-secondary-fixed px-space-sm py-1 rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)]"><span class="font-label-sm text-label-sm text-on-secondary-fixed uppercase tracking-wider">IQI Floor</span><span class="font-mono-data text-mono-data text-secondary font-bold tabular-nums">≥84.0</span></div><div class="hidden lg:flex items-center gap-1.5 bg-surface-container-high px-space-sm py-1 rounded"><span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Horizon</span><span class="font-mono-data text-mono-data text-on-surface font-semibold tabular-nums">Q3 FY25</span></div></div><div class="flex items-center gap-space-sm"><button class="flex items-center gap-1.5 px-space-sm py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">tune</span><span class="hidden sm:inline">Base-Case</span><span class="material-symbols-outlined text-[16px]">arrow_drop_down</span></button><button class="flex items-center gap-1 px-space-sm py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" title="Export Plan" type="button"><span class="material-symbols-outlined text-[16px]">file_download</span><span class="hidden lg:inline">Export</span></button><button class="p-1.5 bg-surface-container-lowest text-on-surface rounded shadow-[0_1px_2px_rgba(28,32,41,0.04)] hover:bg-surface-container-low transition-colors" title="Share Scenario" type="button"><span class="material-symbols-outlined text-[16px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-margin-desktop py-space-xl flex flex-col gap-space-xl">
+<!-- Top Meta Context Bar -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-data-sm text-mono-data-sm text-primary uppercase tracking-widest font-semibold">Strategic Engine</span>
+<span class="text-tertiary text-xs">/</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary tracking-wider uppercase">Unit Economics Simulator</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">The Model: Master Strategic Calculator</h1>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low p-1.5 rounded shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-tertiary px-space-xs">Simulation Presets:</span>
+<button class="px-space-md py-1 rounded font-mono-data-sm text-mono-data-sm transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" id="preset-best" onclick="setPreset('best')" type="button">
+          Best-Case ($25.32)
+        </button>
+<button class="px-space-md py-1 rounded font-mono-data-sm text-mono-data-sm transition-all bg-primary-container text-on-primary-container font-semibold shadow-sm" id="preset-base" onclick="setPreset('base')" type="button">
+          Base-Case Plan ($25.00)
+        </button>
+<button class="px-space-md py-1 rounded font-mono-data-sm text-mono-data-sm transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" id="preset-worst" onclick="setPreset('worst')" type="button">
+          Stress-Case ($48.00)
+        </button>
+</div>
+</div>
+<!-- Master Formula Banner -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-64 h-64 bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-2 max-w-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">functions</span> Deterministic Acquisition Formulation
+          </span>
+<div class="font-stat-display text-stat-display text-on-surface tracking-tight">
+            CPL = <span class="text-primary italic">CPM</span> <span class="font-mono-data text-body-lg text-tertiary">÷</span> (1,000 × <span class="text-secondary italic">CTR</span> × <span class="text-on-surface italic">LP-CVR</span>)
+          </div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Direct levers governing unit acquisition cost. CPL compresses linearly with media auction efficiency (CPM) and hyperbolically with creative resonance (CTR) and on-site qualification throughput (CVR).
+          </p>
+</div>
+<!-- Formula Factor Breakdown Cards -->
+<div class="grid grid-cols-3 gap-space-sm sm:gap-space-md shrink-0">
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-1 min-w-[130px]">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Media CPM</span>
+<span class="font-mono-data text-headline-sm text-primary font-bold tabular-nums" id="formula-cpm-tag">$32.00</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> -20.0% vs Base
+            </span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-1 min-w-[130px]">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Creative CTR</span>
+<span class="font-mono-data text-headline-sm text-secondary font-bold tabular-nums" id="formula-ctr-tag">1.80%</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +12.5% vs Base
+            </span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-1 min-w-[130px]">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Funnel CVR</span>
+<span class="font-mono-data text-headline-sm text-on-surface font-bold tabular-nums" id="formula-cvr-tag">4.00%</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +60.0% vs Base
+            </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Dual Column Workspace -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl">
+<!-- LEFT COLUMN: Master Slider Input Console (7 cols) -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Input Parameters &amp; Dynamic Variables</h2>
+</div>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary bg-surface-container-high px-space-sm py-0.5 rounded">Real-time Bi-directional Reactive Engine</span>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col gap-space-xl">
+<!-- Slider 1: CPM -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<label class="font-body-md text-body-md font-semibold text-on-surface flex items-center gap-2" for="cpm-input">
+                  Cost Per Mille (CPM)
+                  <span class="material-symbols-outlined text-tertiary text-[14px]" title="Blended cost per 1,000 ad impressions across Meta, Google Search &amp; YouTube">info</span>
+</label>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">USA Blended Auction Cost · Baseline $40.00</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-tertiary">TARGET</span>
+<span class="font-mono-data text-headline-sm text-primary font-bold tabular-nums bg-surface-container-low px-space-sm py-0.5 rounded" id="cpm-val">$32.00</span>
+</div>
+</div>
+<div class="relative py-2">
+<input class="w-full h-2 bg-surface-container-high rounded cursor-pointer accent-primary appearance-none" id="cpm-input" max="60" min="20" oninput="handleModelChange()" step="0.5" type="range" value="32"/>
+<div class="flex justify-between font-mono-data-sm text-mono-data-sm text-tertiary pt-1">
+<span>$20.00 (Efficient Tier)</span>
+<span class="text-on-surface-variant font-medium">$40.00 (Hist. Avg)</span>
+<span>$60.00 (Peak Congestion)</span>
+</div>
+</div>
+</div>
+<!-- Slider 2: CTR -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<label class="font-body-md text-body-md font-semibold text-on-surface flex items-center gap-2" for="ctr-input">
+                  Click-Through Rate (CTR)
+                  <span class="material-symbols-outlined text-tertiary text-[14px]" title="Outbound click rate from native ad impression to landing environment">info</span>
+</label>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Creative Resonance · Baseline 1.60% · Median US Benchmark 2.19%</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-tertiary">TARGET</span>
+<span class="font-mono-data text-headline-sm text-secondary font-bold tabular-nums bg-surface-container-low px-space-sm py-0.5 rounded" id="ctr-val">1.80%</span>
+</div>
+</div>
+<div class="relative py-2">
+<input class="w-full h-2 bg-surface-container-high rounded cursor-pointer accent-secondary appearance-none" id="ctr-input" max="3.0" min="0.8" oninput="handleModelChange()" step="0.05" type="range" value="1.8"/>
+<div class="flex justify-between font-mono-data-sm text-mono-data-sm text-tertiary pt-1">
+<span>0.80% (Fatigued)</span>
+<span class="text-on-surface-variant font-medium">1.60% (Baseline)</span>
+<span>3.00% (High Hook Rate)</span>
+</div>
+</div>
+</div>
+<!-- Slider 3: CVR -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<label class="font-body-md text-body-md font-semibold text-on-surface flex items-center gap-2" for="cvr-input">
+                  Landing-Page Conversion (CVR)
+                  <span class="material-symbols-outlined text-tertiary text-[14px]" title="Unique visitors completing diagnostic math assessment &amp; verified booking">info</span>
+</label>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Assessment Funnel Qualification · Baseline 2.50% · US Benchmark 5.70%</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-tertiary">TARGET</span>
+<span class="font-mono-data text-headline-sm text-on-surface font-bold tabular-nums bg-surface-container-low px-space-sm py-0.5 rounded" id="cvr-val">4.00%</span>
+</div>
+</div>
+<div class="relative py-2">
+<input class="w-full h-2 bg-surface-container-high rounded cursor-pointer accent-primary appearance-none" id="cvr-input" max="8.0" min="1.0" oninput="handleModelChange()" step="0.1" type="range" value="4.0"/>
+<div class="flex justify-between font-mono-data-sm text-mono-data-sm text-tertiary pt-1">
+<span>1.00% (Friction Peak)</span>
+<span class="text-on-surface-variant font-medium">2.50% (Baseline)</span>
+<span>8.00% (Diagnostic Fast-Track)</span>
+</div>
+</div>
+</div>
+<!-- Sub-Variables Bento Row: Audience Mix, Channel Budget, Decay -->
+<div class="pt-space-md border-t border-surface-container-high grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Audience Segment Distribution -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Audience Mix Weighting</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary font-semibold">100% Normalized</span>
+</div>
+<div class="flex flex-col gap-2">
+<div>
+<div class="flex justify-between font-mono-data-sm text-mono-data-sm text-on-surface mb-1">
+<span>Core US Suburban (High Affluence)</span>
+<span class="font-bold tabular-nums" id="mix-core-val">60%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded overflow-hidden">
+<div class="bg-primary h-full rounded" style="width: 60%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-mono-data-sm text-mono-data-sm text-on-surface mb-1">
+<span>NRI Segment (High Math Propensity)</span>
+<span class="font-bold tabular-nums" id="mix-nri-val">25%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded overflow-hidden">
+<div class="bg-secondary h-full rounded" style="width: 25%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-mono-data-sm text-mono-data-sm text-on-surface mb-1">
+<span>Hispanic Tier-1 Metro</span>
+<span class="font-bold tabular-nums" id="mix-hisp-val">15%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded overflow-hidden">
+<div class="bg-tertiary h-full rounded" style="width: 15%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Budget Channels Allocation -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Channel Budget Allocation</span>
+<span class="font-mono-data-sm text-mono-data-sm text-on-surface font-bold tabular-nums">$240,000 / mo</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-md font-mono-data-sm">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> Meta Ads (45%)
+                  </span>
+<span class="font-semibold tabular-nums text-on-surface">$108,000</span>
+</div>
+<div class="flex items-center justify-between text-body-md font-mono-data-sm">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Google Search Intent (35%)
+                  </span>
+<span class="font-semibold tabular-nums text-on-surface">$84,000</span>
+</div>
+<div class="flex items-center justify-between text-body-md font-mono-data-sm">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> YouTube Video Ads (20%)
+                  </span>
+<span class="font-semibold tabular-nums text-on-surface">$48,000</span>
+</div>
+<div class="w-full flex h-2 rounded overflow-hidden mt-1">
+<div class="bg-primary-container h-full" style="width: 45%"></div>
+<div class="bg-secondary h-full" style="width: 35%"></div>
+<div class="bg-tertiary h-full" style="width: 20%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Operational Controls: Seasonality & Creative Fatigue -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-md rounded bg-surface-container-high/40 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Seasonality Multiplier</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Back-to-School Tailwind</span>
+</div>
+<span class="font-mono-data text-headline-sm text-secondary font-bold tabular-nums">1.05×</span>
+</div>
+<div class="p-space-md rounded bg-surface-container-high/40 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Fatigue Decay Index</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Weekly Refresh Target</span>
+</div>
+<span class="font-mono-data text-headline-sm text-primary font-bold tabular-nums">-0.08%<span class="text-xs text-tertiary font-normal"> /wk</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Output Economics & Validation Cards (5 cols) -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">finance_mode</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Live Unit Economics</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Guardrail Enforced
+          </span>
+</div>
+<!-- Master CPL Hero Display Card -->
+<div class="bg-primary-container text-on-primary-container p-space-lg rounded shadow-md relative overflow-hidden flex flex-col justify-between min-h-[170px]">
+<div class="flex items-start justify-between relative z-10">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-primary-container/80 font-bold">Calculated Primary CPL</span>
+<span class="font-stat-display text-[44px] leading-tight font-bold tracking-tight text-surface-bright tabular-nums mt-1" id="live-cpl-display">$25.00</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-mono-data-sm text-mono-data-sm bg-on-primary-container text-primary-container px-space-sm py-1 rounded font-bold uppercase tracking-wider">
+                -50.0% Reduction
+              </span>
+<span class="font-mono-data-sm text-mono-data-sm text-on-primary-container/70 mt-1">vs $50.00 historic run-rate</span>
+</div>
+</div>
+<div class="relative z-10 pt-space-md border-t border-on-primary-container/20 flex items-center justify-between font-mono-data-sm text-mono-data-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Budget Target Compliance: 100%
+            </span>
+<span class="text-on-primary-container/90 tabular-nums">Runway: 18.4 Mos</span>
+</div>
+</div>
+<!-- Guardrail Quality Index Card -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Inbound Quality Index (IQI)</span>
+<span class="font-mono-data text-headline-sm font-bold text-on-surface tabular-nums">85.8 <span class="text-body-md text-tertiary font-normal">/ 100</span></span>
+</div>
+</div>
+<div class="bg-secondary-fixed px-space-sm py-1.5 rounded flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed uppercase font-bold tracking-wider">PASS (≥80.0 Floor)</span>
+</div>
+</div>
+<!-- Full Downstream Economics Stack -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-semibold pb-1 border-b border-surface-container-high">
+            Downstream Full-Funnel Projection (@ $240,000 / mo spend)
+          </span>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Monthly Qualified Leads</span>
+<span class="font-mono-data text-headline-md font-bold text-on-surface tabular-nums mt-1" id="live-leads">9,600</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary font-medium">100% Verified Math Leads</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Booked Demos (40%)</span>
+<span class="font-mono-data text-headline-md font-bold text-on-surface tabular-nums mt-1" id="live-demos">3,840</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Diagnostic Scheduling</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Student Enrolments (25%)</span>
+<span class="font-mono-data text-headline-md font-bold text-secondary font-bold tabular-nums mt-1" id="live-enrols">960</span>
+<span class="font-mono-data-sm text-mono-data-sm text-tertiary">Paying Customers</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">CAC Payback Period</span>
+<span class="font-mono-data text-headline-md font-bold text-primary font-bold tabular-nums mt-1" id="live-payback">1.8 Mos</span>
+<span class="font-mono-data-sm text-mono-data-sm text-secondary">Down from 3.6 mos</span>
+</div>
+</div>
+<!-- Total Monthly ARR / Bookings Strip -->
+<div class="bg-surface-container-high/60 p-space-md rounded flex items-center justify-between mt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-tertiary">Projected Monthly New Bookings</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">LTV Assumption: $1,500 / Student</span>
+</div>
+<span class="font-stat-display text-stat-display text-on-surface font-bold tabular-nums" id="live-bookings">$1,440,000</span>
+</div>
+<!-- Ratio Callout -->
+<div class="flex items-center justify-between px-space-xs font-mono-data-sm text-mono-data-sm text-tertiary">
+<span>Spend-to-Revenue Multiple: <strong class="text-on-surface tabular-nums">6.0×</strong></span>
+<span>Customer Acquisition Cost (CAC): <strong class="text-primary tabular-nums">$250.00</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Sensitivity Matrix Grid -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container-high">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Dual Sensitivity Analysis: CTR vs Landing-Page CVR</h3>
+<p class="font-body-md text-body-md text-tertiary">CPL outputs evaluated at fixed baseline CPM of $32.00. Highlighted cell indicates current active slider scenario.</p>
+</div>
+<div class="flex items-center gap-space-md font-mono-data-sm text-mono-data-sm">
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-secondary-fixed"></span> Target ≤ $25.00</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-primary-fixed"></span> Marginal $25–$35</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-error-container"></span> Unviable &gt; $35.00</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-mono-data text-mono-data tabular-nums border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-tertiary font-label-sm text-label-sm uppercase">
+<th class="p-space-sm font-semibold">CTR \ CVR</th>
+<th class="p-space-sm text-center">2.50% CVR</th>
+<th class="p-space-sm text-center">3.00% CVR</th>
+<th class="p-space-sm text-center">3.50% CVR</th>
+<th class="p-space-sm text-center bg-surface-container-high text-on-surface font-bold">4.00% CVR (Current)</th>
+<th class="p-space-sm text-center">4.50% CVR</th>
+<th class="p-space-sm text-center">5.00% CVR</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-on-surface">
+<tr>
+<td class="p-space-sm font-semibold text-tertiary">1.40% CTR</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$91.43</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$76.19</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$65.31</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$57.14</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$50.79</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$45.71</td>
+</tr>
+<tr>
+<td class="p-space-sm font-semibold text-tertiary">1.60% CTR</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$80.00</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$66.67</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$57.14</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$50.00</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$44.44</td>
+<td class="p-space-sm text-center bg-primary-fixed text-on-primary-fixed font-semibold">$40.00</td>
+</tr>
+<tr class="bg-surface-container-low/50">
+<td class="p-space-sm font-bold text-on-surface bg-surface-container-high">1.80% CTR (Active)</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$71.11</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$59.26</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$50.79</td>
+<!-- CURRENT ACTIVE POINT: $25.00 -->
+<td class="p-space-sm text-center bg-primary-container text-on-primary-container font-bold text-headline-sm shadow-sm">
+                $25.00 ★
+              </td>
+<td class="p-space-sm text-center bg-secondary-fixed text-on-secondary-fixed font-semibold">$22.22</td>
+<td class="p-space-sm text-center bg-secondary-fixed text-on-secondary-fixed font-bold">$20.00</td>
+</tr>
+<tr>
+<td class="p-space-sm font-semibold text-tertiary">2.00% CTR</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$64.00</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$53.33</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$45.71</td>
+<td class="p-space-sm text-center bg-secondary-fixed text-on-secondary-fixed font-semibold">$22.50</td>
+<td class="p-space-sm text-center bg-secondary-fixed text-on-secondary-fixed font-semibold">$20.00</td>
+<td class="p-space-sm text-center bg-secondary-fixed text-on-secondary-fixed font-bold">$18.00</td>
+</tr>
+<tr>
+<td class="p-space-sm font-semibold text-tertiary">2.20% CTR</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$58.18</td>
+<td class="p-space-sm text-center bg-error-container text-on-error-container font-semibold">$48.48</td>
+<td class="p-space-sm text-center bg-primary-fixed text-on-primary-fixed font-semibold">$41.56</td>
+<td class="p-space-sm text-center bg-secondary-fixed text-on-secondary-fixed font-semibold">$20.45</td>
+<td class="p-space-sm text-center bg-secondary-fixed text-on-secondary-fixed font-bold">$18.18</td>
+<td class="p-space-sm text-center bg-secondary-fixed text-on-secondary-fixed font-bold">$16.36</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between text-body-md text-tertiary pt-space-xs font-mono-data-sm">
+<span>Sensitivity Assumption: Uniform traffic distribution across Meta and Search inventory.</span>
+<button class="text-primary hover:underline flex items-center gap-1 font-semibold" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[16px]">print</span> Print Strategy Ledger
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function handleModelChange() {
+    const cpm = parseFloat(document.getElementById('cpm-input').value);
+    const ctr = parseFloat(document.getElementById('ctr-input').value);
+    const cvr = parseFloat(document.getElementById('cvr-input').value);
+
+    // Update readouts
+    document.getElementById('cpm-val').innerText = '$' + cpm.toFixed(2);
+    document.getElementById('ctr-val').innerText = ctr.toFixed(2) + '%';
+    document.getElementById('cvr-val').innerText = cvr.toFixed(2) + '%';
+
+    document.getElementById('formula-cpm-tag').innerText = '$' + cpm.toFixed(2);
+    document.getElementById('formula-ctr-tag').innerText = ctr.toFixed(2) + '%';
+    document.getElementById('formula-cvr-tag').innerText = cvr.toFixed(2) + '%';
+
+    // Formula calculation: CPL = CPM / (1000 * (CTR/100) * (CVR/100))
+    // Simplifies to: CPL = (CPM * 10) / (CTR * CVR)
+    const cpl = (cpm * 10) / (ctr * cvr);
+    document.getElementById('live-cpl-display').innerText = '$' + cpl.toFixed(2);
+
+    // Monthly Spend is fixed at $240,000 for this master model view
+    const totalSpend = 240000;
+    const leads = Math.round(totalSpend / cpl);
+    const demos = Math.round(leads * 0.40);
+    const enrols = Math.round(demos * 0.25);
+    const bookings = enrols * 1500;
+    const cac = enrols > 0 ? (totalSpend / enrols) : 0;
+    const payback = cac > 0 ? (cac / (1500 / 12)).toFixed(1) : 0;
+
+    document.getElementById('live-leads').innerText = leads.toLocaleString('en-US');
+    document.getElementById('live-demos').innerText = demos.toLocaleString('en-US');
+    document.getElementById('live-enrols').innerText = enrols.toLocaleString('en-US');
+    document.getElementById('live-bookings').innerText = '$' + bookings.toLocaleString('en-US');
+    document.getElementById('live-payback').innerText = payback + ' Mos';
+  }
+
+  function setPreset(type) {
+    const bestBtn = document.getElementById('preset-best');
+    const baseBtn = document.getElementById('preset-base');
+    const worstBtn = document.getElementById('preset-worst');
+
+    const activeClasses = ['bg-primary-container', 'text-on-primary-container', 'font-semibold', 'shadow-sm'];
+    const idleClasses = ['text-on-surface-variant', 'hover:text-on-surface', 'hover:bg-surface-container-high'];
+
+    [bestBtn, baseBtn, worstBtn].forEach(btn => {
+      btn.classList.remove(...activeClasses);
+      btn.classList.add(...idleClasses);
+    });
+
+    if (type === 'best') {
+      bestBtn.classList.add(...activeClasses);
+      bestBtn.classList.remove(...idleClasses);
+      document.getElementById('cpm-input').value = 28.0;
+      document.getElementById('ctr-input').value = 2.1;
+      document.getElementById('cvr-input').value = 5.2;
+    } else if (type === 'base') {
+      baseBtn.classList.add(...activeClasses);
+      baseBtn.classList.remove(...idleClasses);
+      document.getElementById('cpm-input').value = 32.0;
+      document.getElementById('ctr-input').value = 1.8;
+      document.getElementById('cvr-input').value = 4.0;
+    } else if (type === 'worst') {
+      worstBtn.classList.add(...activeClasses);
+      worstBtn.classList.remove(...idleClasses);
+      document.getElementById('cpm-input').value = 36.0;
+      document.getElementById('ctr-input').value = 1.5;
+      document.getElementById('cvr-input').value = 3.0;
+    }
+
+    handleModelChange();
+  }
+</script></main></div></body></html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'IBM Plex Sans', sans-serif;
+  --font-serif: 'Source Serif 4', serif;
+  --color-tertiary-container: #6c748a;
+  --color-tertiary: #535b70;
+  --color-on-secondary: #ffffff;
+  --color-surface-container-highest: #dfe2ef;
+  --color-surface-container: #ebedfa;
+  --color-on-secondary-fixed: #002113;
+  --color-inverse-primary: #ffb77b;
+  --color-inverse-surface: #2c303a;
+  --color-on-error-container: #93000a;
+  --color-inverse-on-surface: #eef0fd;
+  --color-on-tertiary-fixed: #131b2d;
+  --color-surface: #f9f9ff;
+  --color-background: #f9f9ff;
+  --color-on-primary-fixed: #2e1500;
+  --color-outline-variant: #d8c2b3;
+  --color-on-secondary-fixed-variant: #105137;
+  --color-primary-fixed: #ffdcc2;
+  --color-surface-container-low: #f1f3ff;
+  --color-on-secondary-container: #326e51;
+  --color-on-surface: #181c24;
+  --color-surface-variant: #dfe2ef;
+  --color-tertiary-fixed-dim: #bec6de;
+  --color-on-primary-container: #fffaf9;
+  --color-surface-container-high: #e5e8f4;
+  --color-on-surface-variant: #534438;
+  --color-secondary-container: #aeedca;
+  --color-surface-tint: #8e4e06;
+  --color-on-tertiary-container: #fdfbff;
+  --color-on-error: #ffffff;
+  --color-on-tertiary-fixed-variant: #3f475a;
+  --color-secondary: #2d694d;
+  --color-tertiary-fixed: #dae2fb;
+  --color-primary-fixed-dim: #ffb77b;
+  --color-on-primary: #ffffff;
+  --color-on-tertiary: #ffffff;
+  --color-on-background: #181c24;
+  --color-surface-bright: #f9f9ff;
+  --color-on-primary-fixed-variant: #6d3a00;
+  --color-primary-container: #a8631e;
+  --color-surface-dim: #d7dae6;
+  --color-error-container: #ffdad6;
+  --color-secondary-fixed: #b1f0cd;
+  --color-surface-container-lowest: #ffffff;
+  --color-error: #ba1a1a;
+  --color-secondary-fixed-dim: #96d4b2;
+  --color-outline: #867467;
+  --color-primary: #8a4b02;
+  --spacing-space-xl: 2rem;
+  --spacing-space-md: 0.75rem;
+  --spacing-gutter-desktop: 1.25rem;
+  --spacing-margin: 1rem;
+  --spacing-gutter: 1rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-lg: 1.25rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-margin-desktop: 2rem;
+  --text-label-md: 12px;
+  --text-label-md-line-height: 16px;
+  --text-label-md-font-weight: 500;
+  --text-headline-md: 22px;
+  --text-headline-md-line-height: 28px;
+  --text-headline-md-font-weight: 600;
+  --text-mono-data: 13px;
+  --text-mono-data-line-height: 16px;
+  --text-mono-data-font-weight: 500;
+  --text-headline-lg-mobile: 26px;
+  --text-headline-lg-mobile-line-height: 34px;
+  --text-headline-lg-mobile-font-weight: 600;
+  --text-headline-sm: 17px;
+  --text-headline-sm-line-height: 24px;
+  --text-headline-sm-font-weight: 600;
+  --text-headline-lg: 32px;
+  --text-headline-lg-line-height: 40px;
+  --text-headline-lg-font-weight: 600;
+  --text-mono-data-sm: 11px;
+  --text-mono-data-sm-line-height: 14px;
+  --text-mono-data-sm-font-weight: 500;
+  --text-stat-display: 36px;
+  --text-stat-display-line-height: 40px;
+  --text-stat-display-font-weight: 600;
+  --text-label-sm: 11px;
+  --text-label-sm-line-height: 14px;
+  --text-label-sm-font-weight: 600;
+  --text-stat-display-mobile: 28px;
+  --text-stat-display-mobile-line-height: 34px;
+  --text-stat-display-mobile-font-weight: 600;
+  --text-body-md: 13px;
+  --text-body-md-line-height: 18px;
+  --text-body-md-font-weight: 400;
+  --text-body-lg: 15px;
+  --text-body-lg-line-height: 22px;
+  --text-body-lg-font-weight: 400;
+  --radius-sm: 0.125rem;
+  --radius: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+}
+body {
+  overscroll-behavior: none;
+}
+main > :first-child {
+  margin-top: 0 !important;
+}
+main > :last-child {
+  margin-bottom: 0 !important;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

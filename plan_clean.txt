@@ -1,0 +1,2496 @@
+BRIGHTCHAMPS  |  MARKETING AND GROWTH
+From $50 to $25
+A growth plan for USA Math lead generation
+Halving cost per lead through a marketing engine, a product engine and audience expansion, while protecting lead quality with a hard guardrail.
+AI Forward Deployed Associate | Founder’s OfficePrepared by : Sunny Kumar
+Growth Plan  |  September 29, 2026
+Note : Baseline figures are illustrative and are replaced with account actuals in Week 0.
+Contents
+Every section below uses Word heading styles, so you can jump between them with the Navigation Pane (View, then Navigation Pane). All charts are native images and all tables are editable.
+#
+Section
+What it answers
+1
+Executive summary
+The plan, the number, the guardrail and the decisions requested
+2
+Objective, scope and definitions
+What exactly is being promised, and how each metric is defined
+3
+The unit-economics model
+Why CPL is three levers, how $50 becomes $25, and how sensitive it is
+4
+Funnel diagnostic and how to spend the gain
+Where the money leaks today and three ways to cash in the improvement
+5
+Marketing engine playbook
+Creative, targeting, channels, bidding, measurement and seasonality
+6
+Product engine playbook
+Landing page, form, booking, reminders and the experimentation program
+7
+Audience expansion
+NRI, South Asian, East Asian, Hispanic and niche segments, and how to test them
+8
+Lead quality and the guardrail
+Quality index, lead scoring, CAC-neutral threshold and fraud controls
+9
+Scenario analysis
+Ten scenarios, best, base and worst case, and what to do in each
+10
+Roadmap and targets
+Week 0, 30/60/90 days, months 4 to 12 and year two, with targets
+11
+KPI framework
+Every metric, its formula, owner, cadence, target and alert threshold
+12
+Risks, limitations and mitigations
+Fourteen risks, early-warning signals, and limits of this document
+13
+US compliance and platform policy
+COPPA, TCPA, FTC endorsement rules and ad-platform constraints
+14
+Team, cadence and governance
+Who owns what, weekly rhythm and decision rules
+15
+Budget and resources
+Illustrative budget envelope and the value it must return
+A to E
+Appendices
+Assumptions register, glossary, sources, hook library, launch checklist
+1. Executive summary
+The situation
+BrightChamps is doubling down on one market and one subject: the USA and Math. Two things must improve every month: the quantity of leads and the quality of leads. Today the blended cost per lead (CPL) is $50. The goal is $25, which means the same media budget must buy roughly twice as many leads, or the same number of leads must cost half as much.
+The thesis
+CPL is not one number to push on. It is the output of three levers, each owned by a different team:
+CPL = CPM ÷ (1,000 × CTR × Landing-page CVR)
+CPM (cost to be seen) and CTR (share of viewers who click) are the marketing engine.
+Landing-page CVR (share of clicks that become a lead with a booked trial) is the product engine.
+A third lever, audience expansion, changes the blend of who we buy attention from, and is the only lever expected to lift quality as well as lower cost.
+The numbers, in one table
+Lever
+Today
+Plan
+Effect on CPL
+Owner
+Marketing engine: CPM
+$20
+$18
+$50.00 to $45.00
+Marketing
+Marketing engine: CTR
+1.6%
+1.8%
+$45.00 to $40.00
+Marketing and creative
+Product engine: landing-page CVR
+2.5%
+4.0%
+$40.00 to $25.00
+Product, design, data
+Audience expansion (20% of spend)
+0%
+20%
+$25.00 to $22.25
+Marketing
+Every plan value sits below the published 2025 benchmark median for its lever (Meta CTR median about 2.19%, education landing-page conversion median about 5.7%). The plan does not need heroic execution on any one lever. It needs three ordinary improvements to land together.
+The guardrail
+Halving CPL is easy if quality is allowed to fall: loosen targeting, buy junk traffic, and $25 arrives while the business quietly breaks. Every recommendation here therefore travels with a lead-quality index that must stay at or above 100 (baseline). A relative drop of more than 15% in lead-to-paid conversion pauses the responsible lever. The mathematical limit is generous, because halving CPL leaves room for quality to fall by up to 50% before cost per paid student worsens, but the plan uses a far tighter tripwire on purpose (Section 8).
+What success looks like
+Month 1: CPL about $43 from quick wins (form cut, creative refresh). Month 3: about $30. Month 5: $25. Month 12: about $20 with audience expansion working (commit $25, stretch $20).
+At constant $100K monthly media budget: leads rise from about 2,000 to about 4,000 per month. At constant lead volume: $50K per month of media budget is released.
+Cost per paid student (media only, illustrative funnel) falls from about $712 to about $356 if lead quality holds.
+Decisions requested
+Approve a Week 0 measurement audit so illustrative baselines are replaced with account actuals.
+Approve landing-page and booking-flow capacity (design, front-end, analytics) for a rolling experiment program.
+Ring-fence an 8% test reserve of media budget for new formats and audience segments.
+Adopt the guardrail and kill rules in Sections 8 and 14 as standing policy.
+Name a single owner per engine, and a weekly review with authority to reallocate budget.
+Honest scope note
+No account data was available for this plan. Baselines are calibrated to reproduce the stated $50 CPL using published 2025 platform benchmarks. Treat every figure as a hypothesis to be confirmed or replaced in the first 14 days. The structure of the plan, the guardrails and the decision rules do not depend on the exact baseline.
+2. Objective, scope and definitions
+2.1 Objective statement
+Objective
+Reduce blended paid CPL for the USA Math vertical from $50 to $25 or lower within 5 months, sustain it through month 12, hold the lead-quality index at or above 100, and grow monthly qualified lead volume by at least 1.5x at constant budget.
+2.2 Two pillars, two engines
+Marketing engine
+Product engine
+Quantity of leads
+More qualified reach per dollar: lower CPM, higher CTR, better channel mix, more creative variety
+More of every click becomes a lead: higher landing-page and booking conversion, less friction
+Quality of leads
+Sharper targeting, lookalikes from paying customers, conversion signals fed back to platforms
+Light qualification questions, better expectation-setting, reminders that lift show rate
+2.3 In scope and out of scope
+In scope
+Out of scope (but interdependent)
+Paid media: Meta, Google, YouTube, short-form video
+Landing page, form, slot booking, confirmations and reminders
+Audience expansion and localization
+Measurement, dashboards, experimentation
+Lead scoring and routing rules
+Pricing and packaging (affects paid conversion, not CPL)
+Curriculum and teacher supply (affects trial experience)
+Sales scripts after the trial (affects paid conversion)
+Brand campaigns and PR
+Non-USA geographies and non-Math verticals
+Out-of-scope items still matter. If teacher supply cannot absorb twice the trial demand, cheaper leads will simply wait longer for a slot and quality will fall. Section 12 lists these capacity risks explicitly.
+2.4 Metric definitions
+Metric
+Formula
+Why it matters
+CPM
+Media cost ÷ impressions × 1,000
+Price of attention. Driven by auction competition and ad relevance.
+CTR
+Link clicks ÷ impressions
+Signal of creative and audience fit. Below median usually means a creative problem.
+CPC
+Media cost ÷ clicks = CPM ÷ (1,000 × CTR)
+Price of a visit. Baseline $1.25, plan $1.00.
+Landing-page CVR
+Leads (booked trials) ÷ landing-page sessions
+Share of paid visits that become leads. The biggest single lever in this plan.
+CPL (headline)
+Media cost ÷ leads = CPM ÷ (1,000 × CTR × CVR)
+The number the founder asked us to halve.
+Cost per booked trial
+CPL ÷ lead-to-booked rate
+Removes leads that never book a slot.
+Cost per attended trial
+CPL ÷ (booked rate × show rate)
+The first quality-adjusted cost.
+CAC (media only)
+CPL ÷ (booked × show × paid rates)
+Cost to acquire one paying student, before sales cost.
+Lead-quality index
+Weighted composite of booked, show and paid rates vs. baseline = 100
+The guardrail. Tracked next to CPL every week.
+2.5 Headline metric versus guardrail metric
+Headline metric
+Guardrail metric
+Name
+Blended CPL (raw)
+Lead-quality index, plus cost per attended trial
+Direction
+Down, to $25 or lower
+Flat or up (at or above 100)
+Cadence
+Daily by channel, weekly blended
+Weekly, with a 4-week lag for paid conversion
+Rule
+Never reported without the guardrail beside it
+A relative decline above 15% pauses the responsible lever
+3. The unit-economics model
+3.1 From impressions to leads
+For any spend S, impressions = S ÷ CPM × 1,000, clicks = impressions × CTR, and leads = clicks × CVR. Dividing spend by leads gives CPL = CPM ÷ (1,000 × CTR × CVR). CPL falls when CPM falls, and it falls just as much when CTR or CVR rises by the same proportion. That symmetry is why the plan pulls both engines together rather than betting on one.
+3.2 Baseline calibration
+The stated baseline is a $50 blended CPL. The three inputs below reproduce it exactly, and each is defensible against published 2025 benchmarks. They are illustrative until Week 0 replaces them with account data.
+Input
+Baseline
+Benchmark reference (approximate)
+Reading
+CPM
+$20
+Meta median about $13 to $14 overall, up to about $20.70 in competitive verticals
+Parenting and education compete for the same parent attention, so the top of the range is plausible.
+CTR
+1.6%
+Meta 2025 median about 2.19%
+Below median usually signals creative fatigue or loose targeting.
+Landing-page CVR
+2.5%
+Education median about 5.7%; lead-gen average about 11.9%; top pages above 10%
+A parent-plus-child-plus-slot form is heavy, so a low baseline is plausible and leaves room.
+Resulting CPL
+$50.00
+$20 ÷ (1,000 × 0.016 × 0.025)
+Matches the brief exactly.
+3.3 The bridge from $50 to $25
+Figure 1. Sequential contribution of each lever to the CPL bridge (order-dependent; see note).
+Order matters because the levers multiply. Taking CVR first would attribute a larger dollar amount to the product engine and a smaller one to the marketing engine. The end point is identical. The product engine contributes $15 of the $25 reduction because CVR moves 60% while CPM moves 10% and CTR 12.5%.
+Step
+CPM
+CTR
+CVR
+CPL
+Change
+Baseline
+$20.00
+1.6%
+2.5%
+$50.00
+-
+CPM to $18
+$18.00
+1.6%
+2.5%
+$45.00
+-$5.00
+CTR to 1.8%
+$18.00
+1.8%
+2.5%
+$40.00
+-$5.00
+CVR to 4.0%
+$18.00
+1.8%
+4.0%
+$25.00
+-$15.00
++ 20% audience mix
+blended
+blended
+blended
+$22.25
+-$2.75
+3.4 Sensitivity: which combinations reach $25?
+The grid shows CPL at CPM of $18 across CTR and CVR values. Any cell shaded green is at or below $25. Note how many combinations work: the target does not depend on a single lever landing perfectly.
+Figure 2. CPL sensitivity to CTR and landing-page CVR at CPM of $18.
+Minimum viable path: CTR 1.6% (no creative gain at all) still reaches $25 if CVR reaches 4.5%. CTR 1.8% needs CVR 4.0%. CTR 2.2% needs only CVR 3.3%.
+Asymmetry to exploit: landing-page CVR is fully within BrightChamps' control and can be tested within days. CTR and CPM depend partly on auction dynamics. Prioritize CVR early because it is the faster and more reliable lever.
+Warning cell: CTR 2.2% with CVR 2.5% still costs $32.70. Better creative that does not convert is the most common way to feel busy without moving CPL.
+3.5 Audience mix effect
+Audience expansion is modeled as a second campaign with its own economics: CPM 15% lower, CTR 25% higher and CVR 10% higher than the core plan, reflecting less contested inventory and higher category affinity. These multipliers are hypotheses to be tested, not facts (Section 7 gives pessimistic and optimistic ranges). Blended CPL is computed on leads per dollar so that the weighting is economically correct.
+Share of spend on expansion audiences
+Blended CPL
+Change vs. core plan
+Illustrative quality index
+0%
+$25.00
+-
+100
+10%
+$23.55
+-$1.45
+104
+20%
+$22.25
+-$2.75
+108
+30%
+$21.09
+-$3.91
+112
+40%
+$20.05
+-$4.95
+116
+The index column is a simplified proxy that credits only audience-fit shifts (+0.4 points per 1% of spend). In live operation the index is computed from measured downstream rates (Section 8).
+4. Funnel diagnostic and how to spend the gain
+4.1 Where the money leaks today
+At baseline, $10,000 of media buys about 500,000 impressions and 8,000 clicks at a cost of $1.25 per click. Only 200 of those clicks become leads. 97.5% of paid visits leave without becoming a lead. Each click is not expensive; the waste sits after the click. That single fact justifies putting the product engine at the center of the plan, not at its edge.
+Per $10,000 of spend
+Baseline
+Plan
+Change
+Impressions
+500,000
+555,556
++11%
+Clicks
+8,000
+10,000
++25%
+Cost per click
+$1.25
+$1.00
+-20%
+Leads (booked trials requested)
+200
+400
++100%
+Booked trials (60% of leads)
+120
+240
++100%
+Attended trials (65% of booked)
+78
+156
++100%
+Paid students (18% of attended)
+14.0
+28.1
++100%
+Media cost per paid student
+$712
+$356
+-50%
+Downstream rates (60% book, 65% attend, 18% pay) are illustrative and identical in both columns, which assumes quality holds. Section 8 tests what happens when it does not.
+Figure 3. Funnel outputs per $10,000 of media spend, baseline versus plan (quality held constant).
+4.2 Three ways to cash the improvement
+A halved CPL is a choice, not just a result. The founder should decide explicitly which of the three options below is the goal, because each implies different operating changes.
+Option
+Monthly media
+Monthly leads
+Best when
+Watch out for
+A. Hold spend, take volume
+$100,000
+4,000 (from 2,000)
+Growth is the priority and capacity exists
+Sales and teacher capacity must double; speed-to-contact degrades first
+B. Hold leads, release budget
+$50,000
+2,000
+Efficiency is the priority, or budget is tight
+Growth stalls; released budget needs a use
+C. Hybrid
+$75,000
+3,000
+Balanced: more volume, lower spend
+Requires a capacity plan for 1.5x trials
+4.3 Capacity check before choosing Option A
+Twice the leads means about twice the trial classes, twice the reminders and twice the follow-up calls. Before scaling volume, answer four questions: How many trial slots can teachers deliver per week in each US time zone? How many leads can one representative contact within five minutes and within one hour? What is the no-show recovery process? What is the cost of a trial class (teacher time)? If any answer says capacity is fixed, choose Option C and reinvest released budget in quality improvements, not volume.
+5. Marketing engine playbook
+The marketing engine controls CPM and CTR. The plan needs CPM down about 10% ($20 to $18) and CTR up about 12.5% (1.6% to 1.8%). Both are modest and both are well inside published benchmark ranges.
+5.1 Lever inventory and planning allocation
+Lever
+Mechanism
+Metric moved
+Effort
+Time to impact
+Budget consolidation
+Fewer, larger ad sets exit the learning phase faster and bid more efficiently
+CPM
+Low
+1 to 2 weeks
+Creative variety and refresh
+More distinct hooks find more responsive parents and delay fatigue
+CTR, CPM
+Medium
+2 to 4 weeks
+Seed-quality lookalikes
+Model paying students, not all leads
+CPM, CVR, quality
+Medium
+3 to 6 weeks
+Conversion API and offline events
+Send booked, attended and paid events back to platforms
+CPL, quality
+Med-high
+4 to 8 weeks
+Intent channels (search)
+Capture parents already looking for math help
+CVR, quality
+Low-med
+2 to 4 weeks
+Placement and daypart pruning
+Stop paying for placements and hours that never convert
+CPM
+Low
+1 to 2 weeks
+Retargeting sequences
+Cheaper conversion from warm visitors
+CPL
+Low
+2 weeks
+Partnerships and referral
+Lower-cost, higher-trust lead sources
+CPL, quality
+High
+8 to 16 weeks
+Planning allocation (targets, not forecasts)
+CPM -10%: consolidation about -3 points, creative relevance about -4, placement pruning about -2, signal quality about -1.
+CTR +12.5%: hook and format testing about +6 points, targeting layers about +3, refresh cadence about +2.5, offer clarity about +1.
+These splits exist so each owner has a number. Week 0 data will reshuffle them.
+5.2 The creative system
+Formats and angles to test
+Format
+Example angle (illustrative)
+Works best for
+Watch out for
+Parent testimonial (UGC style)
+Parent describes child moving from avoiding math to volunteering answers
+Trust, cold audiences
+Must be real, disclosed and substantiated (Section 13)
+Child demo clip
+Child solves a puzzle-style problem live with a teacher
+Hook rate, emotion
+Consent and privacy for minors
+Math-anxiety hook
+"Does homework night end in tears?" then a calm alternative
+Struggling-learner parents
+Avoid shaming or fear-only messaging
+Teacher introduction
+Short video of a teacher explaining one tricky idea in 30 seconds
+Credibility, search audiences
+Teacher availability for filming
+Progress and results
+Before and after view of a learner's diagnostic
+Retargeting
+Claims need evidence; no guaranteed outcomes
+Myth-busting
+"Three myths about supplemental math" carousel
+Mid-funnel education
+Low CTR if too generic
+Comparison
+Live small-group online versus a drive-to-center model
+Considered purchase
+Do not name competitors negatively
+Sample problems
+Static or carousel with a grade-level puzzle and a 'try the next one' CTA
+Competitive-math parents
+Difficulty must match stated grade
+Scarcity or timing
+Real seat limits for a cohort start date
+Late-funnel
+Only if the constraint is genuine
+Founder or mission story
+Why BrightChamps teaches math this way
+Brand-aware audiences
+Rarely a top CTR performer; keep to 10% of mix
+Testing framework
+Modular testing: vary one element at a time (hook, body, CTA, format). Start with 4 hooks x 3 formats = 12 concepts in month 1, then 8 new concepts per month.
+70 / 20 / 10 budget rule: 70% of creative budget on proven winners, 20% on iterations of winners, 10% on net-new concepts.
+Judge on lead quality, not only CTR: a hook that lifts CTR but lowers booked-trial rate is a loser. Report cost per booked trial for every concept after two weeks.
+Signal
+Threshold (starting values)
+Action
+Spend with no lead
+Spend reaches 2x target CPL (about $50) with zero leads
+Pause the ad
+Hook rate (3-second views ÷ impressions)
+Below 25% on video after 1,000 impressions
+Rework the first 3 seconds
+Frequency (7-day, prospecting)
+Above 2.5
+Refresh creative or widen audience
+CTR decay
+Down more than 25% from first-week peak
+Rotate in a new concept
+CPM drift
+Up more than 20% at constant audience
+Check overlap, fatigue and seasonality
+Cost per booked trial
+Above 1.3x account average after 14 days
+Cut or restructure
+5.3 Targeting and audience architecture
+Layer
+Audience
+Purpose
+Share of prospecting
+1. Broad, creative-led
+US, parent age range, no interest constraints
+Let the algorithm find responders; creative does the targeting
+35 to 40%
+2. Interest and behavior stacks
+Parents of grade K to 8, education, STEM, after-school, homeschool interests
+Controlled reach into core users
+20 to 25%
+3. Lookalikes
+1% and 1 to 3% from paying-student seed
+Model best customers
+20 to 25%
+4. Value-based lookalikes
+Seed weighted by first-year revenue
+Bias toward high-value families
+10 to 15%
+5. Expansion audiences
+Segment tests (Section 7)
+New pools, capped by test reserve
+Up to 8% at first
+Seed tiers for lookalikes
+Tier
+Seed audience
+Why
+Minimum size
+1
+Paid students (all)
+Best proxy for the customer you want
+100 to 500 records
+2
+Attended and completed a trial
+Bigger, still high intent
+500+
+3
+Booked a trial
+Volume seed; lower purity
+1,000+
+4
+Website visitors with 60s+ engagement
+Interest signal only; use for retargeting, not modeling
+Any
+Retargeting windows and message sequence
+Audience
+Window
+Message
+Frequency cap
+Landing-page visitors, no form start
+0 to 3 days
+Reassurance: what the free trial includes, teacher intro
+2 per day
+Form started, not finished
+0 to 7 days
+One-tap continue link, shorter form reminder
+3 per day
+Booked, not attended
+0 to 14 days
+Reschedule offer and what your child will do
+1 per day
+Attended, not paid
+0 to 30 days
+Progress recap and enrolment options (with sales)
+1 per day
+Video viewers 50%+ and social engagers
+0 to 30 days
+Testimonial and outcome-led offer
+1 per day
+Geography
+Start with dense metro clusters where the fit is strongest and expand outward: the New York and New Jersey corridor, the San Francisco Bay Area, Seattle, the Dallas to Fort Worth and Austin areas, Houston, Atlanta, Chicago, Washington DC and Northern Virginia, Boston and Raleigh-Durham. Time zones matter for slot supply: show slots in the parent's local time and staff trial classes across ET, CT, MT and PT evening and weekend windows.
+5.4 Channel strategy
+Channel
+Role
+Primary KPI
+Main risk
+First test
+Meta (Facebook, Instagram)
+Scale engine for prospecting and retargeting
+Cost per booked trial
+Fatigue, CPM inflation
+Consolidate, add lookalikes, new creative
+Google Search
+Capture parents already searching for math help
+Cost per booked trial, CVR
+High CPC on competitive terms
+Exact and phrase match on 'math tutor grade X', 'math help online'
+YouTube and Demand Gen
+Mid-funnel education and remarketing
+View-through, assisted leads
+Weak last-click attribution
+Teacher explainer clips
+Short-form (TikTok, Reels, Shorts)
+Cheap reach and creative discovery
+Hook rate, CPC
+Younger audience skew; low intent
+Recycle winning UGC
+Creator partnerships
+Trust transfer from parenting, homeschool and teacher creators
+Cost per booked trial
+Variable quality; disclosure duties
+5 micro-creators, tracked links
+Community partnerships
+Schools, PTAs, libraries, cultural schools, community centers
+Referred leads, quality index
+Slow to build
+3 pilot partners per wave
+Referral program
+Parents refer parents
+Referred paid students
+Incentive abuse
+Give-and-get credit after first month
+SEO and content
+Long-run low-cost lead source
+Organic booked trials
+Slow payback
+Grade-level math guides
+Email and SMS lifecycle
+Nurture, reminders, win-back
+Show rate, reactivation
+Compliance (TCPA, CAN-SPAM)
+Reminder cadence (Section 6.5)
+Figure 4. Illustrative media mix today, at Day 90 and at Day 180 (share of budget, %).
+The mix shifts gradually. Meta stays the largest channel but its share falls as search, creators and partnerships prove they can deliver lower cost per booked trial. The test reserve stays at 4% permanently so new ideas always have funding. Any channel that fails to beat the account average cost per booked trial after its test window loses budget.
+5.5 Bidding and measurement
+Event
+Definition
+Use
+Lead
+Form submitted
+Volume and CPL reporting
+Booked trial
+Slot selected and confirmed
+Primary optimization event to start
+Attended
+Joined the class for at least 10 minutes
+Quality signal, offline import
+Qualified
+Lead score above threshold (Section 8)
+Switch optimization here when volume allows
+Paid
+First payment received
+Lookalike seed and value-based bidding
+Send server-side events (Meta Conversions API, Google enhanced conversions and offline import) for booked, attended and paid. Without them, platforms optimize on the cheapest clicks, which is exactly the quality trap.
+Optimize for booked trials first, then move to qualified events when an ad set produces roughly 50 events per week. Below that volume, deeper events starve the algorithm.
+Treat platform-reported results as directional. Blended CPL from your own finance and CRM data is the source of truth. Add a geographic holdout or conversion-lift test each quarter to check incrementality.
+Pacing rules: no more than a 20% budget change per ad set per 3 days, so learning is not reset.
+5.6 Seasonality calendar
+Typical US patterns; confirm against your own history in Week 0.
+Period
+Parent mindset
+Posture
+CPM pressure
+Jan to Feb
+New-year goals, mid-year report cards
+Scale winning creative
+Moderate
+Mar to Apr
+State-test preparation, math confidence
+Test-prep and confidence angles
+Moderate
+May to Jun
+Summer-slide prevention
+Scale; strong intent
+Moderate to high
+Jul
+Quieter, family time
+Test new creative cheaply
+Lower
+Aug to Sep
+Back to school; Hispanic Heritage Month begins Sep 15
+Protect proven creative; segment campaigns
+High
+Oct
+First-term grades; festival season for several communities
+Localized creative for Diwali and other moments
+Moderate
+Nov to Dec
+Black Friday and Cyber Monday auction spike
+Cut prospecting, lean on retargeting and search to protect CPL
+Very high
+5.7 Marketing engine actions by phase
+Phase
+Actions
+Target at end of phase
+Days 1 to 30
+Consolidate ad sets; prune placements and dayparts; launch 12 creative concepts; build tracking for booked, attended and paid events
+CPM about $20; CTR 1.65%
+Days 31 to 60
+Launch lookalikes from paying students; first search campaigns; creator pilots; retargeting sequences
+CPM $19.50; CTR 1.70%
+Days 61 to 90
+Switch to qualified-event optimization where volume allows; scale winning concepts; first community partners
+CPM $19; CTR 1.75%
+6. Product engine playbook
+The product engine controls landing-page and booking conversion. It carries the largest single share of the plan: 60% relative improvement in CVR, from 2.5% to 4.0%. It is also the fastest to test, the cheapest to change and fully inside BrightChamps' control.
+6.1 The parent's journey
+Figure 5. End-to-end lead journey with metrics and owners at each step.
+Steps 3 to 5 (landing page, form start, slot booked) carry the 97.5% loss described in Section 4. Steps 6 to 8 (reminders, attendance, completion) determine whether a lead is worth having. The product engine therefore owns both the first cliff and the quality of the second.
+6.2 Landing-page anatomy
+Section
+Purpose
+Hypotheses to test
+Hero
+Promise and one clear action
+Outcome-led headline versus feature-led; matches the ad that brought the click
+Trust bar
+Proof at a glance
+Families taught, ratings, teacher credentials (only figures BrightChamps can substantiate)
+How it works
+Remove uncertainty
+Three steps versus four; 'free 30-minute class' wording if accurate
+Curriculum fit
+Show US relevance
+Alignment to US grade levels and state standards; diagnostic option
+Teacher credibility
+Who will teach my child
+Teacher intro video versus text profiles
+Results and testimonials
+Social proof
+Video versus text; testimonials matched to segment
+Objection handling (FAQ)
+Answer silent objections
+Screen time, teacher quality, device needs, cancellation, price
+Sticky call to action
+Keep the action in reach on mobile
+Sticky bar versus inline only
+Footer and compliance
+Privacy, terms, consent language
+Clear consent text (Section 13)
+6.3 Form and booking redesign
+Field or step
+Assumed today
+Proposed
+Stage
+Parent first name
+Required
+Required
+Step 1
+Mobile number
+Required
+Required, formatted, optional OTP test
+Step 1
+Email
+Required
+Required, validated
+Step 1
+Child grade
+Required (with age, school)
+Required dropdown only
+Step 1
+Child name, school, city
+Required
+Removed from form; collect after booking
+Post-booking
+Preferred slot
+Requested, confirmed later by a call
+Live calendar in parent's time zone (auto-detected)
+Step 2, same page
+Math confidence and goal
+Free text or none
+Two taps: 'catching up', 'on grade level', 'advanced', 'competition'
+Post-booking
+Device check
+None
+One-click test link in confirmation
+Post-booking
+Principle: ask for the minimum needed to hold a slot, then earn the rest. Every field removed before booking should show up in CVR. Fields moved after booking should show up in show rate, because parents who have already committed are willing to give more. At most two qualification questions appear before booking, and both must change how the lead is routed.
+6.4 Speed, mobile and technical hygiene
+Largest contentful paint under 2.5 seconds on mid-range phones. Compress images, defer scripts, remove pop-ups. Most paid social traffic is mobile.
+One-thumb forms: numeric keypad for phone, autofill for name and email, inline error messages, no captcha unless bot traffic is proven.
+Message match: one page variant per ad group, with dynamic headline text where needed, so the promise in the ad is the first thing seen on the page.
+Human fallback: click-to-call or text option for parents who prefer to talk, subject to consent rules.
+Event tracking: page view, form start, step completion, slot selection, booking confirmation, each with the ad and creative identifier.
+6.5 Confirmation and reminder cadence
+Show rate is a quality metric and a cost metric: every trial no-show wastes a teacher slot and a paid lead. The cadence below is the starting hypothesis (test T4).
+When
+Channel
+Purpose
+Immediately after booking
+Email and SMS
+Confirmation, calendar add, reschedule link
+10 minutes after booking
+Email
+What your child will do; short teacher video; device check
+24 hours before
+SMS and email
+Reminder with one-tap confirm or reschedule
+3 hours before
+SMS
+Reminder and join link
+15 minutes before
+SMS and push if available
+Join link
+10 minutes after start, not joined
+SMS and call attempt
+Rejoin now or reschedule
+1 hour after missed trial
+SMS and email
+Rebook offer with next available slots
+24 hours after missed trial
+Email
+Soft win-back with parent-friendly time options
+6.6 Experimentation program
+The backlog below is ranked by ICE score (average of impact, confidence and ease, each scored 1 to 10). Scores are starting points; the team should re-score after each readout.
+ID
+Test
+Metric
+Expected effect
+ICE
+T1
+Cut form to 4 required fields
+CVR
++15 to 25%
+8.7
+T3
+Outcome-led headline matched to each ad's promise
+CVR
++8 to 15%
+8.0
+T4
+Reminder cadence variants (Section 6.5)
+Show rate
++5 to 10 pts
+7.7
+T2
+Embed live slot picker on the same page
+Booked CVR
++10 to 20%
+7.3
+T5
+Page speed: LCP under 2.5 seconds
+CVR
++5 to 10%
+7.0
+T6
+Trust bar: families taught, ratings, teacher credentials
+CVR
++3 to 6%
+6.7
+T7
+Phone verification (OTP)
+Cost per attended trial
+CVR -5 to -10%, quality up
+6.7
+T8
+Video testimonial above the fold
+CVR
++5 to 10%
+6.3
+T9
+Multi-step versus single-step form
+CVR
+-10 to +10%
+6.3
+T10
+Pricing transparency (range shown)
+Quality, CVR
+Mixed
+6.3
+T11
+Click-to-call or text-us option
+CVR
++3 to 8%
+6.0
+T12
+Segment-specific pages (NRI, Spanish-language)
+Segment CVR
++10 to 20%
+5.7
+Figure 6. Experiment lifecycle from backlog to learning log.
+How long does a test take?
+Sample size per variant for a two-sided test at 95% confidence and 80% power is shown below (visitors per arm). At about 8,000 paid clicks per $10,000 of spend, a $100,000 monthly budget delivers roughly 18,000 clicks per week; a 50/50 split gives about 9,000 per arm per week. A 20% relative lift on a 2.5% baseline needs about 16,800 per arm, so it reads out in about two weeks.
+Baseline CVR
+Detect +10% lift
+Detect +20% lift
+Detect +30% lift
+2.5%
+64,120
+16,770
+7,780
+4.0%
+39,430
+10,300
+4,770
+5.0%
+31,200
+8,150
+3,770
+Run every test for at least two full weeks so weekday and weekend behavior are both covered.
+Do not peek and stop early. Decide sample size and duration before launch.
+Every test has a guardrail metric: a CVR win that lowers show rate or lead score is not a win.
+One major change per page per period unless traffic is split into independent slices.
+Log every result, including losses, in a shared learning register.
+6.7 Where the 1.5 points of CVR come from
+Change
+Expected gain (points)
+Cumulative CVR
+Baseline
+-
+2.5%
+Form cut to 4 fields (T1)
++0.4
+2.9%
+Message match to each ad (T3)
++0.3
+3.2%
+Embedded slot picker (T2)
++0.4
+3.6%
+Trust bar and proof (T6, T8)
++0.2
+3.8%
+Page speed (T5)
++0.2
+4.0%
+If any one of these fails, the others still get within reach of 3.6% to 3.8%, and the sensitivity grid in Section 3.4 shows that a modest CTR gain closes the rest. Segment-specific pages (T12) are additional upside for expansion audiences and are not counted here.
+7. Audience expansion
+7.1 Why expand, and why now
+A single broad audience saturates: frequency rises, CTR falls and CPM climbs. Expansion audiences add fresh inventory, and some carry higher affinity for structured supplemental math. Two anchors from public data (approximate, US Census and Pew Research Center):
+Indian-Americans: about 5.2 to 5.5 million people, with the highest median household income of any major US ethnic group (about $145,000 to $151,000). Small, high-fit and concentrated in a few metros.
+Hispanic and Latino population: about 62 to 63 million (about 19% of the US), with a young age profile and the fastest-growing under-18 cohort. Large and currently thin in premium math edtech advertising.
+Population size is not the same as addressable demand. Household income, grade-age children, digital reach and willingness to pay for live online tutoring shrink the number quickly. That is why the plan tests before it commits.
+7.2 Segment map
+Segment
+Why it fits
+Reach method
+Main risk
+Wave
+NRI and Indian-American families in tech-heavy metros
+High income; strong culture of supplemental math; rigor-minded
+Geography and language, permitted interests, community organizations, creators
+Small pool saturates fast; avoid stereotyping
+1
+Indian-American language communities (Telugu, Tamil, Gujarati, Punjabi, Malayalam, Bengali, Hindi)
+Trust through language and community
+Language creators, community groups, regional festivals
+Fragmentation raises production cost
+1b to 2
+Competitive-math and gifted families (AMC, MathCounts, Math Kangaroo)
+Interest-based across all backgrounds
+Contest communities, coaches, forums, search
+Requires advanced curriculum proof
+1 to 2
+Struggling or catch-up learners
+Large intent pool; search-led
+Google Search: 'math help', 'below grade level'
+Price sensitivity; quality risk
+1 (search)
+Broader South Asian (Pakistani, Bangladeshi, Sri Lankan, Nepali)
+Shared emphasis on education
+Language, geography, creators
+Different sub-community norms
+2
+Homeschool and hybrid-school families
+Flexible schedules; high spend on supplements
+Co-ops, conventions, YouTube, homeschool creators
+Small, tight-knit; reviews matter
+2
+East Asian American (Chinese, Korean, Vietnamese)
+Established supplemental-math culture
+Language creative, community schools, partnerships
+Strong incumbents; high CPMs
+2 to 3
+Hispanic and Latino bilingual families
+Large, young and underserved by premium math edtech
+Spanish and bilingual creative, Spanish landing pages, WhatsApp
+Needs bilingual reps and teachers; affordability
+3
+Black-led parent and educator communities
+Strong demand for STEM enrichment
+Partner-led: community organizations, educators
+Authenticity; do not enter without partners
+4
+Military and relocating families
+Disrupted schooling; online-first
+Military family organizations
+Small volume
+4
+7.3 Reaching communities responsibly
+Platforms restrict direct targeting by ethnicity or other sensitive attributes. Reach communities through language, geography, permitted interests, lookalikes, community partners and, above all, creative that resonates. Verify current platform policy before launch.
+Do not stereotype. Segments are hypotheses about affinity, not assumptions about individuals. Let performance data, not assumptions, decide where budget goes.
+Fit the product, not just the ad. A Spanish-language ad that lands on an English-only page with no Spanish-speaking rep wastes the click.
+Use partners for trust. Teachers, community organizations and creators from the community carry credibility that paid media cannot buy.
+7.4 Localization playbook
+Element
+NRI and South Asian
+Hispanic and Latino
+East Asian American
+Language
+English primary; Hindi and regional-language creative for community reach
+English, Spanish and bilingual versions; Spanish landing page and reminders
+English primary; Mandarin or Korean creative for community reach
+Calendar moments
+Diwali, Navratri, Pongal, Eid (for South Asian Muslim families)
+Hispanic Heritage Month (Sep 15 to Oct 15), back to school
+Lunar New Year, Chuseok, back to school
+Proof points
+Depth beyond school math; contest pathways; teacher rigor
+Confidence, homework support, bilingual teachers
+Speed and accuracy; contest pathways
+Teacher and rep match
+Familiar accents and pedagogy help trust
+Bilingual rep for the first call
+Language-matched rep where volume supports it
+Payment and offer
+Flexible packages; sibling discounts
+Monthly payment options; transparent price
+Multi-month packages
+Channels
+WhatsApp groups, community pages, creators
+WhatsApp, Instagram, YouTube, community organizations
+WeChat, KakaoTalk communities, community schools
+7.5 Test-cell design and decision rules
+Figure 7. Test-cell business flow for each new audience segment.
+Measure
+Scale if
+Iterate if
+Kill if
+Minimum data before deciding
+At least 120 leads and 14 days
+Same
+Same, unless quality is clearly failing earlier
+CPL versus core plan
+At or below core
+Up to 1.3x core
+Above 1.3x core after iteration
+Quality index (booked, show, paid)
+95 or above
+90 to 94
+Below 90
+Show rate
+At or above core
+Within 5 points below core
+More than 5 points below core
+Volume headroom
+Frequency below 2.5 at higher spend
+Near saturation
+Saturated at test spend
+7.6 Segment economics and ranges
+The base multipliers used in earlier sections are hypotheses. The table shows how blended CPL moves if the expansion segment performs worse or better than assumed. Even the pessimistic case stays close to the $25 target, which is why expansion is upside and not a requirement.
+Case
+CPM
+CTR
+CVR
+Segment CPL
+Blended CPL at 20% mix
+Blended at 40% mix
+Pessimistic
+x1.00
+x0.90
+x0.90
+$30.86
+$25.99
+$27.06
+Base
+x0.85
+x1.25
+x1.10
+$15.45
+$22.25
+$20.05
+Optimistic
+x0.75
+x1.40
+x1.20
+$11.16
+$20.03
+$16.71
+7.7 Sequencing
+Wave
+Timing
+Segments
+Budget share
+Prerequisites
+1
+Months 1 to 2
+NRI and Indian-American metros; competitive-math families; catch-up search
+Up to 8%
+Segment tracking, first localized creative
+2
+Months 3 to 4
+Language communities, wider South Asian, homeschool, East Asian American
+10 to 15%
+Wave 1 read clean; creator partners signed
+3
+Months 4 to 6
+Hispanic and Latino bilingual
+10 to 20%
+Spanish landing page, bilingual rep, Spanish reminders
+4
+Months 6 and later
+Partner-led communities, military families
+As proven
+Community partnerships in place
+7.8 Overlap and cannibalization
+Check audience overlap between core and expansion ad sets weekly. High overlap means the two are bidding against each other.
+Exclude expansion audiences from broad ad sets once a segment has its own campaign, so results stay attributable.
+Measure incremental leads: expansion should add leads, not relabel leads the core would have found anyway. A geographic holdout is the cleanest test.
+8. Lead quality and the guardrail
+8.1 The lead-quality index
+Quality is defined by what happens after the lead, not by how the lead looks. The index compares three downstream rates to their own pre-launch baselines (rolling 90 days before launch):
+Quality index = 100 x [ 0.30 x (booked ÷ booked₀) + 0.30 x (show ÷ show₀) + 0.40 x (paid ÷ paid₀) ]
+Worked example: booked 58% vs. 60%, show 66% vs. 65%, paid 17% vs. 18% gives an index of 97.2, which sits in the amber band.
+Timing: paid conversion lags about four weeks. For the first four weeks of any cohort use 50% booked and 50% show; add paid when the cohort matures.
+Band
+Index
+Rule
+Green
+100 or above
+Continue; eligible to scale
+Amber
+90 to 99
+Hold budget, investigate the driver, fix within two weeks
+Red
+Below 90
+Pause the responsible lever; report at the next weekly review
+8.2 Lead scoring and routing
+A simple, transparent rules-based score is enough to start. It can be replaced by a trained model once about 1,000 paid outcomes exist. The point of scoring is to route effort: the best leads get the fastest human response.
+Signal
+Points (starting values)
+Reason
+Child grade in core range
++15
+Product fit
+Stated goal (catch up, advanced, competition)
++10
+Intent and personalization
+Phone verified
++10
+Reachable and real
+Slot chosen within 72 hours
++10
+Urgency
+Opened prep content or passed device check
++10
+Engagement
+Came from search or referral
++10
+Higher-intent source
+Two or more site visits
++5
+Consideration
+Disposable email or invalid number
+-20
+Junk risk
+Duplicate of an existing lead
+-30
+Waste
+Outside serviceable time zones or region
+-25
+Cannot serve
+Score band
+Points
+Response standard
+Channel
+A
+60 or above
+Human contact within 5 minutes
+Call, then SMS
+B
+40 to 59
+Contact within 1 hour
+SMS and call
+C
+Below 40
+Automated nurture only; review weekly
+Email and SMS sequences
+8.3 The CAC-neutral quality threshold
+Halving CPL creates room for quality to fall before the business is worse off. Using the illustrative funnel (7.02% of leads become paid students), baseline media cost per paid student is about $712. If CPL falls to $25 but the lead-to-paid rate falls by a fraction d, cost per paid student is $25 ÷ (0.0702 x (1 - d)). It only matches baseline when d reaches 50%. At $30 CPL the break-even decline is 40%, and at $35 it is 30%.
+Figure 8. Media cost per paid student as lead-to-paid conversion declines, at three CPL levels.
+Relative decline in lead-to-paid rate
+CAC at $25 CPL
+CAC at $30 CPL
+CAC at $35 CPL
+Versus baseline ($712)
+0%
+$356
+$427
+$499
+Better at $25
+15%
+$419
+$503
+$587
+Better at $25
+30%
+$509
+$611
+$712
+Better at $25
+50%
+$712
+$855
+$997
+Equal at $25
+The plan deliberately sets its tripwire at a 15% decline, far inside the 50% mathematical limit. Reasons: paid conversion is measured with a lag, the revenue effect of lower quality also hits sales and teacher capacity, and a small early decline is usually the start of a larger one.
+8.4 Feeding quality back to the ad platforms
+Send attended and paid events back to each platform so bidding learns which clicks become customers.
+Build lookalikes from paid students and refresh the seed monthly.
+Exclude current customers and recent leads to avoid paying for people already in the funnel.
+Review placement and creative quality monthly: some placements produce cheap, low-quality leads by design.
+8.5 Junk, fraud and incentive traps
+Threat
+Control
+Bots and scripted form fills
+Hidden honeypot field, rate limiting, server-side validation; captcha only if proven necessary
+Fake or mistyped phone numbers
+Format checks and optional OTP (test T7); measure cost per attended trial, not CPL, when testing
+Duplicate leads from multiple campaigns
+Deduplicate on phone and email; attribute to the first qualified touch
+Incentive hunters (free-gift seekers)
+Do not attach gifts to the booking; incentives only after attendance
+Low-intent placements
+Monthly placement audit; exclude any placement with show rate more than 10 points below average
+Affiliate or partner padding
+Pay on attended trial or paid student, not on lead
+8.6 The handoff to sales and onboarding
+Lead quality is a joint result of marketing and the team that calls the lead. A 5-minute response rule is meaningless if the queue is longer than the day.
+Capacity formula: representatives needed = daily leads x average contact minutes per lead ÷ productive minutes per representative per day. At 4,000 leads per month (about 133 per business day), with 6 contact minutes per lead and 300 productive minutes per representative, about 3 representatives are needed for first contact alone, before follow-up.
+Tag every unqualified lead with a reason (wrong grade, not interested, unreachable, price). Review reasons weekly with marketing. This is the fastest source of targeting and creative fixes.
+Share one dashboard. Marketing sees show and paid rates by campaign; sales sees CPL and lead scores by campaign. Neither team optimizes in the dark.
+9. Scenario analysis
+A plan that only works in one world is a forecast, not a plan. This section stress-tests the numbers across ten scenarios, gives a best, base and worst case, and lists what to do when each trigger appears.
+9.1 Ten scenarios
+Figure 9. Blended CPL under ten scenarios (green meets the $25 target).
+Scenario
+Assumptions
+CPL
+vs. today
+Verdict
+Best case: all levers + 25% audience mix
+CPM $17, CTR 2.0%, CVR 5.0%, 25% expansion mix
+$14.7
+-71%
+Meets target
+Plan + 20% audience mix
+CPM $18, CTR 1.8%, CVR 4.0%, 20% expansion mix at base multipliers
+$22.3
+-55%
+Meets target
+Core plan (CPM $18, CTR 1.8%, CVR 4.0%)
+CPM $18, CTR 1.8%, CVR 4.0%, no expansion
+$25.0
+-50%
+Meets target
+Product engine only
+CPM $20, CTR 1.6%, CVR 4.0% (landing page wins only)
+$31.3
+-37%
+Close: one more lever needed
+Marketing engine only
+CPM $18, CTR 1.8%, CVR 2.5% (media wins only)
+$40.0
+-20%
+Misses: escalate
+CTR up, conversion flat
+CPM $18, CTR 2.2%, CVR 2.5% (creative wins, page unchanged)
+$32.7
+-35%
+Misses: escalate
+Seasonal CPM +25% (Q4)
+CPM $22.50 (+25%), CTR 1.8%, CVR 4.0%
+$31.3
+-37%
+Close: one more lever needed
+Audience expansion underperforms
+Core plan plus 20% expansion; segment CPM x1.0, CTR x0.9, CVR x0.9
+$26.0
+-48%
+Close: one more lever needed
+Scaling 2x budget (diminishing returns)
+CPM $20.70 (+15%), CTR 1.62% (-10%), CVR 4.0% at 2x budget
+$31.9
+-36%
+Close: one more lever needed
+Worst case: partial delivery
+CPM $20, CTR 1.7%, CVR 3.0%
+$39.2
+-22%
+Misses: escalate
+What the scenarios teach
+Neither engine alone reaches $25. Product-only lands at about $31 and marketing-only at $40. The plan needs both, which is why owners must share one weekly review.
+Creative that does not convert is the costliest illusion. A CTR of 2.2% with an unchanged landing page still costs $32.70.
+Expansion under-delivery is survivable. If segments perform 10% worse than the core, the blended result is about $26, close to target, not a disaster.
+Seasonality alone can erase the gain. A 25% CPM spike moves the core plan to about $31. This is why the calendar in Section 5.6 shifts spend toward retargeting and search in Q4.
+Scale has a price. Doubling budget with modest diminishing returns lands near $32, so scale should come from new channels and segments as much as from more spend.
+9.2 Best, base and worst case at a $100,000 monthly budget
+Best case
+Base case
+Worst case
+Assumptions
+CPM $17, CTR 2.0%, CVR 5.0%, 25% expansion
+Core plan plus 20% expansion
+CPM $20, CTR 1.7%, CVR 3.0%, no expansion
+Blended CPL
+$14.7
+$22.3
+$39.2
+Monthly leads (baseline 2,000)
+6,803
+4,484
+2,551
+Media cost per paid student (quality held)
+$209
+$318
+$558
+Interpretation
+Benchmarks met on all levers; audience mix adds cushion
+The committed plan with expansion working
+Small gains on every lever; still better than today
+Even the worst case, in which every lever delivers only a fraction of its plan, improves on today's $50. The downside risk in this plan is not that CPL stays at $50. It is that CPL falls but quality falls with it, which is what Section 8 exists to catch.
+9.3 Contingency playbook
+Trigger
+Early signal
+Response
+Owner
+CTR rises, CVR flat
+CTR up 10%+ but cost per booked trial unchanged after 14 days
+Freeze creative scaling; audit message match; run T3 and T1 first
+Product
+CPM spikes more than 20%
+CPM up for 5 days at constant audience
+Check overlap and seasonality; shift budget to search, retargeting and partners; cap prospecting
+Marketing
+CVR up but show rate down
+Show rate falls more than 5 points after form change
+Add one qualification question; strengthen reminders; test OTP
+Product and sales ops
+Expansion segment fails
+Decision rule in Section 7.5 returns 'kill'
+Stop segment; reallocate to best-performing layer; log learning
+Marketing
+Tracking signal loss
+Event match quality falls; platform-reported leads diverge from CRM
+Server-side events; rely on blended CRM CPL; lift test for truth
+Data
+Competitor bid surge
+Search impression share falls; CPC up 20%+
+Defend brand and high-intent terms; expand referral, creators, SEO
+Marketing
+Capacity crunch
+Median speed-to-contact above 15 minutes; slot fill above 90%
+Throttle spend to slot supply; prioritize A leads; open off-peak slots
+Sales ops
+Creative fatigue in under 2 weeks
+Frequency above 2.5; CTR decays quickly
+Raise concept volume; broaden audience; rotate formats
+Creative
+Budget cut of 30%
+Finance instruction
+Protect retargeting, search and lookalikes; pause weakest prospecting; keep test reserve at 4%
+Marketing
+Budget doubling
+Finance instruction
+Step +20% per 3 days; add channels and segments, not only spend; expect CPM +10 to 15%
+Marketing
+Ad rejection or policy flag
+Disapproved ads; account warnings
+Pre-clear claims and child imagery; appeal; keep backup compliant copy
+Marketing and legal
+9.4 What has to be true
+Assumption
+If it is false
+How we detect it
+Reaction
+Baseline CTR is below platform median because of creative, not audience limits
+CTR gains stall near 1.6%
+Two creative rounds with no lift
+Focus on CVR and channels; widen audiences
+Form friction is a major cause of the low CVR
+Cutting fields does not lift CVR
+T1 shows under 5% lift
+Investigate offer, price shown and page trust
+Downstream rates (60% book, 65% show, 18% pay) hold as volume grows
+Cheaper leads convert worse
+Quality index below 100
+Guardrail rules in Section 8
+Expansion segments have higher affinity
+Segments cost more or convert worse
+Test-cell decision rule
+Kill or iterate
+Capacity can absorb volume
+Slots and callbacks lag
+Speed-to-contact and slot fill
+Option C: hold volume, release budget
+10. Roadmap and targets
+10.1 Week 0: the first 14 days
+Nothing in the plan should start before its baseline is registered. Week 0 replaces illustrative numbers with account actuals and sets up the ability to measure honestly.
+Task
+Output
+Owner
+By
+Pull 90 days of spend, impressions, clicks, leads by channel, campaign and creative
+Baseline table for CPM, CTR, CPL
+Data and marketing
+Day 3
+Pull CRM funnel: booked, attended, completed, paid by lead source and week
+Baseline for quality index and CAC
+Sales ops and data
+Day 5
+Audit tracking: pixels, server-side events, UTMs, deduplication
+Gap list and fix plan
+Data
+Day 5
+Review landing-page sessions, drop-off by step, mobile versus desktop
+Funnel and heatmap report
+Product
+Day 7
+Interview sales representatives on lead quality and objections
+Top 10 objections, unqualified-lead reasons
+Marketing
+Day 7
+Scan competitor ad libraries and landing pages
+Competitive angle and offer map
+Marketing
+Day 7
+Legal review of consent language, SMS flow, testimonial disclosures
+Approved templates
+Legal and marketing
+Day 10
+Register baseline and guardrail thresholds in a shared dashboard
+Signed-off baseline
+Founder's office
+Day 10
+Score and rank the experiment backlog; reserve test budget
+Prioritized backlog
+Product and marketing
+Day 12
+Kickoff with owners; confirm weekly rhythm
+Calendar and RACI
+Founder's office
+Day 14
+10.2 Short-term plan: 30, 60 and 90 days
+Workstream
+Days 1 to 30
+Days 31 to 60
+Days 61 to 90
+Marketing
+Consolidate ad sets; prune placements; launch 12 concepts; retargeting set-up
+Lookalikes from paying students; search campaigns; creator pilots
+Qualified-event optimization; scale winners; first community partners
+Product
+Form cut (T1); message-matched headlines (T3); speed fixes (T5)
+Embedded slot picker (T2); reminder cadence (T4); trust bar (T6)
+Video testimonials (T8); segment pages (T12) drafted
+Audience
+Wave 1: NRI and Indian-American metros, competitive-math, catch-up search
+Wave 1b to 2: language communities, homeschool, wider South Asian
+Decide wave 2 results; prepare Spanish assets for wave 3
+Data and measurement
+Dashboard live; server-side events; UTM taxonomy
+Quality index computed weekly; first holdout test
+Lead-scoring v1 live; cost per attended trial tracked
+Sales and onboarding
+Speed-to-contact standard; unqualified-reason tags
+Capacity plan for 1.5x trials; A, B, C routing
+Bilingual rep pilot; no-show recovery in full use
+Governance
+Weekly review; kill and scale rules adopted
+First monthly business review
+Day-90 review and reset of targets
+10.3 Medium-term plan: months 4 to 6
+Reach $25 CPL on the core plan (glide path in 10.5) with quality index at or above 100.
+Launch wave 3 (Hispanic and Latino bilingual) only after Spanish landing page, reminders and a bilingual representative exist.
+Move the majority of spend to qualified-event or value-based optimization where event volume supports it.
+Run the first quarterly incrementality test (geographic holdout) to validate platform-reported results.
+Retire or restructure any channel that fails to beat account-average cost per booked trial after two test windows.
+10.4 Long-term structural bets: months 7 to 12 and year two
+Bet
+What it is
+Why it matters
+Prerequisite
+Target
+Referral engine
+Give-and-get credit after a family's first month
+Lowest-CPL, highest-trust source
+Happy-customer base; incentive rules
+10% of new paid students
+Creator and community network
+Repeatable partnerships with parenting, teacher and community creators
+Reduces dependence on auctions
+Contracts, tracked links, disclosure process
+15% of leads at below-average CPL
+Content and SEO library
+Grade-level guides, problem banks, parent explainers
+Compounding organic leads
+Editorial capacity
+15% of booked trials organic
+Lifecycle CRM
+Nurture, win-back and reactivation flows
+Recovers no-shows and stalled leads
+Consent-compliant list; CRM automation
++5 points show rate; +10% recovery
+Predictive lead scoring
+Model trained on 1,000+ paid outcomes replaces rules
+Better routing and bidding signals
+Clean outcome data
++10% lift in A-lead precision
+Experimentation platform
+Shared tool and learning register for all pages
+Speeds and protects testing
+Analytics capacity
+6+ tests per month
+Adjacent expansion
+Additional US segments, then additional subjects and geographies
+Uses the proven engine on new demand
+Proven unit economics in USA Math
+Decision at month 12
+10.5 The CPL glide path
+Figure 10. Expected blended CPL by month, with commit ($25) and stretch ($20) lines.
+Month
+CPM
+CTR
+CVR
+Expansion mix
+Blended CPL
+M0
+$20.00
+1.60%
+2.5%
+0%
+$50.0
+M1
+$20.00
+1.65%
+2.8%
+0%
+$43.3
+M2
+$19.50
+1.70%
+3.2%
+0%
+$35.8
+M3
+$19.00
+1.75%
+3.6%
+0%
+$30.2
+M4
+$18.50
+1.80%
+3.8%
+0%
+$27.0
+M5
+$18.00
+1.80%
+4.0%
+0%
+$25.0
+M6
+$18.00
+1.80%
+4.0%
+20%
+$22.3
+M7
+$18.00
+1.80%
+4.1%
+20%
+$21.7
+M9
+$18.00
+1.85%
+4.2%
+25%
+$20.1
+M12
+$18.00
+1.85%
+4.3%
+25%
+$19.6
+Commit: $25 by month 5 and sustained. Stretch: $20 by month 9 if expansion and partnerships perform. The plan does not assume the stretch.
+10.6 Short-term and long-term targets
+KPI
+Baseline
+Day 30
+Day 60
+Day 90
+Month 6
+Month 12
+Blended CPL
+$50.0
+$43.3
+$35.8
+$30.2
+$22.3
+$19.6
+CPM
+$20.00
+$20.00
+$19.50
+$19.00
+$18.00
+$18.00
+CTR
+1.60%
+1.65%
+1.70%
+1.75%
+1.80%
+1.85%
+Landing-page CVR
+2.5%
+2.8%
+3.2%
+3.6%
+4.0%
+4.3%
+Expansion share of spend
+0%
+0%
+0%
+0%
+20%
+25%
+Cost per booked trial (booking held at 60%)
+$83
+$72
+$60
+$50
+$37
+$33
+Media cost per paid student (quality held)
+$712
+$617
+$510
+$430
+$318
+$279
+Monthly leads at $100K media
+2,000
+2,309
+2,793
+3,311
+4,484
+5,102
+Show rate (65% today)
+65%
+66%
+67%
+68%
+70%
+72%
+Lead-quality index
+100
+100 or above
+100 or above
+100 or above
+100 or above
+105 or above
+Short-term targets (days 30 to 90) protect against drift and prove the mechanics. Long-term targets (months 6 to 12) capture the compounding effect of expansion, partnerships and lifecycle improvements. Cost figures hold downstream rates constant; any show-rate gain is upside.
+11. KPI framework
+Forty-five metrics sounds like too many. It is not, if each has an owner, a cadence and a threshold that triggers action. Metrics are grouped so that a weekly review can read a handful of headline numbers and drill into a group only when a headline moves. Baselines marked TBD are set in Week 0.
+11.1 Metric tree
+How CPL decomposes
+CPL = CPM ÷ (1,000 x CTR x CVR). CPM and CTR belong to the marketing engine. CVR belongs to the product engine.
+CVR = form start rate x step completion rate x slot booking rate. Each step has its own owner-level metric.
+Quality = booked rate x show rate x paid rate. Show rate and paid rate belong jointly to product, sales and teaching operations.
+11.2 Acquisition efficiency (marketing engine)
+KPI
+Formula
+Cadence
+Owner
+Baseline
+90-day target
+12-month target
+Alert
+CPM
+Spend ÷ impressions x 1,000
+Daily
+Marketing
+$20
+$19
+$17.50 to $18
++20% in 5 days
+CPC
+Spend ÷ clicks
+Daily
+Marketing
+$1.25
+$1.10
+$1.00
++20%
+CTR (link)
+Clicks ÷ impressions
+Daily
+Marketing, creative
+1.6%
+1.75%
+1.85%
+Down 25% from peak
+Hook rate (video)
+3-second views ÷ impressions
+Weekly
+Creative
+TBD
+30%+
+35%+
+Below 25%
+Frequency (7-day)
+Impressions ÷ reach
+Daily
+Marketing
+TBD
+Under 2.5
+Under 2.5
+Above 2.5
+Blended CPL
+Media spend ÷ leads (CRM)
+Daily and weekly
+Marketing
+$50
+$30
+About $20
+Above target by 15%
+Spend pacing
+Actual ÷ planned spend
+Daily
+Marketing
+TBD
+95 to 105%
+95 to 105%
+Outside 90 to 110%
+Search impression share
+Impressions ÷ eligible impressions
+Weekly
+Marketing
+TBD
++10 points
++20 points
+Down 10 points
+11.3 Landing page and booking (product engine)
+KPI
+Formula
+Cadence
+Owner
+Baseline
+90-day target
+12-month target
+Alert
+Landing-page view rate
+Sessions ÷ clicks
+Weekly
+Product
+TBD
+85%+
+90%+
+Below 80%
+Largest contentful paint
+Median load, mobile
+Weekly
+Product
+TBD
+Under 2.5s
+Under 2.0s
+Above 3s
+Form start rate
+Form starts ÷ sessions
+Weekly
+Product
+TBD
++20%
++35%
+Down 10%
+Form completion
+Submits ÷ form starts
+Weekly
+Product
+TBD
++15%
++25%
+Down 10%
+Landing-page CVR
+Booked leads ÷ sessions
+Daily and weekly
+Product
+2.5%
+3.6%
+4.3% to 5%
+Below 3% after 4 weeks
+Time to book
+Median minutes, first visit to booking
+Weekly
+Product
+TBD
+Under 3 min
+Under 2 min
+Above 5 min
+Mobile versus desktop CVR gap
+Mobile CVR ÷ desktop CVR
+Weekly
+Product
+TBD
+0.8+
+0.9+
+Below 0.7
+Tests shipped
+Completed tests per month
+Monthly
+Product
+0
+4+
+6+
+Fewer than 2
+11.4 Lead quality and downstream
+KPI
+Formula
+Cadence
+Owner
+Baseline
+90-day target
+12-month target
+Alert
+Lead-to-booked rate
+Booked ÷ leads
+Weekly
+Product and sales
+60%
+60% or above
+62%+
+Down 10% relative
+Show rate
+Attended ÷ booked
+Weekly
+Sales ops
+65%
+68%
+72%
+Down 5 points
+Paid conversion
+Paid ÷ attended
+Weekly, lagged
+Sales
+18%
+18% or above
+19%+
+Down 15% relative
+Cost per booked trial
+Spend ÷ booked
+Weekly
+Marketing
+$83
+$50
+$33 to $37
+Above plan by 15%
+Cost per attended trial
+Spend ÷ attended
+Weekly
+Marketing
+$128
+$77
+$50 to $56
+Above plan by 15%
+Media CAC
+Spend ÷ paid students
+Monthly
+Marketing
+$712
+$430
+$280 to $310
+Above baseline
+Lead-quality index
+Section 8 formula
+Weekly
+Founder's office
+100
+100 or above
+105 or above
+Below 95 amber; below 90 red
+Median speed-to-contact
+Minutes from lead to first contact
+Daily
+Sales ops
+TBD
+Under 10
+Under 5
+Above 15
+Contact rate
+Leads reached ÷ leads
+Weekly
+Sales ops
+TBD
+80%+
+85%+
+Below 70%
+A-lead share
+Leads scoring 60+ ÷ leads
+Weekly
+Data
+TBD
+25%
+30%
+Down 5 points
+11.5 Audience and segment
+KPI
+Formula
+Cadence
+Owner
+Baseline
+90-day target
+12-month target
+Alert
+Segment CPL
+Segment spend ÷ segment leads
+Weekly
+Marketing
+TBD
+At or below core
+10% below core
+Above 1.3x core
+Segment quality index
+Section 8 formula by segment
+Weekly
+Data
+TBD
+95+
+100+
+Below 90
+Expansion share of spend
+Expansion ÷ total spend
+Weekly
+Marketing
+0%
+8 to 10%
+25 to 30%
+Outside plan
+Audience overlap
+Shared reach between ad sets
+Weekly
+Marketing
+TBD
+Under 25%
+Under 20%
+Above 30%
+Incremental lead share
+Holdout-measured extra leads
+Quarterly
+Data
+n/a
+Measured once
+Measured each quarter
+Below 70%
+11.6 Business outcomes and program health
+KPI
+Formula
+Cadence
+Owner
+Baseline
+90-day target
+12-month target
+Alert
+Monthly leads
+Count (CRM)
+Weekly
+Marketing
+2,000
+3,300
+4,500+
+Below plan by 10%
+Monthly paid students
+Count (CRM)
+Monthly
+Sales
+TBD
++60%
++120%
+Below plan by 10%
+First-year revenue per media dollar
+Revenue ÷ media spend
+Monthly
+Finance
+TBD
++60%
++120%
+Down 10%
+CAC payback
+Media and sales cost ÷ monthly margin
+Monthly
+Finance
+TBD
+Improving
+Under 6 months
+Rising two months
+Experiments completed
+Count per month
+Monthly
+Founder's office
+0
+8+
+10+
+Fewer than 4
+Creative concepts launched
+Count per month
+Monthly
+Creative
+TBD
+12
+8 per month
+Fewer than 6
+Event match quality
+Platform score for server events
+Weekly
+Data
+TBD
+Good or better
+Great
+Falls a band
+Learning-register completeness
+Tests logged ÷ tests run
+Monthly
+Founder's office
+0%
+100%
+100%
+Below 90%
+11.7 Review rhythm
+Cadence
+Reads
+Decision
+Daily (15 minutes)
+Spend pacing, CPM, CTR, CPL by channel, anomalies
+Pause or cap; no strategy changes
+Weekly (60 minutes)
+Blended CPL, quality index, cost per booked trial, test readouts, segment tests
+Reallocate budget; ship or kill tests; scale or pause segments
+Monthly (90 minutes)
+Media CAC, revenue per media dollar, payback, capacity
+Reset budgets and targets; approve structural bets
+Quarterly (half day)
+Incrementality tests, competitive shifts, seasonality lessons, roadmap
+Strategy update; next quarter's targets
+12. Risks, limitations and mitigations
+12.1 Risk register
+ID
+Risk
+Likelihood
+Impact
+Early-warning signal
+Mitigation
+Owner
+R1
+Observed gains are correlation, not cause (traffic mix shifts, seasonality)
+M
+H
+Gains vanish in holdout or split test
+Controlled tests; quarterly geographic holdout
+Data
+R2
+Creative wins do not convert (CTR up, CVR flat)
+H
+M
+CTR up, cost per booked trial flat
+Message match; T1, T2, T3 before scaling creative
+Product
+R3
+Quality erodes as traffic gets cheaper
+M
+H
+Quality index amber or red
+Guardrail rules; qualified-event bidding; junk controls
+Marketing
+R4
+Expansion audiences underperform
+M
+M
+Test-cell rule returns kill or iterate
+Small test cells; partner-led entry; localization
+Marketing
+R5
+Tracking signal loss from privacy changes
+M
+H
+Event match quality falls; platform and CRM diverge
+Server-side events; CRM as source of truth; lift tests
+Data
+R6
+Auction inflation or competitor bidding
+H
+M
+CPM and CPC rise with no audience change
+Diversify channels; defend high-intent terms; build owned sources
+Marketing
+R7
+Creative fatigue accelerates
+H
+M
+Frequency above 2.5; CTR decay
+Concept volume; 70/20/10 rule; broaden audiences
+Creative
+R8
+Sales or teacher capacity cannot absorb volume
+M
+H
+Speed-to-contact above 15 min; slot fill above 90%
+Throttle spend to capacity; Option C; open off-peak slots
+Sales ops
+R9
+Shorter form lowers commitment and show rate
+M
+M
+Show rate falls after T1
+Post-booking profiling; reminders; optional OTP
+Product
+R10
+Ad rejections or account restrictions
+M
+M
+Disapproved ads; policy warnings
+Pre-clear claims and child imagery; backup copy
+Marketing
+R11
+Compliance breach (SMS, child data)
+L
+H
+Complaints; opt-out spikes
+Legal review; consent capture; audit trail
+Legal
+R12
+Seasonality masks or exaggerates results
+H
+M
+Same-period comparison disagrees with trend
+Year-on-year and holdout comparison; calendar-aware targets
+Data
+R13
+Design and engineering bandwidth
+M
+M
+Test backlog ages beyond 3 weeks
+Dedicated pod; no-code page tooling; strict prioritization
+Product
+R14
+Over-optimizing CPL at the expense of lifetime value
+M
+H
+CAC or payback worsens while CPL improves
+Report CAC and LTV beside CPL; weight paid outcomes
+Founder's office
+12.2 Limitations of this document and how to overcome them
+Limitation
+Why it matters
+How to overcome it
+No account data was available; baselines are calibrated to the stated $50 CPL
+The exact CPM, CTR and CVR split may differ
+Week 0 audit replaces every illustrative baseline; the structure of the plan does not change
+Benchmarks come largely from e-commerce and general lead-gen studies
+Education and parent audiences behave differently
+Build BrightChamps' own benchmarks from 90 days of data; prefer education-specific sources
+Downstream rates and revenue per student are assumed
+Cost per paid student and revenue claims depend on them
+Pull actuals from CRM; recompute Sections 4, 8 and 15
+Expansion multipliers are hypotheses
+The audience lever could be larger or smaller
+Test cells with the decision rules in Section 7.5
+The model treats the three levers as independent
+Interactions can help or hurt (for example, a better page makes creative more valuable)
+Track the combined effect against the glide path, not only each lever's own metric
+Static unit economics ignore diminishing returns at scale
+CPM and CTR degrade as spend rises
+Scale in steps; use scenario 8 as the planning case
+One market and one subject
+Learnings may not transfer to other geographies
+Treat expansion beyond USA Math as a later decision
+Legal and platform-policy notes are not legal advice
+Rules change and vary by state
+Obtain counsel review before launching SMS, testimonials and child-data flows
+13. US compliance and platform policy
+Read this first
+This section summarizes areas to review with counsel before launch. It is not legal advice. Rules change and vary by state. The purpose is to make sure growth tactics do not create legal or platform risk.
+Area
+What it covers
+What to do
+COPPA (children under 13)
+Federal rules on collecting personal information from children online
+Collect child details from the parent, not the child; state purpose in a clear privacy notice; do not let children submit forms directly; get counsel review for any child-facing data collection
+TCPA (calls and texts)
+Consent rules for automated or marketing calls and text messages
+Capture clear, recorded opt-in for SMS on the form; honor STOP immediately; respect quiet hours; keep consent records
+CAN-SPAM (email)
+Requirements for commercial email
+Accurate sender information, physical address, working unsubscribe, honor opt-outs promptly
+State privacy laws (for example CCPA and CPRA)
+Notice at collection, rights to opt out of sale or sharing, data access and deletion
+Provide notice and opt-out controls; review whether pixels and retargeting count as sharing; document retention limits
+FTC endorsement and advertising rules
+Testimonials, influencer content, substantiation of claims
+Disclose creator relationships clearly; testimonials must not imply typical results that are not typical; keep evidence for every outcome claim
+Ad-platform policies
+Rules on education claims, minors in creative, personal attributes and targeting
+Avoid implying knowledge of personal attributes; pre-review creative with child imagery; keep compliant backups
+Data security and vendors
+Protection of parent and child data; third-party tools
+Vendor data agreements; access controls; encryption; delete data on schedule
+Consent wording checklist for the form
+Plain-language statement of who will contact the parent, how (call, text, email) and why.
+Separate, unchecked consent for text messages, with message-frequency and opt-out language.
+Link to privacy policy and terms, visible without scrolling on mobile.
+No pre-ticked boxes; no bundling of consent with unrelated agreements.
+14. Team, cadence and governance
+14.1 Roles and responsibilities
+R = responsible, A = accountable, C = consulted, I = informed.
+Activity
+Marketing lead
+Creative
+Product and design
+Data
+Sales ops
+Founder's office
+Media plan and budget reallocation
+R
+C
+I
+C
+I
+A
+Creative production and testing
+A
+R
+C
+C
+I
+I
+Landing-page and booking experiments
+C
+C
+R
+C
+I
+A
+Tracking, dashboards, quality index
+C
+I
+C
+R
+C
+A
+Lead scoring, routing, speed-to-contact
+C
+I
+C
+C
+R
+A
+Audience test cells and decisions
+R
+C
+C
+C
+C
+A
+Compliance review
+R
+C
+C
+C
+C
+A
+Monthly business review
+R
+I
+R
+R
+R
+A
+14.2 Weekly operating rhythm
+Day
+Meeting
+Attendees
+Output
+Monday
+Metrics review
+Marketing, product, data, sales ops
+Headline read; anomalies; budget moves
+Wednesday
+Creative review
+Marketing, creative
+Winners, losers, next concepts
+Thursday
+Sales and marketing sync
+Marketing, sales ops
+Unqualified reasons; script and targeting fixes
+Friday
+Experiment readout
+Product, data, marketing
+Ship, kill or iterate; log learnings
+14.3 Decision rules
+Decision
+Rule
+Authority
+Increase an ad set's budget
++20% every 3 days if CPL at or below target and quality index at or above 95
+Marketing lead
+Pause an ad
+Spend reaches 2x target CPL with no lead, or cost per booked trial above 1.3x average after 14 days
+Marketing lead
+Pause a lever or segment
+Quality index below 90, or CPL above 1.3x core after iteration
+Marketing lead, then founder's office at weekly review
+Ship a page variant
+Reached planned sample; win on primary metric; guardrail metrics not worse
+Product lead
+Launch a new audience segment
+Wave prerequisites met; test cell within 8% budget
+Marketing lead with founder's office approval
+Change targets
+Only at monthly or quarterly review, with data
+Founder's office
+14.4 Tools (examples, not endorsements)
+Ad platforms: Meta Ads Manager, Google Ads, YouTube and short-form platforms.
+Analytics and tracking: web analytics, a tag manager, server-side event tooling, a BI dashboard tool.
+Experimentation: a page-testing tool or split-testing framework in the site stack, and a session-replay tool for qualitative review.
+Messaging: a compliant SMS and email platform with consent logging.
+CRM and scheduling: CRM with lead scoring fields, and a scheduling widget that supports US time zones.
+15. Budget and resources
+All non-media costs below are planning placeholders to be replaced with quotes and internal cost data. They exist to size the investment against the value at stake, not to forecast spend.
+15.1 Illustrative monthly envelope
+Item
+Monthly (illustrative)
+Notes
+Media (baseline)
+$100,000
+Includes 8% test reserve in months 1 to 3, then 4%
+Creative production
+$10,000 to $15,000
+12 concepts in month 1, then about 8 per month
+Experimentation, analytics and tooling
+$2,000 to $4,000
+Testing, session replay, dashboards, server-side events
+Creator and partnership fees
+$5,000 to $10,000
+From month 3; performance-linked where possible
+Localization (one-time, wave 3)
+$3,000 to $6,000
+Spanish landing page, reminders, creative
+Peak non-media investment
+About $17,000 to $29,000
+Excludes salaries of existing staff
+15.2 Roles
+Performance marketer (owner of media engine), conversion and analytics lead (owner of product engine and measurement), designer and front-end builder, lifecycle marketer (reminders, nurture), and a creative producer or agency. Some may be existing roles.
+Founder's office owns the guardrail, the weekly review and the decision rules.
+15.3 What the investment must return
+Measure
+Calculation
+Value (illustrative)
+Budget released (Option B)
+$100,000 - $50,000 per month at constant leads
+$50,000 per month ($600,000 per year)
+Extra leads (Option A)
+4,000 - 2,000 at constant spend
+2,000 per month
+Extra paid students per monthly cohort (Option A)
+2,000 x 7.02%
+about 140
+First-year revenue of that cohort
+140 x $1,500 assumed
+about $210,600
+Non-media envelope as a share of that revenue
+$17,000 to $29,000 ÷ cohort revenue
+about 8% to 14%
+Even on cautious assumptions the investment is a small fraction of the value it unlocks. The larger risk is not that the plan costs too much. It is that the value is not realized because quality slips or capacity fails, which the guardrail and the capacity checks are designed to prevent.
+Appendix A. Assumptions register
+#
+Assumption
+Value
+Basis
+Replace with
+A1
+Baseline CPM
+$20
+Calibrated; competitive vertical benchmark
+Account CPM, 90-day
+A2
+Baseline CTR
+1.6%
+Calibrated; below 2.19% platform median
+Account link CTR
+A3
+Baseline landing-page CVR
+2.5%
+Calibrated; below 5.7% education median
+Analytics: booked leads ÷ sessions
+A4
+Lead-to-booked rate
+60%
+Illustrative
+CRM
+A5
+Booked-to-attended (show) rate
+65%
+Illustrative
+CRM
+A6
+Attended-to-paid rate
+18%
+Illustrative
+CRM
+A7
+First-year revenue per paid student
+$1,500
+Illustrative
+Finance
+A8
+Monthly media budget
+$100,000
+Planning figure
+Approved budget
+A9
+Expansion multipliers (CPM, CTR, CVR)
+x0.85, x1.25, x1.10
+Hypothesis
+Test-cell results
+A10
+Quality-index weights
+30 / 30 / 40
+Judgment
+Regression on paid outcomes
+A11
+Lead-score points
+See Section 8.2
+Judgment
+Trained model at 1,000+ paid outcomes
+A12
+Non-media costs
+See Section 15
+Placeholders
+Quotes and internal costs
+Appendix B. Glossary
+Term
+Meaning
+CPM
+Cost per thousand impressions
+CPC
+Cost per click
+CTR
+Click-through rate: clicks divided by impressions
+CVR
+Conversion rate: leads divided by landing-page sessions
+CPL
+Cost per lead: spend divided by leads
+CAC
+Customer acquisition cost: spend divided by paying customers
+LTV
+Lifetime value of a customer
+ROAS
+Return on ad spend: revenue divided by media spend
+Lookalike audience
+Platform-built audience resembling a seed list, such as paying students
+Frequency
+Average number of times a person sees an ad
+Hook rate
+Share of impressions that watch at least the first three seconds of a video
+LCP
+Largest contentful paint: time until the main content is visible
+OTP
+One-time passcode sent by text to verify a phone number
+ICE score
+Prioritization score: impact, confidence and ease, each 1 to 10
+Holdout
+A group deliberately not exposed to a change, used to measure incremental effect
+Conversions API (CAPI)
+Server-side method of sending conversion events to an ad platform
+UTM
+Tags added to links to record source, medium and campaign
+COPPA, TCPA
+US rules on children's online privacy and on calls and texts
+Appendix C. Sources and benchmark notes
+Figures are approximate, drawn from public sources in 2025 to 2026, and should be re-verified before use in any external document.
+Meta advertising benchmarks (2025): platform-wide medians for CPM (about $13 to $14 overall, up to about $20.70 in competitive verticals) and CTR (about 2.19%) as reported in benchmark analyses by Triple Whale and Influee. These skew toward e-commerce accounts.
+Landing-page conversion benchmarks: Unbounce Conversion Benchmark Report (lead-generation average about 11.9%; education median about 5.7%; all-industry averages roughly 3 to 4%).
+Indian-American population and income: Pew Research Center analyses of US Census data (about 5.2 to 5.5 million people; median household income about $145,000 to $151,000).
+Hispanic and Latino population and growth: US Census Bureau estimates, with purchasing-power and growth analyses from Claritas and MarketingCharts (about 62 to 63 million, roughly 19% of the US population).
+Platform guidance: Google Stitch, Meta and Google advertising policies should be re-read at launch, because rules on targeting, education claims and minors change frequently.
+Appendix D. Creative hook library (angles to test)
+These are angles, not scripts. Each must be produced with real, substantiated stories and consent.
+Homework night that used to end in tears now ends in questions.
+A child explains fractions to a parent using a pizza, guided by a live teacher.
+The difference between doing math and understanding math, shown in 20 seconds.
+Three signs a child is ready for the next math level.
+What state-test season really needs: confidence, not cramming.
+A teacher solves a contest-style problem in a way school rarely shows.
+Why small live groups beat recorded videos for math.
+A parent's five-minute check for math gaps at home.
+Summer slide: how a few weeks of math practice protects a whole year.
+Before and after: a learner's diagnostic over eight weeks.
+Bilingual math help for families who want both languages in the room.
+From drive-to-center to learn-from-anywhere: what a week looks like.
+Appendix E. Pre-launch checklist
+Area
+Check
+Done
+Tracking
+Server-side events for lead, booked, attended and paid; UTMs on every link; dedupe rules tested
+[ ]
+Tracking
+Dashboard shows blended CPL, quality index and cost per booked trial by channel
+[ ]
+Baseline
+90-day actuals recorded and signed off; guardrail thresholds set
+[ ]
+Legal
+Consent language, SMS opt-in, privacy notice, testimonial disclosures reviewed
+[ ]
+Creative
+12 concepts produced; child imagery consent on file; claims substantiated
+[ ]
+Landing page
+Speed under 2.5s on mid-range mobile; form cut live; slot picker tested across US time zones
+[ ]
+Reminders
+Cadence built and tested; STOP handling verified
+[ ]
+Sales and onboarding
+Speed-to-contact standard; lead-score routing; capacity plan for 1.5x trials
+[ ]
+Experimentation
+Backlog ranked; sample sizes and durations pre-registered; learning register ready
+[ ]
+Governance
+Owners named; weekly rhythm booked; kill and scale rules circulated
+[ ]
